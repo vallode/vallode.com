@@ -18,6 +18,7 @@ body{
 	padding-top:0px;
 	
 	border: 3px solid #051522;
+	border-radius: 5px;
 	background-color:#15343E;
 	
 	opacity: 0.75;
@@ -60,6 +61,12 @@ body{
 li{
 	display:inline;
 	position:relative;
+}
+li a{
+	transition: all .25s linear;
+}
+li a:hover{
+	opacity:1;
 }
 li span{
 	font-weight:bold;
