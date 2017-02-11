@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<title> Stay a while and listen </title>
+
+<link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8"> 
+<link href="https://fonts.googleapis.com/css?family=Fira+Mono|VT323" rel="stylesheet"> 
+
+<script>
+function clockTime(){
+	var time = new Date();
+	var h = time.getHours();
+	var m = time.getMinutes();
+	var s = time.getSeconds();
+	var blinker = '<span id="blinker">:</span>'
+	m = checkTime(m);
+	document.getElementById('clock').innerHTML =
+	h + blinker + m
+	var t = setTimeout(clockTime, 500);
+	if (s%2 > 0){
+		document.getElementById('blinker').style.visibility = 'hidden';
+	}else if (s%2 < 0){
+		document.getElementById('blinker').style.visibility = 'visible';
+	}
+}
+function checkTime(i){
+	if (i < 10){
+		i = '0' + i;
+	}
+	return i;
+}
+</script>
+</head>
+
+<body onLoad='clockTime();'>
+	<div id='box'>
+		<div id='header'>
+			<span id='clock'></span>
+		</div>
+		<div class='links'>
+			<ul>
+				<ul>
+					<li><span>Social:</span></li>
+					<li><a target="_blank" href='https://www.reddit.com/'>Reddit</a></li>
+					<li><a target="_blank" href='https://www.facebook.com/'>Facebook</a></li>
+					<li><a target="_blank" href='https://twitter.com/'>Twitter</a></li>
+				</ul>
+				<ul>
+					<li><span>Work:</span></li>
+					<li><a target="_blank" href='https://stackoverflow.com'>Stack Overflow</a></li>
+					<li><a target="_blank" href='https://www.khanacademy.org/'>Khan Academy</a></li>
+					<li><a target="_blank" href='https://www.quora.com'>Quora</a></li>
+				</ul>
+				<ul>
+					<li><span>Images:</span></li>
+					<li><a target="_blank" href='https://www.tumblr.com/dashboard'>Tumblr</a></li>
+					<li><a target="_blank" href='https://imgur.com/'>Imgur</a></li>
+					<li><a target="_blank" href='https://imgur.com/'>/wg/</a></li>
+				</ul>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>
