@@ -1,0 +1,143 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+	line-height:1;
+	color:#D8BDC1;
+	-webkit-text-stroke: 1px #3F2C55;
+	text-decoration:none;
+	list-style-type:none;
+}
+body, html{
+	width:100%;
+	height:100%;
+}
+a{
+	position:relative;
+	text-decoration:none;
+	-webkit-text-stroke: 0px #3F2C55;
+	color:#E5CACF;
+}
+li a:before{
+	content:'';
+	right:-5%;
+	bottom:2px;
+	width:110%;
+	height:80%;
+	z-index:-1;
+	position:absolute;
+	background-color: #3F2C55;
+	visibility:hidden;
+	
+	transition: all .25s linear;
+	-webkit-transform: translateZ(0px) translateX(-60%) scaleX(0);
+}
+li a:hover:before{
+	visibility:visible;
+	-webkit-transform: translateZ(0px) translateX(0) scaleX(1);
+}
+ul > li{
+	font-family: 'Anton', sans-serif;
+	-webkit-text-stroke: 1px #3F2C55;
+	font-size:190%;
+	margin-bottom:3px;
+	margin-top:3px;
+}
+ol li{
+	font-size:100%;
+	-webkit-text-stroke: 0px #3F2C55;
+	margin-bottom:3px;
+}
+body{
+	background: url(page.jpg) no-repeat center fixed;
+	background-size:100%;
+}
+h1{
+	font-size:450%;
+}
+p{
+	font-size:500%;
+	color:#D8BDC1;
+}
+.container{
+	position:absolute;
+	width:580px;
+	height:inherit;
+	left:10%;
+	top:30%;
+}
+.screen{
+	width:50%;
+	text-align:center;
+}
+.header{
+	font-size:110%;
+	background-color:#C4877C;
+	margin:5px;
+	width:570px;
+	height:90px;
+	border-radius:5px;
+	opacity:.75;
+}
+.box{
+	display:block;
+	border: 1px solid #D8BDC1;
+	overflow:hidden;
+	margin:5px;
+	background-color:#C4877C;
+	border-radius:5px;
+	transition: opacity .25s;
+	opacity:.75;
+}
+.box:hover{
+	opacity:.85;
+	transition: opacity .25s;
+}
+.box1{
+	float:left;
+	width:260px;
+	height:85px;
+	background-color:#C4877C;
+	border-radius:5px;
+	opacity:.75;
+}
+.box2{
+	float:left;
+	margin-top:0px;
+	width:260px;
+	height:40px;
+	background-color:#C4877C;
+	border-radius:5px;
+	opacity:.75;
+}
+.box3{
+	float:right;
+	width:300px;
+	height:260px;
+	background-color:#C4877C;
+	border-radius:5px;
+	opacity:.75;
+}
+.box4{
+	float:left;
+	width:260px;
+	height:120px;
+	background-color:#C4877C;
+	border-radius:5px;
+	opacity:.75;
+}
+.dash{
+	-webkit-text-stroke: 1px #3F2C55;
+	line-height:1;
+	color:#D8BDC1;
+	opacity:.75;
+}
+#clock{
+	font-size:500%;
+}
+#date{
+	-webkit-text-stroke: 1px #3F2C55;
+	font-size:230%;
+	color:#D8BDC1;
+}
