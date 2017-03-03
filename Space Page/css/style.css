@@ -4,7 +4,7 @@
 	text-decoration: none;
 }
 body{
-    background: #01040E url(page.jpg) center center no-repeat fixed; 
+    background: #01040E url(page.jpg) center top no-repeat fixed; 
 }
 li, ul, ol{
 	list-style-type: none;
