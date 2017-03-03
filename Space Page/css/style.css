@@ -6,7 +6,10 @@
 body{
 	background-color:#01040E;
 	background-image: url(page.jpg);
-	background-size: auto;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 }
 li, ul, ol{
 	list-style-type: none;
