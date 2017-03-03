@@ -8,7 +8,7 @@ body{
 }
 @media only screen and (max-width: 768px) {
     body {
-        background: #01040E url(page.jpg) no-repeat fixed; 
+        background: #01040E url(page.jpg) cover no-repeat fixed; 
     }
 }
 li, ul, ol{
