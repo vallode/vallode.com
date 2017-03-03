@@ -6,6 +6,11 @@
 body{
     background: #01040E url(page.jpg) center top no-repeat fixed; 
 }
+@media only screen and (max-width: 768px) {
+    body {
+        background: #01040E url(page.jpg) no-repeat fixed; 
+    }
+}
 li, ul, ol{
 	list-style-type: none;
 	float: left;
