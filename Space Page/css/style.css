@@ -4,12 +4,7 @@
 	text-decoration: none;
 }
 body{
-	background-color:#01040E;
-	background-image: url(page.jpg);
-	webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
+    background: #01040E url(page.jpg) no-repeat center fixed; 
 }
 li, ul, ol{
 	list-style-type: none;
