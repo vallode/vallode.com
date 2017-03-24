@@ -65,7 +65,7 @@ a:hover{
 	color:#BBD2E3
 }
 .center{
-	width:50%;
+	width:80%;
 	text-align: center;
 	margin-left:auto;
 	margin-right:auto;
@@ -73,7 +73,7 @@ a:hover{
 }
 @media (min-width: 400px) {
 	.center{
-		width:50%;
+		width:80%;
 	}
 }
 @media (min-width: 900px) {
