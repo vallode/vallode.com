@@ -35,6 +35,9 @@ code{
 	margin-left:20px;
 	counter-reset: item
 }
+ol{
+	color:#BBD2E3;
+}
 .content li{ 
 	margin-bottom: 0 !important;
 	display: block 
