@@ -37,6 +37,12 @@ a{
 	display:block;
 	float:right;
 }
+.startpage3{
+	width:330px;
+	height:200px;
+	display:block;
+	float:right;
+}
 .container{
 	left:50%;
 	transform:translate(-50%);
