@@ -17,11 +17,7 @@ li, ul, ol{
 	margin:0 !important;
 	margin-bottom: 1% !important;;
 }
-a:visited{
-	text-decoration:none;
-	color:#50958A;
-}
-a:link{
+a:visited,a:link{
 	text-decoration:none;
 	color:#50958A;
 }
