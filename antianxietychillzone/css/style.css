@@ -65,8 +65,14 @@ a:hover{
 	color:#BBD2E3
 }
 .center{
+	width:50%;
 	text-align: center;
 	margin-left:auto;
 	margin-right:auto;
 	display:block;
+}
+@media (min-width: 900px) {
+	.center{
+		width:100%;
+	}
 }
