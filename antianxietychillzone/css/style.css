@@ -60,7 +60,7 @@ ol > ol{
 	margin-left: 20px;
 }
 ul{
-	margin-left: 0px;
+	margin-left: 0px !important;
 }
 .content li:before{
 	content: counters(item, ".") " "; counter-increment: item
