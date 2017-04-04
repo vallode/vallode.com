@@ -21,7 +21,6 @@ h5{
 }
 p, ul{
 	font-size: 100%;
-	text-align:justify;
 	margin-top:15px;
 	color:#BBD2E3;
 }
@@ -95,6 +94,9 @@ a:hover{
 	margin-right:auto;
 	display:block;
 }
+.three.columns {
+	width:50%;
+}
 @media (min-width: 400px) {
 	.center{
 		width:100%;
@@ -121,5 +123,8 @@ a:hover{
 	}
 	.icon32{
 		top:0px;
+	}
+	.three.columns {
+		width:20%;
 	}
 }
