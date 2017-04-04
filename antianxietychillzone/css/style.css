@@ -14,13 +14,13 @@ h5, h4{
 	margin:0;
 	margin-left:5px;
 	color:#BBD2E3;
-	font-size: 300%;
+	font-size: 250%;
 }
 h5{
 	font-size: 200% !important;
 }
 p, ul{
-	font-size: 125%;
+	font-size: 100%;
 	text-align:justify;
 	margin-top:15px;
 	color:#BBD2E3;
@@ -66,7 +66,7 @@ ul{
 	content: counters(item, ".") " "; counter-increment: item
 }
 .rules{
-	font-size: 125%;
+	font-size: 100%;
 	text-align:justify;
 	margin-top:15px;
 	color:#BBD2E3;
@@ -101,5 +101,11 @@ a:hover{
 	}
 	ul{
 		margin-left: 50px;
+	}
+	p, ul{
+		font-size: 120%;
+	}
+	.rules{
+		font-size: 125%;
 	}
 }
