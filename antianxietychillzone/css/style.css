@@ -28,6 +28,10 @@ p, ul{
 code{
 	color: green;
 }
+.icon{
+	top:8px;
+	position: relative;
+}
 .segment{
 	margin-bottom: 10px;
 }
@@ -107,5 +111,8 @@ a:hover{
 	}
 	.rules{
 		font-size: 125%;
+	}
+	.icon{
+		top:0px;
 	}
 }
