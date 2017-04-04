@@ -1,7 +1,7 @@
 *{
 	margin:0;
 	padding:0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	text-decoration:none;
 }
 html, body{
@@ -26,25 +26,31 @@ a{
 	color:black;
 }
 .startpage{
+	margin:5px;
 	width:330px;
 	height:200px;
 	display:block;
-	float:left;
+	float:right;
 }
-.startpage2{
+.startpageright{
+	margin:5px;
 	width:330px;
 	height:200px;
 	display:block;
 	float:right;
 }
 .startpage3{
+	margin:5px;
 	width:330px;
 	height:200px;
 	display:block;
 }
 .container{
-	left:50%;
-	transform:translate(-50%);
+	width: 700px;
 	position:absolute;
 	text-align:center;
+}
+.center{
+	left:50%;
+	transform:translate(-50%);
 }
