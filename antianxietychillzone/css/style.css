@@ -1,44 +1,56 @@
-*{
-	font-family: 'Droid Serif', serif;
-}
-body{
+* { font-family: 'Droid Serif', serif; }
+h5 { font-size: 200% !important; }
+code { color: green; }
+.segment { margin-bottom: 10px; }
+body {
 	width:100%;
 	background-color: #3386AC;
 }
-img{
+img {
 	margin-bottom: 10px;
 	margin-top:10px;
 }
-h5, h4{
+h5, h4 {
 	font-weight: bold;
 	margin:0;
 	margin-left:5px;
 	color:#BBD2E3;
 	font-size: 250%;
 }
-h5{
-	font-size: 200% !important;
-}
-p, ul{
+p, ul {
 	font-size: 100%;
 	margin-top:15px;
 	color:#BBD2E3;
 }
-code{
-	color: green;
+ol {
+	color:#BBD2E3;
+	margin-bottom: 10px;
 }
-.icon16{
+ol > ol {
+	margin: 0;
+	margin-left: 20px;
+}
+ul {
+	margin-left: 0px !important;
+}
+a, a:visited {
+	text-decoration: none;
+	color:#BBD2E3;
+}
+a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	color:#BBD2E3
+}
+.icon16 {
 	top:10px;
 	position: relative;
 }
-.icon32{
+.icon32 {
 	top:16px;
 	position: relative;
 }
-.segment{
-	margin-bottom: 10px;
-}
-.content{
+.content {
 	border: 2px solid #3277AB;
 	border-radius: 7px;
 	position: relative;
@@ -48,46 +60,26 @@ code{
 	transform: translate(-50%);
 	margin:0 !important;
 }
-.content ol{
+.content ol {
 	margin:0;
 	color:#73A4C6;
 	margin-left:20px;
 	counter-reset: item
 }
-ol{
-	color:#BBD2E3;
-	margin-bottom: 10px;
-}
-.content li{ 
+.content li { 
 	margin-bottom: 0 !important;
 	display: block 
 }
-ol > ol{
-	margin: 0;
-	margin-left: 20px;
-}
-ul{
-	margin-left: 0px !important;
-}
-.content li:before{
+.content li:before {
 	content: counters(item, ".") " "; counter-increment: item
 }
-.rules{
+.rules {
 	font-size: 100%;
 	text-align:justify;
 	margin-top:15px;
 	color:#BBD2E3;
 }
-a, a:visited{
-	text-decoration: none;
-	color:#BBD2E3;
-}
-a:hover{
-	text-decoration: underline;
-	cursor: pointer;
-	color:#BBD2E3
-}
-.center{
+.center {
 	width:100%;
 	text-align: center;
 	margin-left:auto;
@@ -103,28 +95,12 @@ a:hover{
 	}
 }
 @media (min-width: 900px) {
-	.center{
-		width:100%;
-	}
-	img{
-		margin:0px;
-	}
-	ul{
-		margin-left: 50px;
-	}
-	p, ul{
-		font-size: 120%;
-	}
-	.rules{
-		font-size: 125%;
-	}
-	.icon16{
-		top:0px;
-	}
-	.icon32{
-		top:0px;
-	}
-	.three.columns {
-		width:25%;
-	}
+	image { margin:0px; }
+	ul 	{ margin-left: 50px; }
+	p, ul	{ font-size: 120%; }
+	.center { width:100%; }
+	.rules	{ font-size: 125%; }
+	.icon16	{ top:0px; }
+	.icon32	{ top:0px; }
+	.three.columns: { width:25%; }
 }
