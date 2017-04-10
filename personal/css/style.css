@@ -1,8 +1,16 @@
-* { margin:0; font-family: 'Lato', sans-serif; }
+* { margin:0; font-family: 'Lato', sans-serif; color: #013; }
 body { background-color: #e5eeff; }
 b { color: #04c; }
-hr { border-color: rgba(87, 143, 255, 0.5); margin-bottom: 2rem; }
-h5 { margin: 0; }
+hr { border-color: rgba(87, 143, 255, 0.5); margin-bottom: 2rem; margin-top: 0;}
+h5 { margin: auto; }
+h2 { color: #013;}
+div > h3 {
+	margin: 0;
+	line-height: 1;
+}
+a:hover {
+	color: #013;
+}
 .profile {
 	width: 180px;
 	height: 180px;
@@ -12,20 +20,30 @@ h5 { margin: 0; }
 	font-smooth: never;
 	-webkit-font-smoothing : none;
 }
-.mail{
-	display: inline-block;
-	transition: all .1s linear;
+.scaleIn {
 	text-decoration: none;
-	color: #04c;
+	transition: all .15s linear;
 }
-.mail:hover {
-	color: #04c;
+.underline {
+	text-decoration: none;
+	color: #013;
+	position: relative;
+}
+.underline:before{
+	content:'';
+	left:0;
+	bottom:0;
+	width: 100%;
+	background-color: #b3cdff;
+	height: 2px;
+	position: absolute;
+	transform: scaleX(0) translateZ(0px);
+	visibility:hidden;
+	transition: all .2s linear;
 }
 .content {
 	text-align: center;
-}
-.social {
-
+	margin-top: 15%;
 }
 .socialProfile {
 	width: 32px;
@@ -33,7 +51,10 @@ h5 { margin: 0; }
 	margin-right:1%;
 	margin-left:1%;
 }
-div > h3 {
-	margin: 0;
-	line-height: 1;
+.underline:hover:before {
+	visibility: visible;
+	transform: scaleX(1) translateZ(0px);
+}
+.scaleIn:hover {
+	transform: scale(1.2);
 }
