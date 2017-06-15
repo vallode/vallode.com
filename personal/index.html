@@ -14,6 +14,20 @@
 
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
+<script>
+  function reveal() {
+   document.getElementById("reveal1").classList.toggle("show")
+   document.getElementById("breaker").classList.toggle("noMargin")
+  }
+  $( ".about" ).click(function() {
+    //alert($( this ).css( "transform" ));
+    if (  $( this ).css( "transform" ) == 'none' ){
+        $(this).css("transform","rotate(45deg)");
+    } else {
+        $(this).css("transform","" );
+    }
+});
+</script>
 <body>
   <div class="container">
     <div class="row">
@@ -23,7 +37,11 @@
         <div>
           <p style='font-size: 110%'>an <b>aspiring entrepreneur</b> and <b>computer scientist</b><br>who dabbles in many things and <b>loves</b> talking to people</p>
           <div class='social'>
-            <hr>
+            <h5><a class='about underline' onclick='reveal()'>About me</a></h5>
+            <hr id='breaker'>
+            <div id='reveal1' class='reveal'> <!--all the content I need to be shown-->
+              <p>This is what should show up when you fucking click that button</p>
+            </div>
             <h5><a class='underline' style='display: inline;' href="mailto:mariuszz@therecursive.co.uk">Get in touch</a></h5>
 
             <a href="https://github.com/vallode"><img class='socialProfile scaleIn' src="images/ghicon.png" alt="github"></a>
