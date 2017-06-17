@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"trs",
+				"translateY()"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"tran",
+				"transform"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"border",
+				"border-bottom-style"
+			],
+			[
+				"border-bott",
+				"border-bottom"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"backgr",
+				"background-size"
+			],
+			[
+				"tra",
+				"translateY"
+			],
+			[
+				"tras",
+				"translateX()"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
 				"inline",
 				"inline-block"
 			],
@@ -36,14 +80,6 @@
 				"background-color"
 			],
 			[
-				"tras",
-				"transition"
-			],
-			[
-				"tran",
-				"transform"
-			],
-			[
 				"cooki",
 				"cookiesExist"
 			],
@@ -58,14 +94,6 @@
 			[
 				"padding",
 				"padding-top"
-			],
-			[
-				"border",
-				"border-color"
-			],
-			[
-				"trans",
-				"transform"
 			],
 			[
 				"backg",
@@ -94,14 +122,6 @@
 			[
 				"citizen",
 				"citizenFemale"
-			],
-			[
-				"tra",
-				"transform"
-			],
-			[
-				"margin",
-				"margin-bottom"
 			],
 			[
 				"a",
@@ -164,10 +184,6 @@
 				"background-color"
 			],
 			[
-				"backgr",
-				"background-color"
-			],
-			[
 				"win",
 				"winRate"
 			],
@@ -199,16 +215,8 @@
 			"file": "/C/Users/Mariusz/Work/Projects/In progress/sleekpage/index.html",
 			"settings":
 			{
-				"buffer_size": 1644,
+				"buffer_size": 1678,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Mariusz/Work/Projects/Stable/Defaultpage/index.html",
-			"settings":
-			{
-				"buffer_size": 1627,
 				"line_ending": "Windows"
 			}
 		},
@@ -216,7 +224,7 @@
 			"file": "style.css",
 			"settings":
 			{
-				"buffer_size": 557,
+				"buffer_size": 2281,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -360,6 +368,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Mariusz/Work/Projects/Stable/vallode/index.html",
+		"/C/Users/Mariusz/Work/Projects/Stable/Defaultpage/index.html",
 		"/C/Users/Mariusz/AppData/Local/Temp/7zE0B6E99A1/style.css",
 		"/C/Users/Mariusz/Documents/Temp/notes for LOLcom.txt",
 		"/C/Users/Mariusz/Documents/Temp/python33.dll",
@@ -450,6 +460,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".first {\n\ttransform: translateY(-60%);\n}",
+			"h3",
+			"SLink 1",
+			";\n",
 			"<h3> SLink 1</h3>",
 			"> ",
 			"'>\n",
@@ -488,6 +502,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"p",
+			"1",
 			"<a> SLink 1</a>",
 			"js",
 			"scale",
@@ -523,15 +539,19 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1644,
+						"buffer_size": 1678,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								815,
-								815
+								1036,
+								1036
+							],
+							[
+								1102,
+								1102
 							]
 						],
 						"settings":
@@ -540,36 +560,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 891.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Mariusz/Work/Projects/Stable/Defaultpage/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1627,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 729.0,
+						"translation.y": 535.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -582,20 +573,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 557,
+						"buffer_size": 2281,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								172,
-								172
+								1010,
+								993
 							]
 						],
 						"settings":
@@ -604,14 +595,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 243.0,
+						"translation.y": 1237.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "normalize.css",
 					"semi_transient": false,
 					"settings":
@@ -641,7 +632,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "skeleton.css",
 					"semi_transient": false,
 					"settings":
@@ -667,7 +658,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
