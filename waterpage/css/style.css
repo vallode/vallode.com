@@ -33,7 +33,7 @@ a {
 	font-size: 1em;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	color: #141F14;
+	color: #D5F2F6;
 
 	transition: all 0.1s linear;
 }
@@ -58,12 +58,12 @@ a {
 	margin-right: 2%;
 	vertical-align: text-top;
 	display:inline-block;
-	background-color: #245C67;
+	background-color: #295D36;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
 .time {
-	color: #245C67;
+	color: #295D36;
 	width:auto;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -81,7 +81,7 @@ a {
 	width:10%;
 	padding:2px;
 	vertical-align: text-top;
-	background-color: #245C67;
+	background-color: #295D36;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
