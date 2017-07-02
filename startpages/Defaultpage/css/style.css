@@ -23,6 +23,7 @@ h5, h1 { margin: 0; padding: 0; line-height: 0.9; }
 	width: 50%;
 	height: 50%;
 	filter: blur(1px);
+	-webkit-filter: blur(1px);
 }
 .dateUnder {
 	font-size: 200%;
@@ -33,11 +34,9 @@ h5, h1 { margin: 0; padding: 0; line-height: 0.9; }
 }
 .dateFormat {
 	font-size: 800%;
-	font-weight: bold;
 	font-family: 'Droid Sans', sans-serif;
 	display: block;
-	-webkit-text-stroke: 1px #A77C63;
-	color:#1F1E44;
+	color:#A77C63;
 }
 .circle {
 	border-style: solid;
