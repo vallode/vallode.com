@@ -10,6 +10,14 @@
 	font-size: 100%;
 	font-family: 'Roboto Slab', serif;
 	text-decoration:none;
+	
+	/* No select */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 body, html {
 	width: 100%;
