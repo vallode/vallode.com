@@ -3,12 +3,12 @@
 	padding:0;
 
 	background-color: #EA6969;
-	color: #0A4747;
+	color: #F1F1F1;
 	outline: none;
 
 	/* Font stuff */
 	font-size: 100%;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Droid Sans', sans-serif;
 	text-decoration:none;
 	
 	/* No select */
@@ -45,10 +45,10 @@ body, html {
 	transition: transform 0.25s ease-out;
 }
 h1 {
-	font-size: 350%;
+	font-size: 390%;
 }
 a {
-	font-size: 120%;
+	font-size: 140%;
 	display: inline-block;
 }
 img {
