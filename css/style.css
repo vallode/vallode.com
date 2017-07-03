@@ -2,8 +2,8 @@
 	margin:0;
 	padding:0;
 
-	background-color: #FFC1C1;
-	color: #B45151;
+	background-color: #FFDFDF;
+	color: #297F29;
 	outline: none;
 
 	/* Font stuff */
@@ -59,7 +59,6 @@ img {
 }
 p {
 	font-size: 150%;
-	color: #1F6262;
 }
 .startpage:hover {
 	z-index: 10;
