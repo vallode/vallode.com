@@ -28,3 +28,12 @@ function nth(d) {
         default: return "<b>t</b>h";
     }
 } 
+function animate(){
+	$(".link").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
+	  $(this).removeClass("animated")
+	})
+
+	$(".link").hover(function(){
+	  $(this).addClass("animated");        
+	})
+}

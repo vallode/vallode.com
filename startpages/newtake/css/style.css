@@ -87,9 +87,8 @@ body {
 
 	border-bottom: solid #141E00 1px;
 }
-
-a:hover{
-	animation: stuff 0.7s linear infinite alternate;
+a.animated{
+	animation: stuff 0.7s linear 2 alternate;
 }
 @keyframes stuff {
 	from { background-color: #EEE00F;
