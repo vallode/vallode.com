@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	/* Font Stuff */
+	color:#f3f3f3;
+	font-family: 'Lora', serif;
+	line-height: 2;
+
+	/* No select */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+body {
+	background-color: #343434;
+}
+/* Main */
+.content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	display: inline-flex;
+	float:left;
+	overflow: hidden;
+
+    padding: 10px;
+	width: 40%;
+	height: 40%;
+}
+.content .image {
+	height: 100%;
+	border: solid 5px #D6CAB0;
+}
+.image img {
+	max-height: 100%;
+}
+.content .text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	background-color: #282828;
+
+	padding: 5px;
+	height: 100%;
+	width: 100%;
+}
+.text .links {
+	padding: 5px;
+
+	overflow: hidden;
+	display: inline-flex;
+	justify-content: space-around;
+}
+.text .header {
+	display: inline-flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: space-around;
+}
+input {
+	outline: none;
+	border: none;
+	padding: 4px;
+	line-height: 1.4;
+
+	background-color: #404040;
+	color: #D6CAB0;
+	width: 100%;
+}
+form {
+	width: 100%;
+}
+/* Specific */
+a {
+	text-decoration: none;
+	padding: 10px;
+	transition: all 0.25s ease-in;
+}
+a:hover {
+	color: #D6CAB0;
+}
+#quote {
+	font-style: italic;
+	color: #ababab;
+}
+.dateTemperatureC, .dateTemperatureF {
+	display: inline-block;
+	transition: all 0.25s ease-in;
+}
+.dateTemperatureC:hover, .dateTemperatureF:hover {
+	color: #D6CAB0;
+}
+.hide {
+	visibility: hidden; 
+	display: none; 
+}

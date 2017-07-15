@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset='UTF-8'/>
+	<title>Gezakt</title>
+
+	<link rel='stylesheet' href='css/style.css'/>
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<script src="scripts/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/jquery.simpleWeather.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/script.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="scripts/weather.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body onload='getQuote(); weather(); date();'>
+	<div class='content'>
+		<div class='image'>
+			<img src="images/face.jpg" alt="">
+		</div>
+		<div class='text'>
+		    <div class='header'>
+		        <p id='quote'>The quote didnt come up ;(</p>
+		        <p><span id='dateWeather'></span> 
+		        <span onclick='changeT();' class='dateTemperatureC'></span>
+		        <span onclick='changeT();' class='dateTemperatureF hide'></span>
+		        <span id='day'>00</span>/<span id='month'>00</span>/<span id=year>00</span></p>
+		    </div>
+		    <div class='links'>
+		    	<a href="https://www.tumblr.com/dashboard" title="">tumblr</a>
+				<a href="https://www.theguardian.com" title="">theguardian</a>
+				<a href="https://www.economist.com" title="">economist</a>
+				<a href="https://twitter.com" title="">twitter</a>
+		    </div>
+		    <div class='links'>
+		    	<a href="https://github.com/" title="">github</a>
+				<a href=https://www.goodreads.com"https://www.goodreads.com" title="">goodreads</a>
+				<a href="https://www.reddit.com/" title="">reddit</a>
+				<a href="https://www.facebook.com" title="">facebook</a>
+		    </div>
+		    <div class='links'>
+		    	<form action="http://www.google.co.uk/search?hl=en-GB&source=hp&q=" method="get" accept-charset="utf-8">
+		    		<input type="text" name="q" placeholder="search">
+		    	</form>
+		    	
+		    </div>
+		</div>
+	</div>
+</body>
+</html>
