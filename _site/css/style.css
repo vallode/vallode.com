@@ -30,7 +30,7 @@ a:active {
 }
 /* Wrapper */
 .wrapper {
-    max-width:40%;
+    max-width:40vw;
     margin-left: auto;
     margin-right: auto;
 
@@ -47,7 +47,7 @@ a:active {
 }
 .header p {
     font-size: 1em;
-    margin-bottom: 1%;
+    margin-bottom: 1vh;
 }
 .social {
     position: absolute;
@@ -86,11 +86,11 @@ a:active {
     min-height: 100%;
 }
 .content p {
-    padding: 1em;
+    padding: 2vh;
     text-align: left;
 }
 .content h2 {
-    float:left;
+    float: left;
     padding: 2vh;
     padding-bottom: 1vh;
     font-size: 140%;
@@ -104,8 +104,6 @@ a:active {
     justify-content: space-evenly;
     align-content: flex-start;
     flex-wrap: wrap;
-
-    height: 100%;
     width: 100%;
 }
 .entry {
@@ -151,32 +149,16 @@ a:active {
 }
 .post .date {
     font-style: italic;
-    font-size: 80%;
+    font-size: 0.8em;
     color: #666666;
 }
 h2 .date {
     font-style: italic;
     font-weight: normal;
-    font-size: 60%;
+    font-size: 0.6em;
     color: #666666;
 }
 /* Footer */
-.footer {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-
-    opacity: .5;
-    transform: translate(-50%);
-    transition: all 0.25s ease;
-    padding: 5px;
-}
-.footer p {
-    color: #555555;
-}
-.footer img {
-    height: 12px;
-}
 
 /* Animation */
 .expand {
@@ -199,10 +181,6 @@ h2 .date {
 .active {
     background-color: #333333;
     color: #f1f1f1;
-}
-
-.footer:hover {
-    opacity: 1;
 }
 
 a:hover {
@@ -229,8 +207,26 @@ a:hover {
         max-width:80%;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .wrapper {
         max-width:100%;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .social {
+        display: none;
+    }
+    .content p{
+        padding: 0 ;
+    }
+    .content h2,h1 {
+    }
+    .navigation {
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width: 380px){
+    .header h1 {
+        font-size: 2em;
     }
 }
