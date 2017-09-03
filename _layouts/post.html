@@ -1,0 +1,43 @@
+---
+title: Mariusz Zarzycki
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ post.title }}</title>
+    <meta name="description" content="personal website">
+    <meta name="author" content="Vallode">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" type="images/png" href="/images/favicon.png">
+  </head>
+  <script>
+  </script>
+  <body>
+      <div class='wrapper'>
+          <div class='header'>
+            <div class='social'>
+                  <a href="https://twitter.com/Vallode_" target="_blank"><img src="/images/twitter.svg" class='expand'></a>
+                  <a href="https://github.com/vallode" target="_blank"><img src="/images/github.svg" class='expand'></a>
+            </div>
+            <h1>Mariusz Zarzycki</h1>
+            <p>An aspiring autodidact in many fields</p>
+            <nav class='navigation'>
+                  <a href="/projects/projects.html" class='highlight'>Projects</a>
+                  <a href="/other/other.html" class='highlight'>Notes</a>
+                  <a href="/index.html" class='highlight'>About</a>
+            </nav>
+          </div>
+
+          <div class='content'>
+              <h1>{{ page.title}}</h1>
+              {{ page.content }}
+          </div>
+      </div>
+  </body>
+</html>
