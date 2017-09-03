@@ -56,7 +56,7 @@ a:active {
 /* Nav */
 .navigation {
     width: 100%;
-    display: inline-flex;
+    display: flex;
     justify-content: space-around;
     list-style: none;
 
@@ -98,7 +98,7 @@ a:active {
 
 /* Content for Projects */
 .projects{
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     position: relative;
     justify-content: space-evenly;
