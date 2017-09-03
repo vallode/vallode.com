@@ -24,7 +24,6 @@ b {
 h1, h2 {
     color: #803028;
 }
-
 /* Wrapper */
 .wrapper {
     max-width:40%;
@@ -75,6 +74,30 @@ h1, h2 {
 }
 .content h1 {
     font-size: 2em;
+}
+
+/* Content for Projects */
+.projects{
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    height: 100%;
+    width: 100%;
+}
+.entry {
+    width: 15vh;
+    height: 15vh;
+
+    margin: 1em;
+
+    background-color: #dcdcdc;
+    outline: 0.5vh solid black;
+}
+.projects img {
+    width: 100%;
 }
 
 /* Footer */
