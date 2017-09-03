@@ -154,6 +154,12 @@ a:active {
     font-size: 80%;
     color: #666666;
 }
+h2 .date {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 60%;
+    color: #666666;
+}
 /* Footer */
 .footer {
     position: absolute;
