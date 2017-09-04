@@ -83,10 +83,11 @@ a:active {
 .content {
     width: 87%;
     margin: auto;
-    min-height: 100%;
+    height: 100%;
 }
 .content p {
     padding: 2vh;
+    padding-bottom: 0;
     text-align: left;
 }
 .content h2 {
@@ -129,13 +130,12 @@ a:active {
 }
 .content a {
     float: left;
-    padding: 0.5vh;
 }
 .content p {
     float:left;
 }
 .blog {
-    padding: 1vh;
+    padding: 2vh;
 }
 .post {
     display: block;
