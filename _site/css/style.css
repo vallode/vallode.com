@@ -9,8 +9,6 @@
 
     text-decoration: none;
     color: #222222;
-
-    /* Others */
 }
 html,
 body{
@@ -84,11 +82,11 @@ a:active {
     width: 87%;
     margin: auto;
     height: 100%;
+    text-align: justify;
 }
 .content p {
     padding: 2vh;
     padding-bottom: 0;
-    text-align: left;
 }
 .content h2 {
     float: left;
@@ -128,14 +126,17 @@ a:active {
     list-style: none;
     float: left;
 }
-.content a {
-    float: left;
+.postTitle {
+    float:left;
 }
 .content p {
     float:left;
 }
 .blog {
     padding: 2vh;
+}
+p a {
+    color: #1275CE;
 }
 .post {
     display: block;
