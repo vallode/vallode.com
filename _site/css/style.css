@@ -106,6 +106,9 @@ a:active {
     width: 100%;
 }
 .entry {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     width: 15vh;
     height: 15vh;
 
@@ -113,6 +116,11 @@ a:active {
 
     background-color: #dcdcdc;
     outline: 0.5vh solid black;
+}
+.entry p {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0;
 }
 .projects img {
     width: 100%;
