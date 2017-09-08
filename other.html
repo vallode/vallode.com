@@ -4,13 +4,11 @@ title: Mariusz - Notes
 ---
 <h2>A repository of my blog posts</h2>
 <div class='blog'>
-  <ul>
-    {% for post in site.posts %}
-      <li class='post'>
-        <a class='postTitle' href="{{ post.url }}">{{ post.title }} <span class='date'>{{ post.date | date: '%B %d, %Y' }}</span></a>
-        <br>
-        {{ post.excerpt }}
-      </li>
-    {% endfor %}
-  </ul>
+{% for post in site.posts %}
+  <li class='post'>
+    <a class='postTitle' href="{{ post.url }}">{{ post.title }} <span class='date'>{{ post.date | date: '%B %d, %Y' }}</span></a>
+    <br>
+    {{ post.excerpt }}
+  </li>
+{% endfor %}
 </div>

@@ -66,7 +66,7 @@ a:active {
     padding: 0.25em;
     padding-bottom: 0.10em;
     line-height: 1;
-    flex-basis: 20%;
+    flex-basis: 30%;
     font-size: 1.5em;
 }
 .navigation a{
@@ -229,6 +229,10 @@ a:hover {
         padding: 0 ;
     }
     .content h2,h1 {
+        padding-left: 0;
+    }
+    .blog {
+        padding-left: 0;
     }
     .navigation {
         font-size: 0.8em;
@@ -237,5 +241,9 @@ a:hover {
 @media only screen and (max-width: 380px){
     .header h1 {
         font-size: 2em;
+    }
+    .entry {
+        width: 30vh;
+        height: 30vh;
     }
 }
