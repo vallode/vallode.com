@@ -1,249 +1,253 @@
 *{
     margin: 0;
-    padding:0;
+    padding: 0;
 
     /* Font stuff */
     font-family: 'Roboto', sans-serif;
-    line-height: 1.3;
-    font-size: 100%;
+    font-size: 14px;
 
     text-decoration: none;
-    color: #222222;
 }
+
 html,
 body{
-    min-width: 100%;
+    width: 100vw;
+    height: 100vh;
 
-    background-color: #f1f1f1;
+    background-color: #333;
+    color: #212121;
 }
-b {
-    color: #C75B50;
+
+/* Links and headers */
+a {
+    color: #03A9F4;
+
+    transition: all 0.25s ease;
 }
-h1, h2 {
-    color: #803028;
-    padding: 1vh;
+
+a:hover {
+    color: #01579B;
 }
-a:active {
-    color: #803028;
+
+h1 {
+    font-size: 3.5em;
+    line-height: 1.3;
 }
+
+h2 {
+    font-size: 1.8em;
+    padding: 0 0 1vh 0;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
 /* Wrapper */
+
 .wrapper {
-    max-width:40vw;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 50vw;
+    height: 100%;
+    margin: 0 auto;
 
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
+
 .header {
-    background-color: #dcdcdc;
+    background-color: #f1f1f1;
+
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
 }
-.header h1 {
-    font-size: 3em;
-    line-height: 1;
-}
+
 .header p {
-    font-size: 1em;
-    margin-bottom: 1vh;
+    font-size: 1.4em;
 }
+
 .social {
     position: absolute;
     padding: 1vh;
 }
+
 /* Nav */
+
 .navigation {
-    width: 100%;
     display: flex;
     justify-content: space-around;
     list-style: none;
 
-    background-color: #dcdcdc;
-    border-bottom: 3px #333333 solid;
+    border-bottom: 3px #03A9F4 solid;
     border-radius: 2px;
+
+    padding-top: 1vh;
 }
+
 .navigation li {
-    padding: 0.25em;
-    padding-bottom: 0.10em;
-    line-height: 1;
     flex-basis: 30%;
-    font-size: 1.5em;
 }
+
 .navigation a{
-    padding: 0.25em;
-    padding-top: 0.1em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    padding-bottom: 0.1em;
-    line-height: 1;
-}
-/* Content */
-.content {
-    width: 87%;
-    margin: auto;
-    height: 100%;
-    text-align: justify;
-}
-.content p {
-    padding: 2vh;
-    padding-bottom: 0;
-}
-.content h2 {
-    float: left;
-    padding: 2vh;
-    padding-bottom: 1vh;
-    font-size: 140%;
-}
+    font-size: 1.8em;
 
-/* Content for Projects */
-.projects{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    justify-content: space-evenly;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.entry {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 15vh;
-    height: 15vh;
-
-    margin: 1em;
-
-    background-color: #dcdcdc;
-    outline: 0.5vh solid black;
-}
-.entry p {
-    font-size: 0.8em;
-    text-align: center;
-    padding: 0;
-}
-.projects img {
-    width: 100%;
-    filter: grayscale();
-
-    transition: all 0.25s ease;
-}
-
-/* Content for blog */
-.content ul {
-    list-style: none;
-    float: left;
-}
-.postTitle {
-    float:left;
-}
-.content p {
-    float:left;
-}
-.blog {
-    padding: 2vh;
-}
-p a {
-    color: #1275CE;
-}
-.post {
-    display: block;
-    float: left;
-}
-.post p {
-    text-align: justify;
-    padding: 0;
-    padding-left: 2vh;
-    margin-bottom: 1vh;
-}
-.post .date {
-    font-style: italic;
-    font-size: 0.8em;
-    color: #666666;
-}
-h2 .date {
-    font-style: italic;
-    font-weight: normal;
-    font-size: 0.6em;
-    color: #666666;
-}
-/* Footer */
-
-/* Animation */
-.expand {
-    height: 32px;
-    filter: opacity(0.7);
-    transition: all 0.25s ease;
-}
-.expand:hover {
-    filter: opacity(1);
+    padding: 0 1vh 0 1vh;
 }
 
 .highlight {
     transition: all 0.25s ease;
 }
+
 .highlight:hover {
-    background-color: #333333;
-    color: #f1f1f1;
+    background-color: #03A9F4;
+    color: #212121;
 }
 
 .active {
-    background-color: #333333;
+    background-color: #03A9F4;
+    color: #212121;
+}
+
+.icon {
+    height: 32px;
+    filter: opacity(0.7);
+    transition: all 0.25s ease;
+}
+
+.icon:hover {
+    filter: opacity(1);
+}
+
+/* Content */
+
+.contentWrapper {
+    height: 100%;
+    float: left;
+    text-align: justify;
+}
+
+.content {
+    background-color: #f1f1f1;
+
+    border-bottom: 3px #03A9F4 solid;
+    border-top: 3px #03A9F4 solid;
+    border-radius: 2px;
+
+    margin: 2vh 0;
+    padding: 2vh;
+}
+
+/* Content Presets */
+
+.content p {
+    font-size: 1.2em;
+    padding: 1vh 0;
+}
+
+/* Blog */
+
+.blog {
+    list-style: none;
+}
+
+.post {
+    padding: 0 0 1vh 0;
+}
+
+.postTitle {
+    font-size: 1.3em;
+}
+
+.date {
+    color: #555;
+}
+
+.post p {
+    padding: 0 0 0 1vh;
+}
+
+/* Projects */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.subtitle p{
+    padding: 0;
+    padding-bottom: 2vh;
+}
+
+.entry {
+    text-align: center;
+    width: 256px;
+
+    transition: all 0.25s ease;
+}
+
+.entry img {
+    width: 60%;
+    border-radius: 2px;
+}
+
+.entry:hover {
+    filter: brightness(110%);
+}
+
+/* Footer */
+
+footer {
+    padding: 1vh;
+}
+
+footer span {
     color: #f1f1f1;
+    opacity: 0.5;
+    transition: all 0.25s ease;
 }
 
-a:hover {
-    color: #803028;
+footer span:hover {
+    opacity: 1;
 }
 
-.projects img:hover {
-    filter: grayscale(0);
+footer span img {
+    width: 12px;
+    transform: translate(0, 18%);
 }
 
 /* Media tags */
-@media only screen and (max-width: 1800px) {
-    .wrapper {
-        max-width:40%;
-    }
-}
-@media only screen and (max-width: 1400px) {
-    .wrapper {
-        max-width:60%;
-    }
-}
-@media only screen and (max-width: 1000px) {
-    .wrapper {
-        max-width:80%;
-    }
-}
-@media only screen and (max-width: 800px) {
-    .wrapper {
-        max-width:100%;
-    }
-}
-@media only screen and (max-width: 520px) {
+
+@media screen and (max-width: 1040px) {
     .social {
         display: none;
     }
-    .content p{
-        padding: 0 ;
-    }
-    .content h2,h1 {
-        padding-left: 0;
-    }
-    .blog {
-        padding-left: 0;
-    }
-    .navigation {
-        font-size: 0.8em;
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        max-width: 70vw;
     }
 }
-@media only screen and (max-width: 380px){
-    .header h1 {
-        font-size: 2em;
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        max-width: 90vw;
     }
-    .entry {
-        width: 30vh;
-        height: 30vh;
+}
+@media screen and (max-width: 600px) {
+    .wrapper {
+        max-width: 100vw;
+    }
+
+    .header h1 {
+        font-size: 2.6em;
+    }
+
+    .navigation a{
+        font-size: 1.4em;
     }
 }

@@ -6,7 +6,10 @@ title: Mariusz - Notes
 <div class='blog'>
 {% for post in site.posts %}
   <li class='post'>
-    <a class='postTitle' href="{{ post.url }}">{{ post.title }} <span class='date'>{{ post.date | date: '%B %d, %Y' }}</span></a>
+    <a class='postTitle' href="{{ post.url }}">
+        {{ post.title }} 
+        <span class='date'>{{ post.date | date: '%B %d, %Y' }}</span>
+    </a>
     <br>
     {{ post.excerpt }}
   </li>
