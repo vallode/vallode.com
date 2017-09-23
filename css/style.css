@@ -103,11 +103,15 @@ h3 {
 
 .highlight:hover {
     background-color: #03A9F4;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
     color: #212121;
 }
 
 .active {
     background-color: #03A9F4;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
     color: #212121;
 }
 
