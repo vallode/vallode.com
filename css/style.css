@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 
@@ -10,7 +10,7 @@
 }
 
 html,
-body{
+body {
     width: 100vw;
     height: 100vh;
 
@@ -181,7 +181,7 @@ h3 {
     justify-content: space-around;
 }
 
-.subtitle p{
+.subtitle p {
     padding: 0;
     padding-bottom: 2vh;
 }
