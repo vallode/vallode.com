@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 
@@ -10,7 +10,7 @@
 }
 
 html,
-body{
+body {
     width: 100vw;
     height: 100vh;
 
@@ -103,11 +103,15 @@ h3 {
 
 .highlight:hover {
     background-color: #03A9F4;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
     color: #212121;
 }
 
 .active {
     background-color: #03A9F4;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
     color: #212121;
 }
 
@@ -177,7 +181,7 @@ h3 {
     justify-content: space-around;
 }
 
-.subtitle p{
+.subtitle p {
     padding: 0;
     padding-bottom: 2vh;
 }
