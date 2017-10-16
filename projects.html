@@ -1,50 +1,25 @@
 ---
 layout: default
-title: Mariusz - Projects
+title: Projects
+
+projects: [
+	['smol.link', 'http://www.smol.link', '/images/smol.png'],
+	['Minesweeper JS', 'https://vallode.github.io/Minesweeper-JS/', '/images/msjs.png'],
+	['Vera Rubin Tribute Page', 'https://codepen.io/Vallode/pen/NvJgMj', '/images/veraicon.png'],
+	['"Pape" wallpaper sharing', 'https://vallode.github.io/papes/', '/images/papes.png'],
+	['standUP Extension', 'https://github.com/vallode/standUP', '/images/standup.png'],
+	['Pastel Clock', 'https://codepen.io/Vallode/pen/RZXwee', '/images/clock.png'],
+	['Solar System', 'https://codepen.io/Vallode/pen/JyVeme', '/images/space.png']]
 ---
 <h2>All of my proudest creations</h2>
 <span class='subtitle'><p>Check out my <strong><a href='https://codepen.io/Vallode/'>codepen</a></strong> for some more of my work</p></span>
 <div class='projects'>
-	<div class='entry'>
-		<a href='http://www.smol.link'>
-			<img src='/images/smol.png'>
-		</a>
-		<p>Smol.link</p>
-	</div>
-	<div class='entry'>
-		<a href='https://vallode.github.io/Minesweeper-JS/'>
-			<img src='/images/msjs.png'>
-		</a>
-		<p>Minesweeper JS</p>
-	</div>
-	<div class='entry'>
-		<a href='https://codepen.io/Vallode/pen/NvJgMj'>
-			<img src='/images/veraicon.png'>
-		</a>
-		<p>Vera Rubin Tribute Page</p>
-	</div>
-	<div class='entry'>
-		<a href='https://vallode.github.io/papes/'>
-			<img src='/images/papes.png'>
-		</a>
-		<p>'Pape' wallpaper sharing</p>
-	</div>
-	<div class='entry'>
-		<a href='https://github.com/vallode/standUP'>
-			<img src='/images/standup.png'>
-		</a>
-		<p>standUP Extension</p>
-	</div>
-	<div class='entry'>
-		<a href='https://codepen.io/Vallode/pen/RZXwee'>
-			<img src='/images/clock.png'>
-		</a>
-		<p>Pastel Clock</p>
-	</div>
-	<div class='entry'>
-		<a href='https://codepen.io/Vallode/pen/JyVeme'>
-			<img src='/images/space.png'>
-		</a>
-		<p>Solar System</p>
-	</div>
+	{% for entry in page.projects %}
+		<div class='entry'>
+			<a href='{{entry[1]}}'>
+				<img src='{{entry[2]}}'>
+			</a>
+			<p>{{entry[0]}}</p>
+		</div>
+	{% endfor %}
 </div>

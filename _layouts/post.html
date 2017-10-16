@@ -1,13 +1,10 @@
 ---
 title: Mariusz Zarzycki
 ---
-{% include header.html %}
-		<div class='contentWrapper'>
-			<div class='content'>
+{% include head.html %}
+{% include nav.html %}
 				<h2>{{ page.title }}
 					<span class='date'>{{ page.date | date: '%B %d, %Y' }}</span>
 				</h2>
 				{{ page.content }}
-			</div>
-		</div>
 {% include footer.html %}
