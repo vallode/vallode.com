@@ -1,33 +1,6 @@
-<body>
-	<div class='wrapper'>
-		<div class='header'>
-			<div class='social'>
-				<a href='https://twitter.com/Vallode_' target='_blank'><img src='/images/twitter.svg' class='icon'></a>
-				<a href='https://github.com/vallode' target='_blank'><img src='/images/github.svg' class='icon'></a>
-			</div>
-			<h1>Mariusz Zarzycki</h1>
-			<p>Junior Full-stack Developer</p>
-			<nav class='navigation'>
-
-			{% if page.title == 'Projects' %}
-				<li><a class='highlight active'>{{page.title}}</a></li>
-			{% else %}
-				<li><a href='/projects/' class='highlight'>Projects</a></li>
-			{% endif %}
-
-			{% if page.title == 'Notes' %}
-				<li><a class='highlight active'>{{page.title}}</a></li>
-			{% else %}
-				<li><a href='/notes/' class='highlight'>Notes</a></li>
-			{% endif %}
-
-			{% if page.title == 'About' %}
-				<li><a class='highlight active'>{{page.title}}</a></li>
-			{% else %}
-				<li><a href='/' class='highlight'>About</a></li>
-			{% endif %}
-
-			</nav>
-		</div>
-		<div class='contentWrapper'>
-			<div class='content'>
+	<nav class='navigation' id='{{page.title}}'>
+		<li><a href='/projects/' class='highlight'>Projects</a></li>
+		<li><a href='/notes/' class='highlight'>Notes</a></li>
+		<li><a href='/' class='highlight'>About</a></li>
+	</nav>
+</div>
