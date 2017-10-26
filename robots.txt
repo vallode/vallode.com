@@ -1,0 +1,2 @@
+Sitemap: http://vallode.cf/sitemap.xml
+User-agent: *
