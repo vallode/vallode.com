@@ -1,7 +1,6 @@
 timezone: Europe/London
 encoding: UTF-8
 exclude: ['_drafts/']
-safe: true
 permalink: /:title/
 plugins:
   - jekyll-sitemap
