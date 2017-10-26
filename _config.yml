@@ -4,4 +4,4 @@ exclude: ['_drafts/']
 permalink: /:title/
 plugins:
   - jekyll-sitemap
-  - jekyll-minifier
+  - jekyll-seo-tag
