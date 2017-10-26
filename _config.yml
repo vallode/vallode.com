@@ -3,3 +3,4 @@ encoding: UTF-8
 exclude: ['_drafts/']
 permalink: /:title/
 plugins:
+  - jekyll-sitemap
