@@ -1,6 +1,7 @@
 timezone: Europe/London
 encoding: UTF-8
 permalink: /:title/
+include: [".well-known"]
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
