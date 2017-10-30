@@ -1,7 +1,7 @@
 # Vallode.cf Personal website
 My personal website to use for public information and as a way to quickly display my projects
 
-Written with pure html and css with the use of Jekyll, Jekyll-minify
+Written with pure html and css with the use of Jekyll
 
 ```
 git clone https://github.com/vallode/vallode.cf
