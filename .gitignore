@@ -1,2 +1,5 @@
-_site/
-_drafts/
+/docs/_site/
+/docs/_drafts/
+/node_modules/
+/package-lock.json
+/.idea/
