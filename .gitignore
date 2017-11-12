@@ -1,5 +1,10 @@
-/docs/_site/
-/docs/_drafts/
-/node_modules/
+# Jekyll files
+/docs/_site
+/docs/_drafts
+
+# Webstorm
+/.idea
+
+# Node
+/node_modules
 /package-lock.json
-/.idea/
