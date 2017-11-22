@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+$background: #282828;
+$foreground: #f0f0f0;
+$highlight: #03A9F4;
+
 html,
 body {
     width: 100%;
@@ -14,11 +18,11 @@ body {
 body {
     min-height: 100%;
 
-    background-color: #282828;
-    color: #101010;
+    background-color: $background;
+    color: $background;
 
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* Typography */
@@ -26,12 +30,12 @@ body {
 h1,
 h2,
 h3 {
-    letter-spacing: 0.0250rem;
+    letter-spacing: 0.125rem;
     margin: 0;
 }
 
 h1 {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
 }
 
 h2 + p {
@@ -44,17 +48,18 @@ p {
 }
 
 a {
-    color: #03a9f4;
+    color: $highlight;
     text-decoration: none;
 
     transition: color 0.25s ease;
 
     &:hover {
-        color: #033c69;
+        color: darken($highlight, 20%);
     }
 }
 
 .highlighter-rouge {
+    color: $background;
     background-color: #d0d0d0;
     padding: 0.1rem 0.5rem;
     margin: 0 0.1rem;
@@ -64,7 +69,7 @@ a {
 
     .highlight {
         &:hover {
-            color: #101010;
+            color: $background;
             background-color: #d0d0d0;
         }
     }
@@ -97,7 +102,7 @@ a {
     position: relative;
     height: 95px;
     text-align: left;
-    background-color: #f0f0f0;
+    background-color: $foreground;
 
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
 
@@ -133,6 +138,7 @@ a {
 /* Nav */
 
 .navigation{
+    letter-spacing: 0.075rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -144,38 +150,39 @@ a {
     padding: 0;
 
     li {
-        margin: 0 20px 0 20px;
+        margin: 0 15px 0 15px;
         line-height: 1.3;
     }
 
     a {
-        font-size: 1.8em;
+        font-size: 1.6em;
 
         padding: 0 10px 0 10px;
     }
 }
 
 .highlight {
+    color: $background;
     transition: all 0.25s ease;
 
     &:hover {
-        color: black;
+        color: $highlight;
     }
 }
 
 #Projects li:nth-child(1) a,
 #Notes li:nth-child(2) a,
 #About li:nth-child(3) a {
-    color: black;
+    color: $highlight;
 }
 
 /* Content */
 
 .content {
-    background-color: #f1f1f1;
+    background-color: $foreground;
 
-    border-bottom: 3px #03A9F4 solid;
-    border-top: 3px #03A9F4 solid;
+    border-bottom: 3px $highlight solid;
+    border-top: 3px $highlight solid;
     border-radius: 2px;
 
     margin: 20px 0;
@@ -188,6 +195,13 @@ a {
         padding: 0 0 20px 0;
         margin: 0;
         text-align: justify;
+    }
+
+    .profile {
+        margin: 25px;
+        width: 256px;
+        border-radius: 25px;
+        float: right;
     }
 }
 
@@ -220,7 +234,7 @@ a {
     .date {
         display: inline-block;
         font-size: 0.7em;
-        color: #555;
+        color: lighten($background, 20%);
     }
 }
 
@@ -261,7 +275,7 @@ a {
 
 footer {
     p {
-        color: #f1f1f1;
+        color: $foreground;
         margin: 0.5em;
         opacity: 0.5;
         transition: all 0.25s ease;
@@ -327,6 +341,10 @@ footer {
 @media screen and (max-width: 450px) {
     .content-wrapper {
         max-width: 100vw;
+    }
+
+    .profile {
+        display: none;
     }
 
     html,
