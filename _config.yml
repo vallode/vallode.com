@@ -9,3 +9,7 @@ gitlab_username:  vallode
 # Build settings
 plugins:
   - jekyll-feed
+
+sass:
+  style: compressed
+  sass_dir: _sass
