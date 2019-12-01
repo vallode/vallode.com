@@ -1,0 +1,51 @@
+.page-header {
+  color: $-c-blue-500;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 30px;
+  position: relative;
+  width: 100%;
+
+  h2 {
+    display: inline;
+    font: 37px "Forta", serif;
+    letter-spacing: 5px;
+    line-height: 74px;
+  }
+
+  .ode,
+  .d {
+    position: relative;
+
+    &::before {
+      background-color: $-c-yellow-500;
+      content: '';
+      display: block;
+      height: .3em;
+      position: absolute;
+      top: calc(50% - 2px);
+    }
+  }
+
+  .ode {
+    left: -4px;
+    letter-spacing: -1px;
+    z-index: 1;
+
+    &::before {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 105%;
+      z-index: -1;
+    }
+  }
+
+  .d {
+    &::before {
+      left: 0;
+      transform: translateY(-50%);
+      width: .4em;
+      z-index: 1;
+    }
+  }
+}
