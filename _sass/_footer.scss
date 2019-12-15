@@ -1,11 +1,10 @@
 .page-footer {
+  @include container-padding;
+
   border-top: 4px solid $-c-yellow-500;
   color: $-c-blue-500;
   display: flex;
   fill: $-c-blue-500;
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 10px;
   position: relative;
   width: 100%;
 
