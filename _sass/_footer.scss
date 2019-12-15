@@ -1,0 +1,48 @@
+.page-footer {
+  border-top: 4px solid $-c-yellow-500;
+  color: $-c-blue-500;
+  display: flex;
+  fill: $-c-blue-500;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+
+  .social {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .arrow {
+    align-items: center;
+    display: flex;
+
+    svg {
+      margin: 0;
+    }
+  }
+
+  a {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    transition: fill .125s ease;
+
+    &:focus,
+    &:hover {
+      fill: $-c-yellow-500;
+    }
+  }
+
+  p {
+    font-weight: $-f-bold;
+    margin: .4em;
+  }
+
+  svg {
+    margin: 0 0 0 12px;
+  }
+}
