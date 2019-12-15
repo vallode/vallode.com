@@ -11,34 +11,44 @@
 h1,
 h2,
 h3,
-h4,
-h5 {
+.h1,
+.h2,
+.h3 {
   color: $-c-blue-500;
+  font-family: $-f-forta;
 }
 
 h1,
 .h1 {
-  font: rem(47px) / rem(74px) $-f-forta;
+  font-size: rem(37px);
+  line-height: rem(59px);
+
+  @include phone-up {
+    font-size: rem(47px);
+    line-height: rem(74px);
+  }
 }
 
 h2,
 .h2 {
-  font: rem(37px) / rem(59px) $-f-forta;
+  font-size: rem(29px);
+  line-height: rem(49px);
+
+  @include phone-up {
+    font-size: rem(37px);
+    line-height: rem(59px);
+  }
 }
 
 h3,
 .h3 {
-  font: rem(29px) / rem(48px) $-f-forta;
-}
+  font-size: rem(23px);
+  line-height: rem(40px);
 
-h4,
-.h4 {
-  font: rem(23px) / rem(40px) $-f-forta;
-}
-
-h5,
-.h5 {
-  font: rem(18px) / rem(32px) $-f-forta;
+  @include phone-up {
+    font-size: rem(29px);
+    line-height: rem(49px);
+  }
 }
 
 p {
