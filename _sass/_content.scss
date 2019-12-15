@@ -1,0 +1,74 @@
+.content-wrapper {
+  @include container-padding;
+
+  background-color: $-c-green-500;
+  color: $-c-black;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  line-height: 24px;
+  position: relative;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    position: relative;
+  }
+
+  .link,
+  p a {
+    color: $-c-blue-500;
+    font-weight: $-f-bold;
+    position: relative;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+    }
+
+    &:focus::before,
+    &:hover::before {
+      background-color: $-c-green-700;
+      height: 110%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% + 1ch);
+    }
+
+    &::after {
+      background-color: $-c-yellow-500;
+      bottom: 0;
+      height: 2px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: calc(100% - 1ch);
+    }
+
+    &:focus::after,
+    &:hover::after {
+      width: 0;
+    }
+  }
+
+  hr {
+    background: url('/assets/images/break.svg') no-repeat;
+    border: 0;
+    color: $-c-yellow-500;
+    height: 18px;
+    margin: 45px 0;
+  }
+}
