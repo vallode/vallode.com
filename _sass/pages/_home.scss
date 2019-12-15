@@ -1,0 +1,26 @@
+.page-home {
+
+  .intro {
+    @include container-padding;
+
+    max-width: 710px;
+    position: relative;
+    z-index: 1;
+
+    .h3 {
+      font-family: $-f-poly;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+
+    span {
+      background-color: $-c-yellow-500;
+      font-weight: $-f-bold;
+      padding: 0 .5ch;
+
+      @include phone-up {
+        white-space: nowrap;
+      }
+    }
+  }
+}
