@@ -18,29 +18,29 @@ h5 {
 
 h1,
 .h1 {
-  font: 47px / 74px $-f-forta;
+  font: rem(47px) / rem(74px) $-f-forta;
 }
 
 h2,
 .h2 {
-  font: 37px / 59px $-f-forta;
+  font: rem(37px) / rem(59px) $-f-forta;
 }
 
 h3,
 .h3 {
-  font: 29px / 48px $-f-forta;
+  font: rem(29px) / rem(48px) $-f-forta;
 }
 
 h4,
 .h4 {
-  font: 23px / 40px $-f-forta;
+  font: rem(23px) / rem(40px) $-f-forta;
 }
 
 h5,
 .h5 {
-  font: 18px / 32px $-f-forta;
+  font: rem(18px) / rem(32px) $-f-forta;
 }
 
 p {
-  font: 18px 'Poly';
+  font: rem(18px) 'Poly';
 }

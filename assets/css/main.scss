@@ -5,6 +5,9 @@
 
 @import 'variables';
 
+// Mixins
+@import 'mixins/rem';
+
 // Global styles
 @import 'typography';
 @import 'global';
