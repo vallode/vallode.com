@@ -4,7 +4,6 @@
   border-top: 4px solid $-c-yellow-500;
   color: $-c-blue-500;
   display: flex;
-  fill: $-c-blue-500;
   position: relative;
   width: 100%;
 
@@ -16,23 +15,23 @@
     margin: 15px 0;
   }
 
-  .arrow {
-    align-items: center;
-    display: flex;
-
-    svg {
-      margin: 0;
-    }
+  svg {
+    fill: $-c-blue-500;
+    transition: fill .125s ease;
   }
 
+  .arrow,
   a {
     align-items: center;
     display: flex;
-    justify-content: flex-end;
-    transition: fill .125s ease;
+  }
 
-    &:focus,
-    &:hover {
+  a {
+    justify-content: flex-end;
+    margin: 0 0 0 12px;
+
+    &:focus svg,
+    &:hover svg {
       fill: $-c-yellow-500;
     }
   }
@@ -40,9 +39,5 @@
   p {
     font-weight: $-f-bold;
     margin: .4em;
-  }
-
-  svg {
-    margin: 0 0 0 12px;
   }
 }
