@@ -1,5 +1,11 @@
 <header class="page-header">
-  <p class="h1" title="Vallode">
-    Vall<span class="ode">o<span class="d">d</span>e</span>
-  </p>
+  {% if page.title == 'not-found' %}
+    <p class="h1" title="Vallode">
+      <span class="ode">404</span>
+    </p>
+  {% else %}
+    <p class="h1" title="Vallode">
+      Vall<span class="ode">o<span class="d">d</span>e</span>
+    </p>
+  {% endif %}
 </header>
