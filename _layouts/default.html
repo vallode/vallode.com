@@ -3,7 +3,7 @@
 
 {% include head.html %}
 
-<body class="page-{{ page.title }}">
+<body class="page-{{ page.title | replace: " ", "-" }}">
 
   {% include header.html %}
 
