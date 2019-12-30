@@ -29,6 +29,8 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 1.8)
+    jekyll-compose (0.12.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-feed (0.13.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (2.0.1)
@@ -55,23 +57,15 @@ GEM
       ffi (~> 1.9)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    thread_safe (0.3.6)
-    tzinfo (1.2.5)
-      thread_safe (~> 0.1)
-    tzinfo-data (1.2019.3)
-      tzinfo (>= 1.0.0)
     unicode-display_width (1.6.0)
-    wdm (0.1.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   jekyll (~> 4.0.0)
+  jekyll-compose
   jekyll-feed (~> 0.12)
-  tzinfo (~> 1.2)
-  tzinfo-data
-  wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.0.2
+   2.1.2
