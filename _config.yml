@@ -7,6 +7,11 @@ twitter_username: vallode_
 gitlab_username:  vallode
 
 # Build settings
+strict_front_matter: true
+profile: true
+
+permalink: /:title
+
 plugins:
   - jekyll-feed
 
