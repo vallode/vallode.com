@@ -1,0 +1,81 @@
+.page-post .content-wrapper {
+  overflow: hidden;
+
+  h1,
+  .h1 {
+    font-family: $-f-poly;
+    margin: 0;
+  }
+
+  .date {
+    background-color: $-c-yellow-500;
+    color: $-c-blue-500;
+    display: inline;
+    margin: 0 0 1em;
+    padding: .25em .5em;
+  }
+
+  ul {
+    li {
+      line-height: 1.5;
+    }
+
+    li::marker {
+      color: $-c-blue-500;
+    }
+  }
+
+  p > code {
+    background-color: $-c-white;
+    padding: 0 .35em;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  figure,
+  blockquote {
+    background-color: $-c-white;
+    border-bottom: 4px solid $-c-yellow-500;
+    border-top: 4px solid $-c-yellow-500;
+    margin: 0 0 0 -5px;
+    padding: 1em 3em;
+    position: relative;
+    width: calc(100% + 10px);
+
+    @media screen and (min-width: 600px) {
+      margin: 0 0 0 -15px;
+      width: calc(100% + 30px);
+    }
+
+    pre {
+      margin: 0;
+    }
+  }
+
+  blockquote {
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+
+  blockquote::after,
+  blockquote::before {
+    color: $-c-blue-500;
+    font-family: $-f-poly;
+    font-size: 4em;
+    position: absolute;
+    text-align: center;
+  }
+
+  blockquote::before {
+    content: open-quote;
+    left: .5rem;
+    top: .5em;
+  }
+
+  blockquote::after {
+    bottom: 0;
+    content: close-quote;
+    right: .5rem;
+  }
+}
