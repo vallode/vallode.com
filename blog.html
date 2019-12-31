@@ -1,0 +1,22 @@
+---
+layout: page
+title: blog
+---
+
+<ul class="blog-post-list">
+  {% for post in site.posts %}
+    <li>
+      <div class="post-header">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <time datetime="{{ post.date }}" title="{{ post.date }}">
+          {{ post.date | date: "%b %Y" }}
+        </time>
+      </div>
+      <div class="post-categories">
+        {% for category in post.categories %}
+          <p>{{ category }}</p>
+        {% endfor %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,46 @@
+.blog-post-list {
+  list-style: none;
+  padding: 0;
+
+  .post-header {
+    align-items: center;
+    display: flex;
+
+    a {
+      flex: 1;
+    }
+  }
+
+  .post-categories {
+    align-items: center;
+    display: flex;
+
+    p {
+      margin: 0;
+
+      + p::before {
+        color: $-c-blue-500;
+        content: "\00b7";
+        margin: 0 .5em;
+      }
+    }
+  }
+
+  li + li {
+    margin: 1em 0 0;
+  }
+
+  a {
+    color: $-c-blue-500;
+    flex: 1;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+
+  time {
+    background-color: $-c-yellow-500;
+    color: $-c-blue-500;
+    padding: .25em .5em;
+    text-align: center;
+  }
+}
