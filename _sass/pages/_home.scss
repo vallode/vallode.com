@@ -1,10 +1,10 @@
-.page-home .content-wrapper {
+.page-default .content-wrapper {
   padding: 15px 0;
 
   .intro {
     @include container-padding;
 
-    max-width: 710px;
+    max-width: 780px;
     position: relative;
     z-index: 1;
 
