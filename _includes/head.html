@@ -5,11 +5,35 @@
   <meta name="author" content="Mariusz Zarzycki">
   <meta name="description"
         content="Hey there, search engine! I'm Mariusz, a Web Developer. Read all about me, and check out some stuff by me...">
+  <meta content="Vallode" property="og:site_name">
+  <meta content="Hey there, embed! I'm Mariusz, a Web Developer. Read all about me, and check out some stuff by me..."
+        property="og:description">
 
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon-16x16.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}">
+  <meta content="Vallode" property="og:title">
+  
+  {% if page.layout == 'post' %}
+    <meta content="article" property="og:type">
+  {% else %}
+    <meta content="website" property="og:type">
+  {% endif %}
+
+  <meta content="website" property="og:type">
+  <meta content="{{ '/assets/image/splash.png' }}" property="og:image">
+
+  {% if page.url %}
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+  {% endif %}
+
+  <link rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="{{ '/assets/images/favicon-16x16.png' | relative_url }}">
+  <link rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="{{ '/assets/images/favicon-32x32.png' | relative_url }}">
 
   <title>{{ site.title }} | {{ page.title | capitalize }}</title>
 
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
