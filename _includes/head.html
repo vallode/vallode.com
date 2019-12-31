@@ -6,23 +6,30 @@
   <meta name="description"
         content="Hey there, search engine! I'm Mariusz, a Web Developer. Read all about me, and check out some stuff by me...">
   <meta content="Vallode" property="og:site_name">
-  <meta content="Hey there, embed! I'm Mariusz, a Web Developer. Read all about me, and check out some stuff by me..."
+  <meta content="Hey there, opengraph! I'm Mariusz, a Web Developer. Read all about me, and check out some stuff by me..."
         property="og:description">
 
   <meta content="Vallode" property="og:title">
-  
+
   {% if page.layout == 'post' %}
     <meta content="article" property="og:type">
   {% else %}
     <meta content="website" property="og:type">
   {% endif %}
 
-  <meta content="website" property="og:type">
   <meta content="{{ '/assets/image/splash.png' }}" property="og:image">
 
   {% if page.url %}
     <meta content="{{ site.url }}{{ page.url }}" property="og:url">
   {% endif %}
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="Vallode">
+  <meta name="twitter:creator" content="@Vallode_">
+  <meta name="twitter:title" content="Mariusz Zarzycki">
+  <meta name="twitter:description"
+        content="Hey there, twitter! I'm Mariusz, a Web Developer. Read all about me, and check out some stuff by me...">
+  <meta name="twitter:image" content="{{ '/assets/image/splash.png' }}">
 
   <link rel="icon"
         type="image/png"
