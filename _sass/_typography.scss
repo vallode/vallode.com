@@ -55,3 +55,11 @@ p,
 li {
   font: rem(18px) $-f-poly;
 }
+
+a {
+  color: inherit;
+
+  &:visited {
+    color: inherit;
+  }
+}
