@@ -13,12 +13,11 @@
     margin: 0 0 1em;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    position: relative;
+  .intro {
+    color: $-c-blue-500;
+    font-family: $-f-poly;
+    font-size: rem(22px);
+    line-height: rem(34px);
   }
 
   .link,
@@ -67,6 +66,14 @@
     &:hover::after {
       width: 0;
     }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    position: relative;
   }
 
   hr {
