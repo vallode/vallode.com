@@ -1,5 +1,5 @@
 .page-footer {
-  @include container-padding;
+  @include container-padding-sides;
 
   border-top: 4px solid $-c-yellow-500;
   color: $-c-blue-500;
