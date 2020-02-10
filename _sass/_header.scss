@@ -1,9 +1,11 @@
 .page-header {
-  @include container-padding;
+  @include container-padding-sides;
 
+  align-items: center;
   border-bottom: 4px solid $-c-yellow-500;
   color: $-c-blue-500;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   position: relative;
 
   .h1 {
