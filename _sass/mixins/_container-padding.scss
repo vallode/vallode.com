@@ -1,9 +1,21 @@
+$-p-padding-size: 10px;
+
 @mixin container-padding {
   margin: 0 auto;
   max-width: 960px;
-  padding: 0 5px;
+  padding: $-p-padding-size;
 
   @media screen and (min-width: 600px) {
-    padding: 0 15px;
+    padding: $-p-padding-size * 2;
+  }
+}
+
+@mixin container-padding-sides {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 $-p-padding-size;
+
+  @media screen and (min-width: 600px) {
+    padding: 0 ($-p-padding-size * 2);
   }
 }

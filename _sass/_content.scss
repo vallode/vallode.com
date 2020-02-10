@@ -4,10 +4,14 @@
   background-color: $-c-green-500;
   color: $-c-black;
   display: flex;
-  flex: 1;
   flex-direction: column;
+  flex: 1;
   line-height: 24px;
   position: relative;
+
+  main > :first-child {
+    margin: 0 0 1em;
+  }
 
   h1,
   h2,
@@ -69,6 +73,6 @@
     background: url('/assets/images/break.svg') no-repeat;
     border: 0;
     height: 18px;
-    margin: 45px 0;
+    margin: 40px 0;
   }
 }

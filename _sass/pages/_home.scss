@@ -1,27 +1,6 @@
-.page-default .content-wrapper {
-  padding: 15px 0;
-
-  .intro {
-    @include container-padding;
-
-    max-width: 780px;
-    position: relative;
-    z-index: 1;
-
-    .h3 {
-      font-family: $-f-poly;
-      font-size: rem(22px);
-      line-height: rem(34px);
-    }
-
-    span {
-      background-color: $-c-yellow-500;
-      font-weight: $-f-bold;
-      padding: 0 .5ch;
-
-      @include phone-up {
-        white-space: nowrap;
-      }
-    }
-  }
+.intro {
+  color: $-c-blue-500;
+  font-family: $-f-poly;
+  font-size: rem(22px);
+  line-height: rem(34px);
 }
