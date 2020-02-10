@@ -58,11 +58,6 @@ li {
   span {
     background-color: $-c-yellow-500;
     font-weight: $-f-bold;
-    padding: 0 .5ch;
-
-    @include phone-up {
-      white-space: nowrap;
-    }
   }
 }
 
