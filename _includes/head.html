@@ -40,7 +40,11 @@
         sizes="32x32"
         href="{{ '/assets/images/favicon-32x32.png' | relative_url }}">
 
-  <title>{{ site.title }} | {{ page.title | capitalize }}</title>
-
+  {% if page.title %}
+    <title>{{ site.title }} | {{ page.title | capitalize }}</title>
+  {% else %}
+    <title>{{ site.title }}</title>
+  {% endif %}
+  
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
