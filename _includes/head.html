@@ -9,7 +9,11 @@
   <meta content="Hey there, opengraph! I'm Mariusz, a Web Developer. Read all about me, and check out some stuff by me..."
         property="og:description">
 
-  <meta content="Vallode" property="og:title">
+  {% if page.title %}
+    <meta content="{{ page.title }}" property="og:title">
+  {% else %}
+    <meta content="Vallode" property="og:title">
+  {% endif %}
 
   {% if page.layout == 'post' %}
     <meta content="article" property="og:type">
