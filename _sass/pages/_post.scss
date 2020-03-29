@@ -27,6 +27,11 @@
   p > code {
     background-color: $-c-white;
     padding: 0 .35em;
+
+    &.blackout {
+      color: black;
+      background-color: black;
+    }
   }
 
   img {
@@ -38,17 +43,33 @@
     background-color: $-c-white;
     border-bottom: 4px solid $-c-yellow-500;
     border-top: 4px solid $-c-yellow-500;
-    margin: 0 0 0 -5px;
+    margin: 0 0 0 -10px;
     padding: 1em 3em;
     position: relative;
-    width: calc(100% + 10px);
+    width: calc(100% + 20px);
 
     @media screen and (min-width: 600px) {
-      margin: 0 0 0 -15px;
-      width: calc(100% + 30px);
+      margin: 0 0 0 -20px;
+      width: calc(100% + 40px);
     }
 
     pre {
+      margin: 0;
+    }
+  }
+
+  .footnotes {
+    &::before {
+      content: 'Footnotes:';
+    }
+
+    ol {
+      margin: 0 0 1em;
+      padding: 0 0 0 1em;
+    }
+
+    p, ::marker {
+      font-size: 0.8em;
       margin: 0;
     }
   }

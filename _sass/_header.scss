@@ -56,3 +56,37 @@
 .page-not-found .ode {
   left: 0;
 }
+
+.page-nav {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  li {
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 110%;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: all .125s ease;
+      width: calc(100% + 1ch);
+      z-index: -1;
+    }
+
+    &:focus::before,
+    &:hover::before {
+      background-color: $-c-yellow-500;
+    }
+  }
+}
