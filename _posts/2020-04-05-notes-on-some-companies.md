@@ -5,11 +5,11 @@ categories:
 - opinion
 - lifestyle
 - ideology
-date: 2020-04-05 11:03 +0100
+date: 2020-04-05 12:22 +0100
 ---
-I attempt not to buy from any company that, to my personal and very much subjective, consistently and with forethought breaks moral values. There are many companies on my non-existent mental list of places I do not wish to support in any feasible way. What puts them on the list? _Lots_ of things but let's talk about a core aspect
+I attempt not to buy from any company that, to my personal and very much subjective, consistently and with forethought breaks moral values. There are many companies on my non-existent mental list of places I do not wish to support in any feasible way.
 
-I would say that generally speaking the largest members of that list are **amazon, google, and facebook.** My "boycott" of these companies is an _attempt_ to be an objector of the current world monopolies, I believe I am privileged enough in life and I do not require the convenience most of these products provide me. I feel as though people often believe that waiting weeks for deliveries is impossible or that keeping track of the people you 'know' is far too difficult without these websites.
+I would say that generally speaking the largest members of that list are **amazon, google, and facebook.** My "boycott" of these companies is an _attempt_ to be an objector of the current world monopolies. I believe I am privileged enough as it is and I do not require the convenience most of these products provide me. I feel as though people often believe that waiting weeks for deliveries is impossible or that keeping track of the people you 'know' is far too difficult without these websites.
 
 ## Convenience
 
@@ -34,7 +34,7 @@ Amazon claims in its "modern day slavery statement" that it (as a company) follo
 
 > customer obsession rather than competitor focus, passion for invention,  commitment to operational excellence, and long-term thinking.
 
-The interesting thing here is not to note what _is_ there, rather what _isn't_. Not mentioned anywhere here is a principal that would stop them from abusing their workers or preventing slavery from taking place.
+Let's try not to focus on the many corporate values these principles cover, rather we focus on what they do _not_ cover. Not mentioned anywhere here is a principle that would stop them from abusing their workers or preventing slavery from taking place.
 
 Their employees are not their customers (so the first pillar has no meaning), crimes of passion[^8] are not something we are alien to..., operational excellence does not equal to moral operation, long-term thinking is a silly vague phrase that means _nothing_.
 
