@@ -6,23 +6,11 @@
   .post-header {
     display: flex;
     justify-content: space-between;
-    text-decoration: none;
-
-    &:focus span,
-    &:hover span {
-      color: $-c-white;
-    }
-
-    &:focus span::before,
-    &:hover span::before {
-      width: 100%;
-    }
   }
 
   .post-categories {
     align-items: center;
     display: flex;
-    padding: 0 .5rem;
 
     p {
       margin: 0;
@@ -39,27 +27,14 @@
     margin: 1em 0 0;
   }
 
-  span {
+  a {
     color: $-c-blue-500;
     font-size: 1.5em;
-    margin: 0;
-    padding: 0 .5rem;
     position: relative;
-    text-decoration: none;
-    transition: all .225s ease;
-    z-index: 1;
 
-    &::before {
-      background-color: $-c-blue-500;
-      bottom: 0;
-      content: '';
-      display: block;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      transition: all .425s ease;
-      width: 0;
-      z-index: -1;
+    &:focus,
+    &:hover {
+      color: $-c-yellow-500;
     }
   }
 
