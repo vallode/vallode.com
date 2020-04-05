@@ -61,6 +61,8 @@
   .footnotes {
     &::before {
       content: 'Footnotes:';
+      margin: 0 0 .5em;
+      display: block;
     }
 
     ol {
