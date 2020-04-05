@@ -7,7 +7,7 @@ categories:
 - ideology
 date: 2020-04-05 12:22 +0100
 ---
-I attempt not to buy from any company that, to my personal and very much subjective, consistently and with forethought breaks moral values. There are many companies on my non-existent mental list of places I do not wish to support in any feasible way.
+I attempt not to buy from any company that, to my personal and very much subjective opinion, consistently and with forethought breaks moral values. There are many companies on my non-existent mental list of places I do not wish to support in any feasible way.
 
 I would say that generally speaking the largest members of that list are **amazon, google, and facebook.** My "boycott" of these companies is an _attempt_ to be an objector of the current world monopolies. I believe I am privileged enough as it is and I do not require the convenience most of these products provide me. I feel as though people often believe that waiting weeks for deliveries is impossible or that keeping track of the people you 'know' is far too difficult without these websites.
 
