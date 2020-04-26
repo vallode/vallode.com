@@ -2,6 +2,9 @@
 layout: post
 title: Installing URxvt on Debian
 date: 2020-04-26 11:17 +0100
+categories:
+- guides
+- tech
 ---
 I've been a long time URxvt user, though I have slacked in my latest install of Debian and inadvertently have been using `gnome-terminal` for a lot longer than expected. There is absolutely nothing wrong with that terminal emulator but I value having lean and quick programs over more bulky alternatives. Gnome-terminal has recently been crashing for me when running with `nvidia-xrun` (a topic for another day) and so I decided to make the switch back to `rxvt-unicode` again!
 
