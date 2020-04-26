@@ -18,6 +18,7 @@
       + p::before {
         color: $-c-blue-500;
         content: "\00b7";
+        font-weight: bold;
         margin: 0 .5em;
       }
     }
@@ -41,7 +42,7 @@
   time {
     background-color: $-c-yellow-500;
     color: $-c-blue-500;
-    padding: .25rem .5rem;
+    padding: 0 .5rem;
     text-align: center;
   }
 }
