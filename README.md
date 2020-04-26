@@ -1,15 +1,17 @@
-# Vallode.com
+# vallode-com
 
-Personal site to host my portfolio. Potential for blog posts and ramblings.
-Eventually would like to expand it to self-host more and more of my online
-presence. (Twitter, instagram etc.).
+Personal website developed to host my internet presence. Would like to expand 
+it to self-host most of the platforms I use.
 
-# Setup
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2e1d33aa-7cf2-4d16-83d1-b6d38f697460/deploy-status)](https://app.netlify.com/sites/blissful-brown-27656f/deploys)
+
+## Setup
 
 `gem install jekyll bundler`
+
 `bundle install`
 
-# Writing new content
+## Writing new content
 
 ### Posts
 `jekyll post <title>`
