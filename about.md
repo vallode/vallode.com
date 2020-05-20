@@ -11,5 +11,6 @@ The tech stack is simple:
 * [Jekyll](https://jekyllrb.com/) (static site builder)
 * [SASS](https://sass-lang.com/) (CSS extension language)
 * [Netlify](https://www.netlify.com/) (static site hosting)
+* [GoatCounter](https://www.goatcounter.com/) (privacy-focused analytics)
 
 If you have any questions about this site, feel free to reach out to me.
