@@ -18,3 +18,10 @@ plugins:
 sass:
   style: compressed
   sass_dir: _sass
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"

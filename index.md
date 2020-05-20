@@ -1,5 +1,4 @@
 ---
-layout: default
 ---
 
 **Hey!** I'm Mariusz Z. (Vallode), a Web Developer placed on this small pale 
