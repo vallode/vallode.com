@@ -1,43 +1,46 @@
 .page-footer {
   @include container-padding-sides;
 
+  align-items: center;
   border-top: 4px solid $-c-yellow-500;
   color: $-c-blue-500;
   display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
   position: relative;
   width: 100%;
 
   .social {
     align-items: center;
     display: flex;
-    flex: 1;
     justify-content: flex-end;
-    margin: 15px 0;
+  }
+
+  .arrow {
+    margin: .5em;
   }
 
   svg {
+    display: block;
     fill: $-c-blue-500;
     transition: fill .125s ease;
   }
 
-  .arrow,
   a {
-    align-items: center;
-    display: flex;
-  }
+    text-decoration: none;
+    transition: color 0.125s ease;
 
-  a {
-    justify-content: flex-end;
-    margin: 0 0 0 12px;
+    &:focus, 
+    &:hover {
+      color: $-c-yellow-500;
 
-    &:focus svg,
-    &:hover svg {
-      fill: $-c-yellow-500;
+      svg {
+        fill: $-c-yellow-500;
+      }
     }
   }
 
   p {
     font-weight: bold;
-    margin: .4em;
   }
 }
