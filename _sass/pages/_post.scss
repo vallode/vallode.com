@@ -24,6 +24,12 @@
     }
   }
 
+  pre {
+    background-color: $-c-white;
+    overflow: auto;
+    padding: 1em;
+  }
+
   p > code {
     background-color: $-c-white;
     padding: 0 .35em;
