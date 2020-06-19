@@ -19,3 +19,6 @@ each other.
 
 {% include portfolio.html %}
 
+I also manage a niche community based around building startpages on 
+[stpg.tk](https://stpg.tk). As well as occasionally [blog](/blog) on subjects I 
+find interesting.
