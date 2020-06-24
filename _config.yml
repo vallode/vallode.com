@@ -12,9 +12,6 @@ profile: true
 
 permalink: /:title
 
-plugins:
-  - jekyll-feed
-
 sass:
   style: compressed
   sass_dir: _sass
