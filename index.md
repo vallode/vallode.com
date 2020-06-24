@@ -10,7 +10,7 @@ have short to medium term projects that you need help with.
 <hr>
 
 I try to aim high for anything I do, and learn from the failures along the
-way. My many hobbies keep me busy: <span>playing the cello, cycling, writing
+way. My many hobbies keep me busy: <span>gardening, cycling, writing
 sci-fi, photography,</span> and trying to be a **little more**, every day, takes
 up the rest of my time.
 
