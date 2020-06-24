@@ -2,9 +2,9 @@
 ---
 
 **Hey!** I'm Mariusz Z. (Vallode), a Web Developer placed on this small pale 
-blue dot. I love **teaching**, problem solving, and communication. I currently
-spend the majority of my time working at **OnHand**, helping older adults get
-the help they deserve. 
+blue dot. I love **teaching**, problem solving, and communication. I am 
+currently in stealth mode working on a non-profit organisation! Reach out if you
+have short to medium term projects that you need help with.
 {:.intro}
 
 <hr>
