@@ -9,6 +9,11 @@ it to self-host most of the platforms I use.
 
 `bundle install`
 
+To run:
+`bundle exec jekyll serve -D -l`
+
+Uses live-reload and serves draft contents.
+
 ## Writing new content
 
 ### Posts
