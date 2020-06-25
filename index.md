@@ -1,10 +1,15 @@
 ---
 ---
 
-**Hey!** I'm Mariusz Z. (Vallode), a Web Developer placed on this small pale 
-blue dot. I love **teaching**, problem solving, and communication. I am 
-currently in stealth mode working on a non-profit organisation! Reach out if you
-have short to medium term projects that you need help with.
+**Hey!** I'm Mariusz Z., also known as Vallode.
+{:.intro}
+
+Web Developer placed on this small pale blue dot. I love **teaching**, 
+problem solving, and communication. I am currently in stealth mode working on a 
+**non-profit** organisation!
+{:.intro}
+
+Reach out if you have short to medium term projects that you need help with.
 {:.intro}
 
 <hr>
