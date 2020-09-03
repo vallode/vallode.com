@@ -1,10 +1,9 @@
 baseurl: ""
-url: "https://blog.vallode.com/"
+url: "https://mariuszz.com/"
 
-title: Vallode
-email: vallode@hotmail.co.uk
-twitter_username: vallode_
-gitlab_username:  vallode
+title: Mariusz Z
+email: mariusz+netlify@riseup.net
+twitter_username: pulvish
 
 # Build settings
 strict_front_matter: true
