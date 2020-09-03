@@ -1,21 +1,20 @@
 ---
 ---
-
-**Hey!** I'm Mariusz Z., also known as Vallode.
+I'm a **web developer** living on this pale blue dot. I love open communication, robust
+and testable codebases, as well as teaching.
 {:.intro}
 
-Web Developer placed on this small pale blue dot. I love **teaching**, 
-problem solving, and communication. I am currently in stealth mode working on a 
-**non-profit** organisation!
+I'm currently working on a **non-profit** in it's very early stages, if you are
+interested [drop me a line](mailto://mariusz+website@riseup.net)!
 {:.intro}
 
-Reach out if you have short to medium term projects that you need help with.
+I can also help you out with in-depth tech consulting, and on short term
+contract projects.
 {:.intro}
+---
 
-<hr>
-
-I try to aim high for anything I do, and learn from the failures along the
-way. My many hobbies keep me busy: <span>gardening, cycling, writing
+I aim high for anything I do, and learn from the mistakes along the way. Various
+hobbies keep me busy: <span>gardening, cycling, writing
 sci-fi, photography,</span> and trying to be a **little more**, every day, takes
 up the rest of my time.
 
@@ -24,6 +23,6 @@ each other.
 
 {% include portfolio.html %}
 
-I also manage a niche community based around building startpages on 
-[stpg.tk](https://stpg.tk). As well as occasionally [blog](/blog) on subjects I 
+I also manage a niche community based around building startpages on
+[stpg.tk](https://stpg.tk). As well as occasionally [blog](/blog) on subjects I
 find interesting.
