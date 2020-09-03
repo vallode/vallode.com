@@ -22,47 +22,6 @@
       }
     }
   }
-
-  .ode,
-  .d {
-    position: relative;
-
-    &::before {
-      background-color: $-c-yellow-500;
-      content: '';
-      display: block;
-      height: .3em;
-      position: absolute;
-      top: calc(50% - 2px);
-      transition: left .1s ease;
-    }
-  }
-
-  .ode {
-    left: -4px;
-    letter-spacing: -1px;
-    z-index: 1;
-
-    &::before {
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 105%;
-      z-index: -1;
-    }
-  }
-
-  .d {
-    &::before {
-      left: 0;
-      transform: translateY(-50%);
-      width: .4em;
-      z-index: 1;
-    }
-  }
-}
-
-.page-not-found .ode {
-  left: 0;
 }
 
 .page-nav {
@@ -80,7 +39,7 @@
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       height: 110%;
       left: 50%;
