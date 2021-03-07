@@ -1,22 +1,15 @@
-# mariuszz-com
+# vallode-com
 
-Personal website developed to host my internet presence. Would like to expand
-it to self-host most of the platforms I use.
+My personal little space on the internet. Currently hosted using
+[Netlify](https://netlify.com/) but aiming to figure out self-hosting
+at some point.
 
-## Setup
+## Development
 
-`gem install jekyll bundler`
+Single dependency: [Zola](https://www.getzola.org/).
 
-`bundle install`
+Run locally with:
 
-To run:
-`bundle exec jekyll serve -D -l`
-
-Uses live-reload and serves draft contents.
-
-## Writing new content
-
-### Posts
-
-`jekyll post <title>`
-`jekyll draft <title>`
+```
+zola serve
+```

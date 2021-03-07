@@ -1,6 +1,0 @@
-// TODO: Replace static root font size value with variable.
-@function rem($size) {
-  $rem-size: $size / 18px;
-
-  @return #{$rem-size}rem;
-}
