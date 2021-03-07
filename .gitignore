@@ -1,9 +1,3 @@
-# Jekyll
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+public
 
-# MacOs
-.DS_Store
+.netlify

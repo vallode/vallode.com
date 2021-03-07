@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Vallode</title>
+
+  <!-- Inlining critical styles. -->
+  <style>
+    body {
+      margin: 0 auto;
+      width: 70ch;
+    }
+  </style>
+
+  <!-- Simple blocking-style defering -->
+  <link rel="stylesheet" href="/style.css" media="print" onload="this.media='all'; this.onload=null;">
+  <noscript><link href="/style.css" rel="stylesheet" /></noscript>
+</head>
+<body>
+  <main>
+    {% block content %} {% endblock %}
+  </main>
+</body>
+</html>
