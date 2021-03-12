@@ -1,0 +1,11 @@
+ul {
+  padding: 0 1em;
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

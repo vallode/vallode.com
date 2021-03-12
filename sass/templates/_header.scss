@@ -1,0 +1,23 @@
+header {
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  margin: 0 -0.5em;
+  padding: 0.5em;
+
+  p {
+    margin: 0;
+  }
+
+  nav {
+    margin: 0 0 0 auto;
+
+    ul {
+      display: flex;
+      gap: 1em;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

@@ -18,3 +18,7 @@ html {
 body {
   color: var(--black);
 }
+
+@import 'base';
+
+@import 'templates/header';
