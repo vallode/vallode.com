@@ -1,16 +1,22 @@
 header {
-  background-color: var(--black);
-  color: var(--white);
+  border: solid 2px var(--cyan);
+  border-radius: 2px;
+  color: var(--black);
   display: flex;
   margin: 0 -0.5em;
-  padding: 0.5em;
 
   p {
+    background-color: var(--cyan);
+    color: var(--white);
+    font-weight: bold;
     margin: 0;
+    padding: 0.5em 1rem 0.5em 0.5em;
   }
 
   nav {
-    margin: 0 0 0 auto;
+    align-items: center;
+    display: flex;
+    padding: 0.5em 1em;
 
     ul {
       display: flex;
@@ -18,6 +24,11 @@ header {
       list-style-type: none;
       margin: 0;
       padding: 0;
+    }
+
+    li::before {
+      content: "/";
+      display: inline;
     }
   }
 }

@@ -1,6 +1,9 @@
 :root {
   --black: #111111;
   --white: #fcfcfc;
+
+  --cyan: #36acb8;
+  --light-cyan: #eefdfe;
 }
 
 *,
@@ -10,15 +13,15 @@
 }
 
 html {
+  background-color: var(--white);
   box-sizing: border-box;
   font-size: 100%;
-  background-color: var(--white);
 }
 
 body {
   color: var(--black);
 }
 
-@import 'base';
+@import "base";
 
-@import 'templates/header';
+@import "templates/header";
