@@ -7,7 +7,7 @@ p {
 }
 
 a {
-  color: inherit;
+  color: var(--blue);
   text-decoration: none;
 
   &:hover {

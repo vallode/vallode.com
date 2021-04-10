@@ -26,6 +26,10 @@ header {
       padding: 0;
     }
 
+    a {
+      color: inherit;
+    }
+
     li a::before {
       content: "/";
       display: inline;
