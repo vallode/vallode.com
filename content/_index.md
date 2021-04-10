@@ -1,7 +1,7 @@
 +++
 +++
 
-Hey, my name is Mariusz/Vallode. Depends where you know me from :)
+Hey, my name is Mariusz or Vallode, depending on where you know me from :)
 
 I'm a web developer, a bit of a handyman. I am focused on UX right now, trying to supplement my
 knowledge of frontend and backend programming with the empathy designers have for users.
