@@ -24,6 +24,13 @@ a {
   }
 }
 
+details {
+  summary {
+    cursor: pointer;
+    line-height: 1.5;
+  }
+}
+
 hr {
   background-color: var(--black);
   border: none;
