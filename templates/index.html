@@ -1,5 +1,9 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} {% block content %} {{ section.content | safe }}
 
-{{ section.content | safe }}
+<hr />
+
+<footer>
+  <p>I'm currently reading <strong>{{config.extra.currently_reading}}</strong></p>
+</footer>
 
 {% endblock content %}
