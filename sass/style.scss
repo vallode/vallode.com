@@ -25,6 +25,16 @@ body {
   color: var(--black);
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    margin: auto;
+  }
+
+  main {
+    padding: 0 0.5em;
+  }
+}
+
 @import "base";
 
 @import "templates/header";
