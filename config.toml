@@ -12,4 +12,5 @@ highlight_code = false
 build_search_index = false
 
 [extra]
-# Put all your custom variables here
+# Extra tid-bits used across the site.
+currently_reading = "Small is Beautiful by E.F. Schumacher"
