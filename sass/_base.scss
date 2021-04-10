@@ -8,8 +8,18 @@ p {
 
 a {
   color: inherit;
+  text-decoration: none;
 
   &:hover {
     opacity: 0.5;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: var(--black) dashed 2px;
+    outline-offset: 2px;
   }
 }
