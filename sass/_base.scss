@@ -24,6 +24,17 @@ a {
   }
 }
 
+blockquote {
+  border-left: solid 2px var(--gray);
+  color: var(--gray);
+  margin: 0;
+  padding: 0 0 0 1em;
+
+  p {
+    font-style: italic;
+  }
+}
+
 details {
   summary {
     cursor: pointer;
