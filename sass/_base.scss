@@ -7,7 +7,7 @@ p {
 }
 
 a {
-  color: var(--blue);
+  color: $blue;
   text-decoration: none;
 
   &:hover {
@@ -19,7 +19,7 @@ a {
   }
 
   &:focus {
-    outline: var(--black) dashed 2px;
+    outline: black dashed 2px;
     outline-offset: 2px;
   }
 }
@@ -45,7 +45,7 @@ details {
 }
 
 hr {
-  background-color: var(--cyan);
+  background-color: $teal;
   border: none;
   height: 2px;
   margin: 1em -0.5em;

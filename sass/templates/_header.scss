@@ -1,12 +1,12 @@
 header {
-  border: solid 2px var(--cyan);
+  border: solid 2px $teal;
   border-radius: 2px;
   color: black;
   display: flex;
   margin: 0 -0.5em;
 
   p {
-    background-color: var(--cyan);
+    background-color: $teal;
     color: white;
     font-weight: bold;
     margin: 0;
