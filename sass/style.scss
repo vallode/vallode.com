@@ -1,12 +1,5 @@
 :root {
-  --black: #111111;
-  --white: #fcfcfc;
-  --gray: #4a4a4a;
-
-  --blue: #10a2f5;
-  --dark-blue: #087fc4;
   --cyan: #36acb8;
-  --light-cyan: #eefdfe;
 }
 
 *,
@@ -16,13 +9,8 @@
 }
 
 html {
-  background-color: var(--white);
   box-sizing: border-box;
   font-size: 100%;
-}
-
-body {
-  color: var(--black);
 }
 
 @media screen and (max-width: 600px) {

@@ -1,13 +1,13 @@
 header {
   border: solid 2px var(--cyan);
   border-radius: 2px;
-  color: var(--black);
+  color: black;
   display: flex;
   margin: 0 -0.5em;
 
   p {
     background-color: var(--cyan);
-    color: var(--white);
+    color: white;
     font-weight: bold;
     margin: 0;
     padding: 0.5em 1rem 0.5em 0.5em;
