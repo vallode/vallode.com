@@ -7,10 +7,18 @@ create a website similar to this one :)
 
 ## Development
 
-Single dependency: [Zola](https://www.getzola.org/).
+You need [Zola](https://www.getzola.org/), for deployments I use [Netlify](https://netlify.com/).
 
 Run locally with:
 
+```bash
+zola serve # Also available as `make`
 ```
-zola serve
+
+Deploy with:
+
+```bash
+zola build
+netlify build --prod
 ```
+
