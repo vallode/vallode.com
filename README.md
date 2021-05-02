@@ -21,4 +21,3 @@ Deploy with:
 zola build
 netlify build --prod
 ```
-
