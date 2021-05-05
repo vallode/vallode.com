@@ -1,0 +1,15 @@
+.index {
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    margin-top: 0;
+  }
+
+  &__image {
+    float: right;
+    height: 11em;
+    margin: 0 1em;
+  }
+}
