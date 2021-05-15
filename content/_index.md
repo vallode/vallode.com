@@ -4,8 +4,9 @@
 I'm a **web developer**, a bit of a handyperson. I am focused on UX right now, trying to supplement
 my knowledge of frontend and backend programming with the empathy designers have for users.
 
-I'm a **big fan** of the small (not _necessarily_ minimal) web, feel free to explore this plot of
-digital land that I call my homepage.
+I'm a fan of the small,
+[not necessarily minimal](@/posts/2021-05-05-small-not-minimal.md), web. Feel free to explore this
+plot of digital land that I call my homepage.
 
 Here is some tech I am excited about:
 
