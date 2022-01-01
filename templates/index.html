@@ -1,16 +1,8 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %}
+{% block content %}
 
-<h1 class="index__title">Hey, I'm Mariusz</h1>
-<p class="index__subtitle">But I am also known as <strong>Vallode</strong>.</p>
+<h1 class="index__title">Hey, I'm Vallode</h1>
 
 {{ section.content | safe }}
-
-<hr />
-
-<footer>
-  <p>
-    I'm currently reading <strong>{{config.extra.currently_reading}}</strong>
-  </p>
-</footer>
 
 {% endblock content %}

@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM0W7PjPwAFVQKb2/3d3wAAAABJRU5ErkJggg==">
 
-  <title>vallode-com</title>
+  <title>{% block title %}Vallode{% endblock title %}</title>
 
   <!-- Inlining critical styles. -->
-  <style>html{font-family:"DejaVu Sans",Geneva,Verdana,sans-serif}body{margin:1em auto;max-width:70ch;width:calc(100%-1em)}</style>
+  <style>html{font-family:"DejaVu Sans",Geneva,Verdana,sans-serif;height:100%;}body{display:flex;min-height:100%;}</style>
 
   <!-- Simple blocking-style defering -->
   <link rel="stylesheet" href="/style.css" media="print" onload="this.media='all'; this.onload=null;">
@@ -18,7 +18,7 @@
   {% include "header.html" %}
 
   <main>
-    {% block content %} {% endblock %}
+    {% block content %} {% endblock content %}
   </main>
 </body>
 </html>

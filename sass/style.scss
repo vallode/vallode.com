@@ -1,3 +1,12 @@
+/**
+  Why SCSS variables and not CSS variables? SCSS interpolates the actual values
+  into the compiled CSS, saving a few precious bytes!
+
+  You could use single letter CSS variables like var(--t) (8 bytes) but that
+  sacrifices developer experience.
+
+  i.e var(--teal) 11 bytes vs #36acb8 (7 bytes)
+*/
 $teal: #36acb8;
 $blue: #10a2f5;
 
@@ -7,19 +16,37 @@ $blue: #10a2f5;
   box-sizing: inherit;
 }
 
-html {
+
+// NOTE: Some base styles are inlined in base.html
+:root {
   box-sizing: border-box;
-  font-size: 112.5%;
+
+  /**
+    This value is debatably good, but I enjoy the simplicity of 1rem being equal
+    to exactly 10 pixels.
+  */
+  font-size: 62.5%;
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    margin: auto;
+body {
+  display: flex;
+  font-size: 1.8rem;
+  margin: 0;
+  
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
   }
+}
 
-  main {
-    padding: 0 0.5em;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1.6rem;
+  max-width: 60ch;
+  margin-right: auto;
+  flex: 1 1 0%;
+  border-right: 2px solid $teal;
 }
 
 @import "base";

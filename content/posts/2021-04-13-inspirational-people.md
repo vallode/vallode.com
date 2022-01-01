@@ -7,8 +7,8 @@ updated = 2021-04-13
 A good friend of mine recently shared a list of people he finds inspirational,
 I was then inspired by said list to make my own and try to keep it up-to-date.
 
-* Boyan Slat
-* Alan Watts
+* [Boyan Slat](#boyan-slat)
+* [Alan Watts](#alan-watts)
 
 I want to dedicate a section to each of them, perhaps as an internal conversation
 as to why I find them inspiring. (I know the list is small, give me some time!)

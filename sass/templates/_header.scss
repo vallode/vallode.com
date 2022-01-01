@@ -1,9 +1,11 @@
 header {
-  border: solid 2px $teal;
-  border-radius: 2px;
+  border-right: 2px solid $teal;
   color: black;
   display: flex;
-  margin: 0 -0.5em;
+  flex-direction: column;
+  flex: 0 0 16rem;
+  transition: left 0.13s ease;
+  background: white;
 
   .header__title {
     background-color: $teal;
@@ -14,33 +16,21 @@ header {
   }
 
   nav {
-    align-items: center;
     display: flex;
+    flex-direction: column;
     padding: 0.5em 1em;
-
-    ul {
-      display: flex;
-      gap: 1em;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-
-      li {
-        margin: 0;
-      }
-    }
 
     a {
       color: inherit;
     }
 
-    li a::before {
-      content: "/";
-      display: inline;
+    h3 {
+      margin-bottom: 0.8rem;
     }
   }
 
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
+  @media screen and (max-width: 700px) {
+    border-right: none;
+    border-bottom: 2px solid $teal;
   }
 }

@@ -1,6 +1,7 @@
 # https://www.getzola.org/documentation/getting-started/configuration/
 # The URL the site will be built for
 base_url = "https://vallode.com/"
+title = "Vallode"
 
 compile_sass = true
 minify_html = true
