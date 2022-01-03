@@ -7,8 +7,12 @@
 
   i.e var(--teal) 11 bytes vs #36acb8 (7 bytes)
 */
-$teal: #36acb8;
-$blue: #10a2f5;
+$green: #88b04b;
+$darkGreen: #3F6209;
+
+$foreground: black;
+$highlight: $green;
+$background: #f9fbff;
 
 *,
 *::before,
@@ -20,6 +24,7 @@ $blue: #10a2f5;
 // NOTE: Some base styles are inlined in base.html
 :root {
   box-sizing: border-box;
+  color: $foreground;
 
   /**
     This value is debatably good, but I enjoy the simplicity of 1rem being equal
@@ -29,7 +34,6 @@ $blue: #10a2f5;
 }
 
 body {
-  display: flex;
   font-size: 1.8rem;
   margin: 0;
   
@@ -39,17 +43,39 @@ body {
 }
 
 main {
+  background: $background;
+  border: 3px solid $highlight;
   display: flex;
   flex-direction: column;
-  background-color: white;
-  padding: 1.6rem;
-  max-width: 60ch;
-  margin-right: auto;
   flex: 1 1 0%;
-  border-right: 2px solid $teal;
+  margin-right: auto;
+  margin: 1.6rem;
+  max-width: 60ch;
+  padding: 1.6rem;
+  position: relative;
+
+  &::before {
+    background-image: radial-gradient($highlight 0.3rem, transparent 0.3rem);
+    background-size: 1.8rem 1.8rem;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(3deg);
+    width: calc(100% + 2rem);
+    z-index: -1;
+  }
+
+  @media screen and (max-width: 700px) {
+    border: none;
+    border-top: 3px solid $highlight;
+    margin: 0;
+    overflow: hidden;
+  }
 }
 
 @import "base";
 
 @import "templates/header";
-@import "templates/index";

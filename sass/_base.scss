@@ -1,5 +1,6 @@
 h1 {
   margin: 0 0 1.6rem;
+  text-decoration: 3px underline $highlight;
 }
 
 ul {
@@ -7,10 +8,15 @@ ul {
   flex-direction: column;
   gap: 0.8rem;
   margin: 0 0 1.6rem;
-  padding: 0 1rem;
+  padding: 0 1.6rem;
 
-  li {
+  li
+  p {
     margin: 0;
+  }
+
+  li::before {
+    color: $highlight;
   }
 }
 
@@ -20,17 +26,14 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $darkGreen;
   text-decoration: none;
 
   &:hover {
     opacity: 0.5;
   }
 
-  &:active {
-    text-decoration: underline;
-  }
-
+  &:active,
   &:focus {
     outline: black dashed 2px;
     outline-offset: 2px;
@@ -60,10 +63,14 @@ details {
     cursor: pointer;
     line-height: 1.5;
   }
+
+  ul {
+    padding: 1.6rem 0 0;
+  }
 }
 
 hr {
-  background-color: $teal;
+  background-color: $highlight;
   border: none;
   height: 2px;
 }

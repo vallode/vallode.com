@@ -1,18 +1,14 @@
 header {
-  border-right: 2px solid $teal;
-  color: black;
+  background: $background;
+  border-right: 3px solid $highlight;
   display: flex;
   flex-direction: column;
   flex: 0 0 16rem;
-  transition: left 0.13s ease;
-  background: white;
 
   .header__title {
-    background-color: $teal;
-    color: white;
-    font-weight: bold;
+    border-bottom: 3px solid $highlight;
     margin: 0;
-    padding: 0.5em 1rem 0.5em 0.5em;
+    padding: 0.6rem 1rem 0.6rem 0.6rem;
   }
 
   nav {
@@ -31,6 +27,5 @@ header {
 
   @media screen and (max-width: 700px) {
     border-right: none;
-    border-bottom: 2px solid $teal;
   }
 }
