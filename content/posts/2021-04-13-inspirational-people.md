@@ -1,6 +1,5 @@
 +++
 title = "Inspirational people"
-date = 2021-04-13
 updated = 2021-04-13
 +++
 

@@ -1,6 +1,5 @@
 +++
 title = "Efficiency does equate to minimalism"
-date = 2021-05-05
 updated = 2021-05-05
 +++
 

@@ -1,6 +1,5 @@
 +++
 title = "Startpages"
-date = 2021-03-12
 updated = 2021-03-12
 +++
 
