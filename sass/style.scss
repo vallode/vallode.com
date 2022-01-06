@@ -9,6 +9,7 @@
 */
 $green: #88b04b;
 $darkGreen: #3F6209;
+$gray: #e6e6e6;
 
 $foreground: black;
 $highlight: $green;
@@ -34,7 +35,7 @@ $background: #f9fbff;
 }
 
 body {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 0;
   
   @media screen and (max-width: 700px) {
@@ -55,16 +56,16 @@ main {
   position: relative;
 
   &::before {
-    background-image: radial-gradient($highlight 0.3rem, transparent 0.3rem);
+    background-image: radial-gradient($gray 0.3rem, transparent 0.3rem);
     background-size: 1.8rem 1.8rem;
     content: '';
     display: block;
     height: 100%;
-    left: 0;
+    left: 2rem;
     position: absolute;
     top: 0;
     transform: rotate(3deg);
-    width: calc(100% + 2rem);
+    width: calc(100% + 3rem);
     z-index: -1;
   }
 
