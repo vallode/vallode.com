@@ -17,3 +17,5 @@ The website's tech stack is as simple as the site itself, aiming for good develo
   on my own server but for now Netlify takes the cake.
 * **Sourcehut** - For git hosting
   * No mess included git hosting, coming from gitlab it's a breath of fresh air.
+
+I don't run any analytics on this website, if I were to I would be using [Goat Counter](https://www.goatcounter.com/).
