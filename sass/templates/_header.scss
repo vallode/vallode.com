@@ -6,7 +6,7 @@ header {
   flex: 0 0 16rem;
 
   .header__title {
-    border-bottom: 2px solid $gray;
+    border-bottom: 2px solid $highlight;
     margin: 0;
     padding: 0.6rem 1rem 0.6rem 0.6rem;
   }
@@ -22,6 +22,10 @@ header {
 
     h3 {
       margin-bottom: 0.8rem;
+    }
+
+    .bottom {
+      margin: auto 0 0;
     }
   }
 
