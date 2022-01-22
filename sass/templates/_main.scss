@@ -1,10 +1,23 @@
 main {
-  h2, h3 {
+  h2, h3,
+  pre {
     margin: 0 0 1.6rem;
   }
 
   pre {
     background: $gray;
+  }
+  
+  pre code {
+    display: block;
+    overflow-x: auto;
     padding: 0.8rem;
+    white-space: pre;
+  }
+
+  p code {
+    background: $gray;
+    box-decoration-break: clone;
+    word-wrap: break-word;
   }
 }
