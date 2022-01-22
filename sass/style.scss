@@ -1,11 +1,11 @@
 /**
-  Why SCSS variables and not CSS variables? SCSS interpolates the actual values
-  into the compiled CSS, saving a few precious bytes!
+Why SCSS variables and not CSS variables? SCSS interpolates the actual values
+into the compiled CSS, saving a few precious bytes!
 
-  You could use single letter CSS variables like var(--t) (8 bytes) but that
-  sacrifices developer experience.
+You could use single letter CSS variables like var(--t) (8 bytes) but that
+sacrifices developer experience.
 
-  i.e var(--teal) 11 bytes vs #36acb8 (7 bytes)
+i.e var(--teal) 11 bytes vs #36acb8 (7 bytes)
 */
 $green: #88b04b;
 $darkGreen: #3F6209;
@@ -26,10 +26,10 @@ $background: #f9fbff;
 :root {
   box-sizing: border-box;
   color: $foreground;
-
+  
   /**
-    This value is debatably good, but I enjoy the simplicity of 1rem being equal
-    to exactly 10 pixels.
+  This value is debatably good, but I enjoy the simplicity of 1rem being equal
+  to exactly 10 pixels.
   */
   font-size: 62.5%;
 }
@@ -54,7 +54,7 @@ main {
   max-width: 60ch;
   padding: 1.6rem;
   position: relative;
-
+  
   &::before {
     background-image: radial-gradient($gray 0.3rem, transparent 0.3rem);
     background-size: 1.8rem 1.8rem;
@@ -68,7 +68,7 @@ main {
     width: calc(100% + 3rem);
     z-index: -1;
   }
-
+  
   @media screen and (max-width: 700px) {
     border: none;
     border-top: 3px solid $highlight;
@@ -80,3 +80,4 @@ main {
 @import "base";
 
 @import "templates/header";
+@import "templates/main";
