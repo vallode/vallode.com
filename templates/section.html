@@ -11,7 +11,13 @@
 <ul class="posts">
   {% for post in section.pages %}
     <li>
-      <a href="{{ post.permalink }}">{{ post.title }}</a>
+      <a href="{{ post.permalink }}">
+        {{ post.title }}
+      </a>
+
+      {% if post.draft %}
+      <sup>draft</sup>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
