@@ -1,9 +1,26 @@
 header {
-  background: $background;
-  border-right: 3px solid $highlight;
+  align-self: flex-start;
+  border: 2px solid $highlight;
   display: flex;
   flex-direction: column;
   flex: 0 0 16rem;
+  margin: 1.2rem;
+  position: relative;
+
+  &::before {
+    background-color: $background;
+    background-size: 1.8rem 1.8rem;
+    content: '';
+    display: block;
+    height: calc(100% + 1.8rem);
+    left: -1rem;
+    position: absolute;
+    top: -0.6rem;
+    transform: rotate(3deg);
+    width: calc(100% + 1.8rem);
+    z-index: -1;
+  }
+  
   
   .header__title {
     border-bottom: 2px solid $highlight;
@@ -30,6 +47,13 @@ header {
   }
   
   @media screen and (max-width: 700px) {
-    border-right: none;
+    background: $background;
+    border: none;
+    margin: 0;
+    width: 100%;
+
+    &::before {
+      display: none;
+    }
   }
 }
