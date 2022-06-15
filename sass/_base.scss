@@ -1,6 +1,6 @@
 h1 {
   margin: 0 0 1.6rem;
-  text-decoration: 3px underline $highlight;
+  // text-decoration: 3px underline $highlight;
 }
 
 ul {
@@ -32,7 +32,7 @@ a {
   &:hover {
     opacity: 0.5;
   }
-  
+
   &:active,
   &:focus {
     outline: black dashed 2px;

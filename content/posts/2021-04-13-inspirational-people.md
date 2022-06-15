@@ -7,6 +7,7 @@ A good friend of mine recently shared a list of people he finds inspirational,
 I was then inspired by said list to make my own and try to keep it up-to-date.
 
 * [Boyan Slat](#boyan-slat)
+* [Beau Miles](#beau-miles)
 * [Alan Watts](#alan-watts)
 
 I want to dedicate a section to each of them, perhaps as an internal conversation
@@ -35,5 +36,7 @@ think his speeches give me a form of inspiration.
 "You're it" is a great speech by him, very short too, which I'd highly
 recommend to anyone.
 
+## Beau Miles
 
+WIP
 

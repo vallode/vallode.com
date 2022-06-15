@@ -7,13 +7,13 @@ sacrifices developer experience.
 
 i.e var(--teal) 11 bytes vs #36acb8 (7 bytes)
 */
+$gray: #e6e6e6;
 $green: #88b04b;
 $darkGreen: #3F6209;
-$gray: #e6e6e6;
 
+$background: #ffffff;
 $foreground: black;
 $highlight: $green;
-$background: #f9fbff;
 
 *,
 *::before,
@@ -26,6 +26,7 @@ $background: #f9fbff;
 :root {
   box-sizing: border-box;
   color: $foreground;
+  background-color: $background;
   
   /**
   This value is debatably good, but I enjoy the simplicity of 1rem being equal
@@ -35,6 +36,8 @@ $background: #f9fbff;
 }
 
 body {
+  align-items: stretch;
+  display: flex;
   font-size: 1.6rem;
   margin: 0;
   
@@ -47,7 +50,7 @@ main {
   display: flex;
   flex-direction: column;
   flex: 1 1 0%;
-  margin-right: auto;
+  margin: 3.4rem auto 0;
   max-width: 60ch;
   padding: 1.2rem;
   position: relative;
@@ -63,4 +66,5 @@ main {
 @import "base";
 
 @import "templates/header";
+@import "templates/sidebar";
 @import "templates/main";

@@ -1,9 +1,13 @@
 +++
 +++
 
-# Hey, I'm Vallode
+# Hi there,
 
-**Web developer**, a bit of a handyperson. Focused on learning more about User Experience. I like sci-fi, sharing, and building things that last.
+I'm **Mariusz**, also **Vallode** in many many places online.
+
+I'm a **web developer**, a bit of a handyperson in many things tech. Focused on
+learning more about User Experience. I like sci-fi, sharing, and building things
+that last.
 
 Feel free to explore this plot of digital land that I call my homepage.
 

@@ -3,10 +3,9 @@ title = "Startpages"
 updated = 2021-03-12
 +++
 
-One of the first hobbies that really and truly drove me to persue web development was the creation
-of _startpages_.
+The creation of startpages was one of my first true web hobbies.
 
-A startpage is the website that appears when you press new tab, you might have that
+A startpage is the website that appears when you open a new tab, you might have that
 page be set to a search engine, or you might have let your browser keep it's page with news and
 other widgets. All of these pages, so long as they open each and every time you click "new tab", are
 **startpages**!
