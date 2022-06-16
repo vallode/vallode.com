@@ -15,4 +15,6 @@ I wrote a few words about my design philoshophy,
 [you can find the post here](@/posts/2021-05-05-small-not-minimal.md).
 
 I also take care of these things:
-* [stpg.tk](//stpg.tk)
+* [stpg.tk](//stpg-tk.netlify.app)
+* [FreeTube](//freetubeapp.io)
+* a secret project
