@@ -20,12 +20,8 @@
   <link rel="stylesheet" href="/style.css" media="print" onload="this.media='all'; this.onload=null;">
   <noscript><link href="/style.css" rel="stylesheet" /></noscript>
 </head>
-<body>  
-  {% include "sidebar.html" %}
-  
+<body>
   <div class="wrap" style="flex: 1 1 0%;">
-    {% include "header.html" %}
-    
     <main>
       {% block content %} {% endblock content %}
     </main>
