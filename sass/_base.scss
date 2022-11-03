@@ -1,6 +1,28 @@
 h1 {
   margin: 0 0 1.6rem;
-  // text-decoration: 3px underline $highlight;
+  position: relative;
+
+  &::before {
+    border-radius: 2px;
+    border: 1px solid $darkGray;
+    content: '';
+    display: block;
+    height: 130%;
+    left: -5%;
+    position: absolute;
+    top: -15%;
+    width: 110%;
+    z-index: -1;
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent 0 3px,
+      $gray 3px 28px
+    );
+  }
+
+  a {
+    color: inherit;
+  }
 }
 
 ul {
@@ -26,17 +48,12 @@ p {
 }
 
 a {
-  color: $darkGreen;
+  color: $highlight;
   text-decoration: none;
   
   &:hover {
-    opacity: 0.5;
-  }
-
-  &:active,
-  &:focus {
-    outline: black dashed 2px;
-    outline-offset: 2px;
+    opacity: 0.8;
+    text-decoration: underline;
   }
 }
 
