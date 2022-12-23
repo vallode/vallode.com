@@ -22,3 +22,11 @@ The website's tech stack is as simple as the site itself, aiming for good develo
   * No mess included git hosting.
 
 I don't run any analytics on this website, if I were to I would be using [Goat Counter](https://www.goatcounter.com/).
+
+## Caveats/Hacks
+
+* The favicon of this website is a single pixel encoded as a base64 image, it
+being inlined saves a network request (which amounts to around 100-200
+bytes transferred).
+* The stylesheet is loaded in a completely non-blocking way, uses a simple
+inline JavaScript trick to load it once complete.
