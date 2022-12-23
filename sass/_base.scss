@@ -2,24 +2,6 @@ h1 {
   margin: 0 0 1.6rem;
   position: relative;
 
-  &::before {
-    border-radius: 2px;
-    border: 1px solid $darkGray;
-    content: '';
-    display: block;
-    height: 130%;
-    left: -5%;
-    position: absolute;
-    top: -15%;
-    width: 110%;
-    z-index: -1;
-    background: repeating-linear-gradient(
-      -45deg,
-      transparent 0 3px,
-      $gray 3px 28px
-    );
-  }
-
   a {
     color: inherit;
   }
@@ -92,4 +74,9 @@ hr {
   height: 2px;
   margin: 0 0 1.6rem -1.6rem;
   width: calc(100% + 3.2rem);
+
+  @media screen and (max-width: 700px) {
+    margin: 0 0 1.6rem 0;
+    width: 100%;
+  }
 }
