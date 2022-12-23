@@ -5,7 +5,7 @@ create a website similar to this one :)
 
 ## Development
 
-You need [Zola](https://www.getzola.org/), for deployments I use
+You need [Zola](https://www.getzola.org/), for deployments/hosting I use
 [Netlify](https://netlify.com/).
 
 Run locally with:
