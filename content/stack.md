@@ -30,3 +30,5 @@ being inlined saves a network request (which amounts to around 100-200
 bytes transferred).
 * The stylesheet is loaded in a completely non-blocking way, uses a simple
 inline JavaScript trick to load it once complete.
+
+Oh you expected to find information about me? Huh.
