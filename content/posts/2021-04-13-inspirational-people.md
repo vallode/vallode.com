@@ -38,5 +38,8 @@ recommend to anyone.
 
 ## Beau Miles
 
-WIP
+It is quite hard to specifcy "what" Beau Miles is. Film-maker, speaker, general 
+"do-er". Beau's youtube films/stories inspire me to want to do all the random
+little things my brain comes up with.
 
+Hike that mountain, explore that hobby, arbitrarily challenge yourself.
