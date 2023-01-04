@@ -1,38 +1,47 @@
-/**
-Why SCSS variables and not CSS variables? SCSS interpolates the actual values
-into the compiled CSS, saving a few precious bytes!
-
-You could use single letter CSS variables like var(--t) (8 bytes) but that
-sacrifices developer experience.
-
-i.e var(--teal) 11 bytes vs #36acb8 (7 bytes)
-*/
-$darkGreen: #21662b;
-$gray: #e7eee8;
-$darkGray: #d1dfd3;
-
-$background: white;
-$foreground: black;
-$highlight: $darkGreen;
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
-
 // NOTE: Some base styles are inlined in base.html
 :root {
+  --white: #fff;
+
+  --light-gray: #eee;
+  --gray: #e7eee8;
+  --dark-gray: #d1dfd3;
+
+  --light-black: #4e4e4e;
+  --black: #1e1e1e;
+
+  --light-green: #8CF396;
+
+  --green: #4BB35A;
+
+  --dark-green: #21662b;
+
+  --foreground: var(--black);
+  --background: var(--white);
+  --highlight: var(--dark-green);
+  --border: var(--gray);
+
   box-sizing: border-box;
-  color: $foreground;
-  background-color: $background;
+  color: var(--foreground);
+  background-color: var(--background);
   
   /**
   This value is debatably good, but I enjoy the simplicity of 1rem being equal
   to exactly 10 pixels.
   */
   font-size: 62.5%;
+
+  @media (prefers-color-scheme: dark) {
+    --foreground: var(--white);
+    --background: var(--black);
+    --highlight: var(--green);
+    --border: var(--light-black);
+  }
 }
 
 body {

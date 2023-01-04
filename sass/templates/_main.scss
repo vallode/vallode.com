@@ -5,7 +5,7 @@ main {
   }
 
   pre {
-    background: $gray;
+    background: var(--border);
   }
   
   pre code {
@@ -16,7 +16,7 @@ main {
   }
 
   p code {
-    background: $gray;
+    background: var(--border);
     box-decoration-break: clone;
     word-wrap: break-word;
   }

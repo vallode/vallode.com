@@ -1,6 +1,5 @@
 header {
-  align-items: center;
-  background-color: white;
+  align-items: center;  
   display: flex;
   margin-bottom: 1.6rem;
   padding: 0.6rem 1.2rem;
@@ -14,8 +13,10 @@ header {
   }
 
   &::before {
+    --background: var(--gray);
+
     border-radius: 2px;
-    border: 1px solid $darkGray;
+    border: 1px solid var(--border);
     content: '';
     display: block;
     height: 100%;
@@ -27,8 +28,12 @@ header {
     background: repeating-linear-gradient(
       -45deg,
       transparent 0 3px,
-      $gray 3px 28px
+      var(--background) 3px 28px
     );
+
+    @media (prefers-color-scheme: dark) {
+      --background: var(--light-black);
+    }
   }
 
   a {
@@ -47,7 +52,7 @@ header {
 }
 
 #mobile-nav {
-  border-bottom: 1px solid $darkGray;
+  border-bottom: 1px solid var(--border);
   display: none;
   gap: 16px;
   margin-bottom: 1.6rem;

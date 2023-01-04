@@ -20,7 +20,7 @@ ul {
   }
   
   li::before {
-    color: $highlight;
+    color: var(--highlight);
   }
 }
 
@@ -30,7 +30,7 @@ p {
 }
 
 a {
-  color: $highlight;
+  color: var(--highlight);
   text-decoration: none;
   
   &:hover {
@@ -69,7 +69,7 @@ details {
 }
 
 hr {
-  background-color: $gray;
+  background-color: var(--border);
   border: none;
   height: 2px;
   margin: 0 0 1.6rem -1.6rem;
