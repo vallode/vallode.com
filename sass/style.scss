@@ -25,23 +25,30 @@
   --background: var(--white);
   --highlight: var(--dark-green);
   --border: var(--gray);
-
-  box-sizing: border-box;
-  color: var(--foreground);
-  background-color: var(--background);
   
-  /**
-  This value is debatably good, but I enjoy the simplicity of 1rem being equal
-  to exactly 10 pixels.
-  */
-  font-size: 62.5%;
-
   @media (prefers-color-scheme: dark) {
     --foreground: var(--white);
     --background: var(--black);
     --highlight: var(--green);
     --border: var(--light-black);
   }
+
+  @media (prefers-contrast: more) {
+    --foreground: white;
+    --background: black;
+    --highlight: lightgreen;
+    --border: gray;
+  }
+
+  box-sizing: border-box;
+  color: var(--foreground);
+  background-color: var(--background);
+
+  /**
+  This value is debatably good, but I enjoy the simplicity of 1rem being equal
+  to exactly 10 pixels.
+  */
+  font-size: 62.5%;
 }
 
 body {
