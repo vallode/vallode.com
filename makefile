@@ -14,6 +14,7 @@ build:
 deploy: build
 	netlify deploy --prod
 
+.PHONY: post
 post:
 	$(file > content/posts/$(shell date "+%Y-%m-%d")-new-post.md,$(POST_TEMPLATE))
 
