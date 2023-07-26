@@ -4,7 +4,7 @@ date = 2021-05-02
 updated = 2022-11-03
 +++
 
-The index page of this website "weighs" only 2.03kB. That's about **1/1000th** of your average (3 minutes @ 96kbps)
+The index page of this website "weighs" ~2kB. That's about **1/1000th** of your average (3 minutes @ 96kbps)
 Spotify song stream. I want to keep this site minimal, but still try to express myself in small unique ways.
 
 The website's tech stack is as simple as the site itself, aiming for good developer experience, respect to the user, and leanness:
