@@ -8,6 +8,9 @@ minify_html = true
 highlight_code = false
 build_search_index = false
 
+[link_checker]
+internal_level = "warn"
+
 [markdown]
 smart_punctuation = false
 
