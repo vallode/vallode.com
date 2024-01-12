@@ -7,18 +7,29 @@ h1 {
   }
 }
 
+hgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0 0 1.6rem;
+
+  h1,
+  p {
+    margin: 0;
+  }
+}
+
 ul {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   margin: 0 0 1.6rem;
   padding: 0 1.6rem;
-  
-  li
-  p {
+
+  li p {
     margin: 0;
   }
-  
+
   li::before {
     color: var(--highlight);
   }
@@ -32,7 +43,7 @@ p {
 a {
   color: var(--highlight);
   text-decoration: none;
-  
+
   &:hover {
     opacity: 0.8;
     text-decoration: underline;
@@ -48,7 +59,7 @@ blockquote {
   color: #4a4a4a;
   margin: 0 0 1.6rem 0;
   padding: 0 0 0 1em;
-  
+
   p {
     font-style: italic;
     margin: 0;
@@ -57,12 +68,12 @@ blockquote {
 
 details {
   margin: 0;
-  
+
   summary {
     cursor: pointer;
     line-height: 1.5;
   }
-  
+
   ul {
     padding: 1.6rem 0 0 1.6rem;
   }
@@ -79,4 +90,27 @@ hr {
     margin: 0 0 1.6rem 0;
     width: 100%;
   }
+}
+
+figure {
+  margin: 0 0 1.6rem;
+
+  p {
+    margin: 0;
+  }
+
+  figcaption {
+    color: gray;
+
+    &::before {
+      content: '🖼️';
+      display: inline;
+      position: relative;
+      margin-right: 0.5ch;
+    }
+  }
+}
+
+img {
+  border-radius: 4px;
 }

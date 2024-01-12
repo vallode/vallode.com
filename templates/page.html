@@ -3,8 +3,10 @@
 {% block title %}{{ page.title }} | {{ config.title }}{% endblock title %}
 
 {% block content %}
-
-<h1>{{ page.title }}</h1>
+<hgroup>
+  <p>{{ page.date }}</p>
+  <h1>{{ page.title }}</h1>
+</hgroup>
 
 {{ page.content | safe }}
 
@@ -12,12 +14,17 @@
 
 <details>
   <summary>Metadata</summary>
-  
+
   <ul>
-    <li><p>Created: {{ page.date }}</p></li>
-    <li><p>Updated: {{ page.updated }}</p></li>
-    <li><p>Word count: {{ page.word_count }}</p></li>
+    <li>
+      <p>Created: {{ page.date }}</p>
+    </li>
+    <li>
+      <p>Updated: {{ page.updated }}</p>
+    </li>
+    <li>
+      <p>Word count: {{ page.word_count }}</p>
+    </li>
   </ul>
 </details>
-
 {% endblock content %}
