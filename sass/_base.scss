@@ -100,7 +100,7 @@ figure {
   }
 
   figcaption {
-    color: gray;
+    color: var(--light-black);
 
     &::before {
       content: '🖼️';
