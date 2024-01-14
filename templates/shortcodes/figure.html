@@ -1,4 +1,4 @@
 <figure>
     {{ body | markdown | safe }}
-    <figcaption>{{ caption }}</figcaption>
+    <figcaption>{{ caption | markdown | safe }}</figcaption>
 </figure>

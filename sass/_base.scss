@@ -95,10 +95,6 @@ hr {
 figure {
   margin: 0 0 1.6rem;
 
-  p {
-    margin: 0;
-  }
-
   figcaption {
     color: var(--light-black);
 
@@ -108,6 +104,11 @@ figure {
       position: relative;
       margin-right: 0.5ch;
     }
+  }
+
+  p {
+    margin: 0;
+    display: inline;
   }
 }
 
