@@ -42,11 +42,19 @@ p {
 
 a {
   color: var(--highlight);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  transition: all 0.1s;
 
   &:hover {
-    opacity: 0.8;
+    color: var(--highlight-dark);
     text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+
+  &:active {
+    background-color: var(--border);
+    text-decoration-thickness: 3px;
   }
 }
 

@@ -19,11 +19,13 @@
 
   --green: #4BB35A;
 
-  --dark-green: #21662b;
+  --dark-green: #1a5222;
+  --dark-green-30: #17471e;
 
   --foreground: var(--black);
   --background: var(--white);
   --highlight: var(--dark-green);
+  --highlight-dark: var(--dark-green-30);
   --border: var(--gray);
 
   @media (prefers-color-scheme: dark) {
