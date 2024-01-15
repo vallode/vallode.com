@@ -1,5 +1,18 @@
 {% extends "base.html" %}
 
+{% block head %}
+<meta name="description" content="{{ page.description }}" />
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:type" content="article" />
+<meta property="og:article:published_time" content="{{ page.date }}" />
+<meta property="og:article:modified_time" content="{{ page.updated }}" />
+<meta property="og:article:author" content="Mariusz Z." />
+<!-- <meta property="og:article:section" content="" />
+<meta property="og:article:tag" content="" /> -->
+<meta property="og:url" content="{{ page.permalink }}" />
+{% endblock head %}
+
 {% block title %}{{ page.title }} | {{ config.title }}{% endblock title %}
 
 {% block content %}

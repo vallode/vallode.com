@@ -6,7 +6,7 @@
 
   <!-- Single base64 encoded pixel, better than a separate network request! -->
   <link
-    rel="icon"
+    rel="shortuct icon"
     type="image/x-icon"
     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2O4eO/yfwAIiAOCGx1JnQAAAABJRU5ErkJggg=="
   >
@@ -19,6 +19,8 @@
   <!-- Simple blocking-style defering -->
   <link rel="stylesheet" href="/style.css" media="print" onload="this.media='all'; this.onload=null;">
   <noscript><link href="/style.css" rel="stylesheet" /></noscript>
+
+  {% block head %}{% endblock head%}
 </head>
 <body>
   <div class="wrap" style="flex: 1 1 0%;">
