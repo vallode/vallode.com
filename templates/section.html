@@ -4,13 +4,15 @@
 
 {% block content %}
 
-<h1><a href="/">{{ section.title }}</a></h1>
+<h1>{{ section.title }}</h1>
 
 {{ section.content | safe }}
 
 <ul class="posts">
   {% for post in section.pages %}
-    <li>
+  <li>
+    <p>
+      {{ post.date }} -
       <a href="{{ post.permalink }}">
         {{ post.title }}
       </a>
@@ -18,7 +20,14 @@
       {% if post.draft %}
       <sup>draft</sup>
       {% endif %}
-    </li>
+    </p>
+
+    {% if post.description %}
+    <p>
+      {{ post.description }}
+    </p>
+    {% endif %}
+  </li>
   {% endfor %}
 </ul>
 {% endblock content %}
