@@ -1,6 +1,7 @@
 +++
 title = "Inspirational people"
-updated = 2021-04-13
+updated = 2024-01-15
+draft = true
 +++
 
 A good friend of mine recently shared a list of people he finds inspirational,
