@@ -123,3 +123,19 @@ figure {
 img {
   border-radius: 4px;
 }
+
+.footnote-definition {
+  display: inline-flex;
+  padding: 0;
+  margin: 0 0 1.6rem;
+
+  &:target p {
+    background-color: var(--border);
+  }
+
+  sup,
+  p {
+    display: inline;
+    margin: 0;
+  }
+}
