@@ -23,6 +23,7 @@
   --dark-green-30: #17471e;
 
   --foreground: var(--black);
+  --foreground-light: var(--light-black);
   --background: var(--white);
   --highlight: var(--dark-green);
   --highlight-dark: var(--dark-green-30);
@@ -87,3 +88,5 @@ main {
 @import "templates/main";
 @import "templates/header";
 @import "templates/footer";
+
+@import "templates/section";

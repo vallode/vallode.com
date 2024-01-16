@@ -11,22 +11,16 @@
 <ul class="posts">
   {% for post in section.pages %}
   <li>
-    <p>
-      {{ post.date }} -
-      <a href="{{ post.permalink }}">
-        {{ post.title }}
-      </a>
+    <a class="post" href="{{ post.permalink }}">
+      <div class="post__header">
+        <p class="post__title">{{ post.title }}{% if post.draft %}<sup> draft</sup>{% endif %}</p>
+        <p class="post__date">{{ post.date }}</p>
+      </div>
 
-      {% if post.draft %}
-      <sup>draft</sup>
+      {% if post.description %}
+      <p>{{ post.description }}</p>
       {% endif %}
-    </p>
-
-    {% if post.description %}
-    <p>
-      {{ post.description }}
-    </p>
-    {% endif %}
+    </a>
   </li>
   {% endfor %}
 </ul>
