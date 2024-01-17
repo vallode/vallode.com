@@ -1,5 +1,6 @@
 +++
 title = "Startpages"
+description = "My first ever web-related hobby."
 updated = 2022-12-26
 +++
 
