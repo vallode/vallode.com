@@ -18,12 +18,9 @@
 
   <title>{% block title %}Vallode{% endblock title %}</title>
 
-  <!-- Inlining critical styles. -->
-  <style>html{font-family:"DejaVu Sans",Geneva,Verdana,sans-serif;height:100%;}body{display:flex;min-height:100%;}.wrap{margin:0 auto;max-width:60ch;}</style>
-
-  <!-- Simple blocking-style defering -->
-  <link rel="stylesheet" href="/style.css" media="print" onload="this.media='all'; this.onload=null;">
-  <noscript><link href="/style.css" rel="stylesheet" /></noscript>
+  <!-- Inlining critical styles -->
+  {% include "partials/critical-css.html" %}
+  <link href="/style.css" rel="stylesheet" />
 
   <!-- GoatCounter analytics -->
   <script data-goatcounter="https://vallode.goatcounter.com/count" src="//gc.zgo.at/count.js" async></script>
