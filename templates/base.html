@@ -12,6 +12,10 @@
     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2O4eO/yfwAIiAOCGx1JnQAAAABJRU5ErkJggg=="
   >
 
+  {% block rss %}
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path='rss.xml', trailing_slash=false) }}">
+  {% endblock %}
+
   <title>{% block title %}Vallode{% endblock title %}</title>
 
   <!-- Inlining critical styles. -->
