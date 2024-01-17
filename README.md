@@ -1,7 +1,6 @@
 # vallode-com
 
-This documentation is aimed at myself, but it might help others who want to
-create a website similar to this one :)
+This documentation is aimed at myself. Hey, me!
 
 ## Development
 
@@ -19,3 +18,9 @@ Deploy with:
 ```bash
 $ zola build && netlify build --prod
 ```
+
+### Useful information
+
+Zola uses [Tera](//keats.github.io/tera/docs/) for it's templating needs, everything that is _not_ Markdown (.md) goes through it.
+
+
