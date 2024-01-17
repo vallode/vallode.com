@@ -1,6 +1,5 @@
 +++
 title = "About"
-updated = 2024-01-16
 +++
 
 The index page of this website "weighs" ~3kB. That's around **1/5000th** of your average (3 minutes @ 96kbps)
