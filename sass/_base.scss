@@ -1,12 +1,3 @@
-h1 {
-  margin: 0 0 1.6rem;
-  position: relative;
-
-  a {
-    color: inherit;
-  }
-}
-
 hgroup {
   display: flex;
   flex-direction: column;
@@ -33,11 +24,6 @@ ul {
   li::before {
     color: var(--highlight);
   }
-}
-
-p {
-  line-height: 1.5;
-  margin: 0 0 1.6rem;
 }
 
 a {
@@ -122,6 +108,12 @@ figure {
 
 img {
   border-radius: 4px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 1.6rem;
 }
 
 .footnote-definition {

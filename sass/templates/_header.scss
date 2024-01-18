@@ -1,8 +1,9 @@
 header {
-  align-items: center;  
+  align-items: center;
   display: flex;
   margin-bottom: 1.6rem;
-  padding: 0.6rem 1.2rem;
+  padding: var(--spacing) 1.2rem;
+  height: 6rem;
   position: relative;
   z-index: 1000;
 
@@ -25,11 +26,9 @@ header {
     top: 0;
     width: 100%;
     z-index: -1;
-    background: repeating-linear-gradient(
-      -45deg,
-      transparent 0 3px,
-      var(--background) 3px 28px
-    );
+    background: repeating-linear-gradient(-45deg,
+        transparent 0 3px,
+        var(--background) 3px 28px);
 
     @media (prefers-color-scheme: dark) {
       --background: var(--light-black);

@@ -29,6 +29,10 @@
   --highlight-dark: var(--dark-green-30);
   --border: var(--gray);
 
+  --spacing-large: 4.4rem;
+  --spacing: 2.7rem;
+  --spacing-small: 1.7rem;
+
   @media (prefers-color-scheme: dark) {
     --foreground: var(--white);
     --background: var(--black);
@@ -58,6 +62,7 @@ body {
   align-items: stretch;
   display: flex;
   font-size: 1.6rem;
+  line-height: 2.7rem;
   margin: 0;
 
   @media screen and (max-width: 700px) {
@@ -84,6 +89,7 @@ main {
   margin: 0 0 1.6rem;
 }
 
+@import "typography";
 @import "base";
 
 @import "templates/main";
