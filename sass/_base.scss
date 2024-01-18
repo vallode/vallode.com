@@ -128,6 +128,13 @@ img {
   sup,
   p {
     display: inline;
+  }
+
+  sup {
+    margin: 0 1ch 0 0;
+  }
+
+  p {
     margin: 0;
   }
 }
