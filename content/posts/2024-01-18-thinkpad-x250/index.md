@@ -2,7 +2,6 @@
 title = "ThinkPad X250 - The laptop in the world"
 description = "Why ThinkPads are appealing, why I bought one, and why I grew to dislike it."
 updated = 2024-01-18
-draft = true
 +++
 
 The world of laptops is confusing and filled with compromise. Laptops offer variety, personalisation, and configuration akin to almost no other *everyday* electronic product. This often makes it difficult to make a satisfying decision. Choosing between two things is somewhat easy, but when you are presented with many choices [analysis paralysis](//wikipedia.org/wiki/Analysis_paralysis) can settle in.
