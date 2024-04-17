@@ -1,19 +1,42 @@
-h1 {
-  font-size: 3.2rem;
-  line-height: 1;
-  margin: 0 0 var(--spacing);
-  position: relative;
+:root {
+  font-size: 10px;
+}
 
-  a {
-    color: inherit;
+body {
+  font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sans-serif;
+}
+
+h1 {
+  line-height: calc(1ex / 0.42);
+  margin: 0 0 1ex;
+}
+
+hgroup {
+  p {
+    margin: 0;
+    line-height: 1;
   }
 }
 
-h2 {
-  font-size: 2.6rem;
-  line-height: 4.2rem;
+p {
+  font-family: serif;
+  line-height: calc(1ex / 0.32);
+  margin: 0 0 calc(1ex / 0.32);
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
-p {
-  margin: 0 0 var(--spacing-small);
+a {
+  font-family: inherit;
 }

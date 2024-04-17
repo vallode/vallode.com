@@ -1,93 +1,4 @@
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-// NOTE: Some base styles are inlined in base.html
-:root {
-  --white: #fff;
-
-  --light-gray: #eee;
-  --gray: #e7eee8;
-  --dark-gray: #d1dfd3;
-
-  --light-black: #4e4e4e;
-  --black: #1e1e1e;
-
-  --light-green: #8CF396;
-
-  --green: #4BB35A;
-
-  --dark-green: #1a5222;
-  --dark-green-30: #17471e;
-
-  --foreground: var(--black);
-  --foreground-light: var(--light-black);
-  --background: var(--white);
-  --highlight: var(--dark-green);
-  --highlight-dark: var(--dark-green-30);
-  --border: var(--gray);
-
-  --spacing-large: 4.4rem;
-  --spacing: 2.7rem;
-  --spacing-small: 1.7rem;
-
-  @media (prefers-color-scheme: dark) {
-    --foreground: var(--white);
-    --background: var(--black);
-    --highlight: var(--green);
-    --border: var(--light-black);
-  }
-
-  @media (prefers-contrast: more) {
-    --foreground: white;
-    --background: black;
-    --highlight: lightgreen;
-    --border: gray;
-  }
-
-  box-sizing: border-box;
-  color: var(--foreground);
-  background-color: var(--background);
-
-  /**
-  This value is debatably good, but I enjoy the simplicity of 1rem being equal
-  to exactly 10 pixels.
-  */
-  font-size: 62.5%;
-}
-
-body {
-  align-items: stretch;
-  display: flex;
-  font-size: 1.6rem;
-  line-height: 2.7rem;
-  margin: 0;
-
-  @media screen and (max-width: 700px) {
-    flex-direction: column;
-  }
-}
-
-.wrap {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 0%;
-  margin: 3.4rem auto 0;
-  max-width: 60ch;
-
-  @media screen and (max-width: 700px) {
-    margin: 0;
-    max-width: 100%;
-  }
-}
-
-main {
-  position: relative;
-  padding: 0 1.2rem;
-  margin: 0 0 1.6rem;
-}
+@import "vendor/modern-normalize";
 
 @import "typography";
 @import "base";
@@ -97,3 +8,4 @@ main {
 @import "templates/footer";
 
 @import "templates/section";
+@import "templates/page";

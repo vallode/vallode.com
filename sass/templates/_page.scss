@@ -1,0 +1,47 @@
+main {
+    figure {
+        margin: 4rem 2rem;
+        p {
+            margin: 0;
+        }
+
+        img {
+            border: 1px solid #d1ded3;
+        }
+    }
+
+    .footnote-definition {
+        display: inline-flex;
+        padding: 0;
+        margin: 0 0 1.6rem;
+
+        &:target p {
+            background-color: #d1ded3;
+        }
+
+        sup,
+        p {
+            display: inline;
+        }
+
+        sup {
+            top: 0;
+            font-size: 2rem;
+            line-height: calc(1ex / 0.32);
+            margin: 0 1rem 0 0;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .metadata {
+        font-size: 0.825em;
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        gap: 1rem;
+    }
+}
