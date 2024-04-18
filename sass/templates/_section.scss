@@ -1,40 +1,19 @@
 .posts {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 0;
+  list-style: none;
 }
 
 .post {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+
+  a {
+    color: inherit;
     text-decoration: none;
 
-    .post__date {
-        color: var(--foreground-alt);
-    }
-
-    p {
-        color: var(--foreground);
-        margin: 0;
-    }
-
     &:hover {
-        text-decoration: none;
-        background-color: #d1ded380;
+      color: var(--foreground-focus);
     }
-
-    &:active .post__title {
-        text-decoration: underline;
-    }
+  }
 }
-
-.post__header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.post__description {}
-
-.post__count {}

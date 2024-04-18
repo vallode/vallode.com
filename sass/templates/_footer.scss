@@ -1,20 +1,18 @@
 footer {
-  color: gray;
   display: flex;
   font-size: 1.6rem;
-  gap: 1.2rem;
-  padding: 1.8rem 0;
+  gap: var(--spacing);
+  padding: var(--spacing) 0;
 
   a {
     color: inherit;
-    padding: 0.3rem;
+    padding: var(--spacing-xs);
     position: relative;
-    text-decoration: underline dotted gray 1px;
-    transition: all 0.05s;
+    text-decoration: underline dotted currentColor 1px;
+    transition: all 0.1s;
 
     &:hover {
-      text-decoration: underline solid black 1px;
-      color: black;
+      text-decoration: underline solid currentColor 1px;
     }
   }
 }

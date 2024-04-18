@@ -1,22 +1,17 @@
 main {
-  h2, h3,
   pre {
-    margin: 0 0 1.6rem;
-  }
-
-  pre {
-    background: var(--border);
+    background: var(--middleground);
   }
   
   pre code {
     display: block;
     overflow-x: auto;
-    padding: 0.8rem;
+    padding: var(--spacing-sm);
     white-space: pre;
   }
 
   p code {
-    background: var(--border);
+    background: var(--middleground);
     box-decoration-break: clone;
     word-wrap: break-word;
   }

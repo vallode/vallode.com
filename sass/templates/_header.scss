@@ -1,25 +1,24 @@
 header {
-  display: flex;
-  gap: 1.2rem;
   align-items: baseline;
-  padding: 1.8rem 0;
+  display: flex;
   font-family: sans-serif;
-
+  gap: var(--spacing);
+  padding: var(--spacing) 0;
+  
   h1 {
     font-size: 3.2rem;
     margin: 0;
   }
-
+  
   nav {
     display: flex;
-    gap: .8rem;
     font-size: 1.6rem;
   }
-
+  
   a {
     color: inherit;
+    padding: var(--spacing-xs);
     position: relative;
-    padding: 0.3rem 0.6rem;
     text-decoration: underline dotted gray 1px;
     transition: all 0.1s;
 

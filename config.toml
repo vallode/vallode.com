@@ -2,7 +2,7 @@
 
 base_url = "https://vallode.com/"
 title = "vallode"
-description = "Mariusz Z., web developer and learner. Writes sometimes."
+description = "Mariusz Z., web developer and learner."
 default_language = "en"
 compile_sass = true
 minify_html = true
