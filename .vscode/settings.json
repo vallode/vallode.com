@@ -1,0 +1,7 @@
+{
+  "[scss][jsonc]": {
+    "editor.detectIndentation": false,
+    "editor.indentSize": 2,
+    "editor.tabSize": 2
+  }
+}
