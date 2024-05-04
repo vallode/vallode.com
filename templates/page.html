@@ -29,12 +29,16 @@
 <hr />
 
 <ul class="metadata">
+  {% if page.date %}
   <li>
     <p><small>Created: {{ page.date }}</small></p>
   </li>
+  {% endif %}
+  {% if page.updated %}
   <li>
     <p><small>Updated: {{ page.updated }}</small></p>
   </li>
+  {% endif %}
   <li>
     <p><small>Word count: {{ page.word_count }}</small></p>
   </li>

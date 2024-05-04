@@ -39,6 +39,7 @@ main {
 
   .metadata {
     display: flex;
+    margin: 0;
     gap: var(--spacing);
     list-style: none;
   }

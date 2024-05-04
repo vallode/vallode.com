@@ -16,7 +16,7 @@ body {
 ol,
 ul {
   line-height: normal;
-  margin-left: 2ch;
+  margin: 0;
   padding: 0;
 }
 
@@ -25,6 +25,11 @@ main {
   max-width: 100%;
   padding: var(--spacing) var(--spacing-lg);
   width: calc(60ch + (var(--spacing) * 2));
+
+  ol,
+  ul {
+    margin-left: 2ch;
+  }
 
   p {
     hyphens: auto;
