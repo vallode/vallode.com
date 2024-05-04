@@ -1,4 +1,10 @@
 main {
+  code {
+    border-radius: 4px;
+    line-height: calc(1ex / 0.32);
+    padding: 0 .5ex;
+  }
+
   pre {
     background: var(--middleground);
   }
