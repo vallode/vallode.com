@@ -10,15 +10,21 @@ The world of laptops is confusing and filled with compromise. Laptops offer vari
 
 ⚠️ *This post is subjective! Personal opinion and hyperbole abound!*
 
-{% figure(caption="Various laptop brands offered by Lenovo, it is not always easy figuring out what makes a ThinkBook different from an IdeaPad.") %}
-![Collage of various laptop brands available from Lenovo, including  the ThinkPad, IdeaPad, and Yoga series.](images/lenovo-line-ups.png)
-{% end %}
+{{
+    figure(
+        src="images/lenovo-line-ups.png",
+        alt="Collage of various laptop brands available from Lenovo, including  the ThinkPad, IdeaPad, and Yoga series.",
+        caption="Various laptop brands offered by Lenovo, it is not always easy figuring out what makes a ThinkBook different from an IdeaPad."
+)}}
 
 Lenovo runs 7 lines of laptops, each usually containing several sub-lines. Similarly, Dell lists 10 lines of laptops on their website. HP lists 12. MSI 10. Each line offers hardware configuration to some degree. Each with a different price range. All offering their own unique combination of pros and cons. Comparing between all these options can be exhausting. Even if you decide on a specific brand, you still need to examine marketing lingo, learn about their specifications and testing[^1], and read third-party reviews before making a final decision.
 
-{% figure(caption="Many people are enthustiastic about the ThinkPad brand!") %}
-![Reddit statistics for the r/thinkpad: 175 thousand members, 600 currently online, top 1% ranking amongst all Reddit subreddits.](images/reddit-thinkpad.png)
-{% end %}
+{{
+    figure(
+        src="images/reddit-thinkpad.png",
+        alt="Reddit statistics for the r/thinkpad: 175 thousand members, 600 currently online, top 1% ranking amongst all Reddit subreddits.",
+        caption="Many people are enthustiastic about the ThinkPad brand!"
+)}}
 
 So when you hear a group of people shouting "Just buy a used ThinkPad!", offering good bang for your buck, dedicated community support, and brand dogma to boot, you come running... *mostly* out of desperation.
 
@@ -26,9 +32,12 @@ So when you hear a group of people shouting "Just buy a used ThinkPad!", offerin
 
 This is a good time to talk more about the way I use my laptop. I work remotely, usually doing web development but also design and UX work. I tend to work from home, but I switch around from desk to living room to kitchen often, and I have *at least* a day a week when I like to work outside, in the city.
 
-{% figure(caption="On a dual-core i5, this is not an uncommon sight when typing in htop into your terminal.") %}
-![CPU usage of 4 cores in percentages, showing numbers in the high 90s.](images/cpu-usage-high.png)
-{% end %}
+{{
+    figure(
+        src="images/cpu-usage-high.png",
+        alt="CPU usage of 4 cores in percentages, showing numbers in the high 90s.",
+        caption="On a dual-core i5, this is not an uncommon sight when typing in htop into your terminal."
+)}}
 
 There is a variety to my work; sometimes the particular software I am working on is quite efficient and light on processors, yet other times I need to compile heavy codebases that can stress just about as much as you throw at them. I also do not make a distinction between a work laptop and a home laptop, I use one for both. I try to organize it in such a way that there is a clear line in the actual software I use. Profiles and containers on Firefox and workspaces on the desktop help. This also means I enjoy taking the laptop with me to the couch, or the bed, or using it as a cooking aide in the kitchen.
 
@@ -38,9 +47,12 @@ I want my laptop to be with me wherever I go, almost like a phone, being able to
 
 In early 2021 I found myself needing a smaller and more portable laptop. ThinkPad laptops were mentioned often in the communities I frequent online, I saw them being used by people on train rides, in offices, and around media in general. I was enamoured with the community's focus on sustainability and future proofing. I also had an aversion to spending "significant" money on... anything. In the laptop world, this boils down to buying chromebooks or secondhand. Since the ThinkPad community got to me, I went with the latter.
 
-{% figure(caption="There are a *lot* of reburbished and secondhand ThinkPads available on the internet.") %}
-![Three eBay listings of secondhand Lenovo ThinkPad laptops.](images/used-thinkpads-on-ebay.png) 
-{% end %}
+{{ 
+    figure(
+        src="images/used-thinkpads-on-ebay.png",
+        alt="Three eBay listings of secondhand Lenovo ThinkPad laptops.",
+        caption="There are a *lot* of reburbished and secondhand ThinkPads available on the internet."
+)}}
 
 When push came to shove, I made the decision to buy one and fairly quickly found an enticing offer for a used [ThinkPad X250](//www.notebookcheck.net/Lenovo-ThinkPad-X250-Ultrabook-Review.136646.0.html) from 2015. I am not entirely sure how I ended up deciding on a ThinkPad X250, in hindsight it was not the right laptop for me, but it likely had to do with dumb-luck matching recent Reddit posts about the X-series laptops with an eye-catching offer on eBay.
 
@@ -54,9 +66,12 @@ It was love at first sight. The X250 was *significantly* smaller than my previou
 
 In a world where new laptops are coming with [dual-screens](//www.asus.com/laptops/for-home/zenbook/asus-zenbook-duo-2024-ux8406/), [foldable screens](//www.lenovo.com/us/en/thinkpad-x1-fold/), or [no screens at all](//product.sightful.com/), it can feel refreshing to own such a simple one. No tricks and *secrets* here!
 
-{% figure(caption="Lenovo offers a 116 page maintenance PDF, breaking down every step of dismantling and assembling the laptop.") %}
-![Illustrated diagram of a ThinkPad X250 showing steps for removing its internal battery pack.](images/maintenance-manual.png)
-{% end %}
+{{ 
+    figure(
+        src="images/maintenance-manual.png",
+        alt="Illustrated diagram of a ThinkPad X250 showing steps for removing its internal battery pack.",
+        caption="Lenovo offers a 116 page maintenance PDF, breaking down every step of dismantling and assembling the laptop."
+)}}
 
 I did have to tinker with it to bring it up to better standards. The beauty of the ThinkPad brand, after all, is that you *can* open it and upgrade it! I dismantled the laptop, replaced the hard drive with a new SSD, and assembled it back together. Later, I dismantled it again, upgraded the WLAN card, and assembled. Dismantled it, used fresh thermal paste, assembled it. Dismantled, added an internal battery, assembled. Dismantled, added an m.2 drive, assembled.
 
@@ -90,9 +105,12 @@ The motherboard, put simply, is unlikely to be upgradable. As with most laptops 
 
 The CPU is linked to the motherboard via BGA, soldering a new CPU onto a motherboard is out of reach for most hobbyists even with proper equipment. Upgrading the GPU is linked directly with the CPU as there is no dedicated GPU on this laptop, even if it were there the chip would be soldered and very difficult to upgrade in any meaningful way.
 
-{% figure(caption="You have to be ready to hunt and spend a lot of money if you want to upgrade your DDR3L RAM.") %}
-![eBay listing for a single module of 16GB DDR3L RAM with a price of 136.68 GBP.](images/laptop-ram-ebay.png)
-{% end %}
+{{ 
+    figure(
+        src="images/laptop-ram-ebay.png",
+        alt="eBay listing for a single module of 16GB DDR3L RAM with a price of 136.68 GBP.",
+        caption="You have to be ready to hunt and spend a lot of money if you want to upgrade your DDR3L RAM."
+)}}
 
 RAM is a touchy subject, ThinkPad lovers *hate* soldered RAM. The sole mention of soldered RAM modules is enough to dissuade people from even contemplating the purchase of a laptop. This 2015 ThinkPad had the possibility of having 16GB of DDR3 1600mhz RAM from the factory. Most configurations are 8GB, with some at 4GB. It is not exactly rare to see a 16GB configuration online but it is much tougher to find one at a great deal price, especially today.
 

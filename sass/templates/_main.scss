@@ -6,7 +6,20 @@ main {
   }
 
   pre {
-    background: var(--middleground);
+    background: var(--background-highlight);
+    border: 1px solid var(--border);
+    position: relative;
+
+    &::after {
+      color: var(--border);
+      content: attr(data-lang);
+      display: block;
+      line-height: calc(1ex / 0.32);
+      padding: var(--spacing-sm);
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
 
   code {

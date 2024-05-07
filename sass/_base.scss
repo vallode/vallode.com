@@ -28,7 +28,7 @@ main {
 
   ol,
   ul {
-    margin-left: 2ch;
+    margin: 0 0 calc(1ex / 0.32) 2ch;
   }
 
   p {

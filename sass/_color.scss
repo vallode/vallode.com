@@ -1,11 +1,12 @@
 :root {
   color-scheme: light dark;
 
-  --foreground: #121212;
+  --foreground: #0e1a0e;
   --foreground-focus: #1b5e20;
   --foreground-highlight: #a5d6a7;
   --middleground: #e0e0e0;
-  --background: #eeeeee;
+  --background-highlight: #fff;
+  --background: #fcfffd;
   --border: #bdbdbd;
 
   @media (prefers-contrast: more) {
