@@ -20,7 +20,9 @@
 
 {% block content %}
 <hgroup>
-  <p><small>{{ page.date }}</small></p>
+  {% if page.date %}
+    <p><small>{{ page.date | date(format="%d %B %Y") }}</small></p>
+  {% endif %}
   <h1>{{ page.title }}</h1>
 </hgroup>
 

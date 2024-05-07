@@ -10,15 +10,18 @@
 {{ section.content | safe }}
 
 <ul class="posts">
-  {% for post in section.pages %}
-  <li>
-    <div class="post">
-      <a href="{{ post.permalink }}">
-        {{ post.title }}
-      </a>
-      <p class="post__date">{{ post.date }}</p>
-    </div>
-  </li>
+  {% for year, posts in section.pages | group_by(attribute="year") %}
+    <li><h2>{{ year }}</h2></li>
+    {% for post in posts %}
+    <li>
+      <div class="post">
+        <a href="{{ post.permalink }}">
+          {{ post.title }}
+        </a>
+        <p class="post__date">{{ post.date | date(format="%d %b %Y") }}</p>
+      </div>
+    </li>
+    {% endfor %}
   {% endfor %}
 </ul>
 {% endblock content %}
