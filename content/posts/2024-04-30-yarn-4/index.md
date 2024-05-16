@@ -1,0 +1,78 @@
++++
+title = "Moving past Yarn 1.x"
+description = "How to migrate from Yarn 1.x, why you should do it, and why people were reluctant to do so."
++++
+
+Yarn 1 (aka "Yarn Classic") has not seen a meaningful performance or feature update in at least 4 years and a significant amount of users are even using "outdated" versions[^1]. While Yarn Classic can be _considered_ stable - in the sense that it will not see breaking changes - issues and bugs creep up over time[^2] and it is only a matter of time before a user of Yarn Classic faces an issue that is insurmountable to them without support. Support they are unlikely to receive. Notably a seemingly common bug present in Yarn Classic has had [an issue](//github.com/yarnpkg/yarn/issues/7807) opened since January 2020 with many users seeking assistance.
+
+<!-- more -->
+
+ℹ️ This post is **not** about convincing people to use Yarn. Use whatever package manager *fulfills the requirements of your project and fits into the workflow of your team or project.* npm, pnpm, and yarn all have their pros and cons.
+
+{{
+    figure(
+        src="images/yarn-classic-versions.png",
+        alt="Table of Yarn versions, their downloads in the last week, and when they were published. Version 1.22.22, 2,493,621 downloads, published 2 months ago. Version 1.22.19, 2,063,290 downloads, published 2 years ago. Version 1.22.18, 1,327,823 downloads, published 2 years ago. Version 1.22.10, 1,406,503 downloads, published 4 years ago.",
+        caption="A large number of Yarn Classic downloads are still using the 4 year old 1.22.10 version."
+)}}
+
+The majority of projects would benefit from migrating away from Yarn Classic and can safely upgrade to Yarn 2+ (aka "Yarn Modern").
+
+If you are running Yarn Classic on any actively maintained project I recommend following the steps in Yarn's [own migration guide](//yarnpkg.com/migration/guide). I will summarize the steps and give a bit of background as to why I think adoption has been so slow.
+
+# The how
+
+Today, migrating to the latest version of Yarn is fairly simple. "Modern" Yarn releases recommend using Node's [**corepack**](//nodejs.org/api/corepack.html) tool, which helps manage multiple versions of Node package managers on your system.
+
+If opting for **corepack**, make sure you are running at least Node 16 (Yarn recommends **Node 18**, however) and run:
+
+```bash
+corepack enable
+# Navigate to a project
+# cd <path-to-your-yarn-project>
+yarn set version berry
+yarn install
+```
+
+In most scenarios that should be all you need to do. In the case that you are using an `.npmrc` file you can read about migrating it [here](//yarnpkg.com/migration/guide#update-your-configuration-to-the-new-settings).
+
+Most importantly, private/custom registries and their corresponding tokens are handled in the new `.yarnrc.yml` file or new environment variables.
+
+The (thankfully short) list of other breaking changes:
+
+- `pre` and `post` lifecycle scripts were dropped, rewrite them explicitly.
+- `yarn global` was removed, use `yarn dlx` or explicitly install your packages.
+- `bundleDependencies` was removed, use the `file:` to define the dependency.
+- `nohoist` was replaced by `nmHoistingLimits`
+- `login`, `logout`, `audit`, `info`, and `publish` CLI commands were moved under the `npm` umbrella. i.e `yarn npm login` instead of `yarn login`
+
+Details on these and more can be found on Yarn's [migration guide](//yarnpkg.com/migration/guide).
+
+# The why
+
+A package manager is an integral piece of your infrastructure. So we should be making sure that it is free of potential security issues and bugs. Yarn Classic no longer has the scrupulous eyes of its team watching over it, with the focus being on Yarn Modern. If you have issues with the way Yarn Modern handles things, or if you have issues migrating, I urge you to reach out to the maintainers and provide constructive feedback so that Yarn can become better than it ever was.
+
+Yarn Modern improves monorepo management, introduces plugins as a way of extending core functionality, and makes stricter dependency requirements easier to enforce. It has a healthy community and slow but steady development.
+
+You can find more about the new plugins, constraints, and plug'n'play systems on [Yarn's website](//yarnpkg.com/features/caching).
+
+# The reluctance
+
+If you were paying attention to the Node world when Yarn 2 was [released]([//yarnpkg.com/blog/release/2.0), you might remember the confusion and general reluctance around its adoption
+
+{{
+    figure(
+        src="images/user-feedback.png",
+        alt="Reddit user Aewawa commented 'I thought their migration documentation was so complicated that I could hardly see having an adoption soon.' 4 years ago",
+        caption="Yarn's team might have overwhelmed users who considered migrating."
+)}}
+
+If you were around the Node world when Yarn 2 was announced, and later launched, you will remember the extreme reluctance people faced when considering upgrading to it. I believe the most major part of this reluctance came from the Yarn team making the plug'n'play (PnP) feature the default package resolution system, which in part caused a huge amount of projects to face difficulties in migrating. (The good news is that the PnP system is **not the default** in Yarn 3+)
+
+A lot of developers, myself included, attempted to upgrade to Yarn Modern and faced issues that were difficult to debug (namely, much stricter dependency resolution), and at the time the supposed benefits of upgrading seemed small compared to spending time on the features or bugs of your actual project. Yarn's team overcompensated the confusion around the upgrade (especially the detachment from the original repository) with a **lot** of documentation and writing, when what was really needed was a clear and succinct upgrade path.
+
+I'm not entirely sure if Yarn is here to stay, with PNPM offering great quality of life improvements and decent speed and npm improving consistently, but if you are using Yarn Classic take a day to upgrade away from it. Let us let it rest.
+
+[^1]: The 4 year old 1.22.10 version of Yarn Classic has nearly one and a half million downloads over the past week (On the date of publishing): [https://www.npmjs.com/package/yarn?activeTab=versions](//www.npmjs.com/package/yarn?activeTab=versions)
+
+[^2]: At the time of writing `yarnpkg/yarn` (the "classic" repository) has had an issue open every 3 days: [https://repo-tracker.com/r/gh/yarnpkg/yarn](//repo-tracker.com/r/gh/yarnpkg/yarn)
