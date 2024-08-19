@@ -1,13 +1,12 @@
 # https://www.getzola.org/documentation/getting-started/configuration/
 
 base_url = "https://vallode.com/"
-title = "vallode"
-description = "Mariusz Z., web developer and learner."
+title = "Vallode"
+description = "Web developer and learner."
 default_language = "en"
 compile_sass = true
 minify_html = true
-generate_feed = true
-feed_filename = "rss.xml"
+generate_feeds = true
 author = "vallode@riseup.net (vallode)"
 build_search_index = false
 

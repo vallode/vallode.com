@@ -6,12 +6,12 @@
   --foreground-highlight: #a5d6a7;
   --middleground: #e0e0e0;
   --background-highlight: #fff;
-  --background: #fcfffd;
+  --background: #fff;
   --border: #bdbdbd;
 
   @media (prefers-contrast: more) {
     --foreground: #121212;
-    --background: white
+    --background: white;
   }
 
   @media (prefers-color-scheme: dark) {

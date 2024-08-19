@@ -1,11 +1,12 @@
 header {
-  align-items: baseline;
+  align-items: center;
   display: flex;
   font-family: sans-serif;
   gap: var(--spacing);
-  padding: var(--spacing) 0;
+  padding: var(--spacing) 0 var(--spacing-xs);
   
-  h1 {
+
+  span {
     font-size: 3.2rem;
     margin: 0;
   }
@@ -18,6 +19,7 @@ header {
   a {
     color: inherit;
     padding: var(--spacing-xs);
+    padding-bottom: 0;
     position: relative;
     text-decoration: underline dotted gray 1px;
     transition: all 0.1s;
