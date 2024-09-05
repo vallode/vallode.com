@@ -28,7 +28,8 @@ main {
 
   ol,
   ul {
-    margin: 0 0 calc(1ex / 0.32) 2ch;
+    margin-block-start: calc(1ex / 0.62);
+    padding-left: 2ch;
   }
 
   p {

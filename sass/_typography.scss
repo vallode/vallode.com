@@ -17,11 +17,17 @@ h4,
 h5,
 h6 {
   font-family: sans-serif;
+  margin: 0;
 }
 
 h1 {
   line-height: calc(1ex / 0.42);
-  margin: 0 0 1ex;
+  margin-block-start: 1ex;
+}
+
+h2 {
+  line-height: calc(1ex / 0.42);
+  margin-block-start: 1ex;
 }
 
 hgroup {
@@ -34,9 +40,10 @@ hgroup {
 p {
   font-family: serif;
   line-height: calc(1ex / 0.32);
-  margin: 0 0 calc(1ex / 0.32);
+  margin: 0;
+  margin-block-start: calc(1ex / 0.52);
 
-  &:last-child {
+  &:first-child {
     margin: 0;
   }
 }
