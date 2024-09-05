@@ -41,6 +41,11 @@ p {
   }
 }
 
+li {
+  font-family: serif;
+  line-height: calc(1ex / 0.32);
+}
+
 a {
   font-family: inherit;
 }

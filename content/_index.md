@@ -1,7 +1,13 @@
 +++
 +++
 
-Web developer, focused on creating long-lived value. I enjoy sharing information and building things that last.
+Hey, welcome to the corner of the internet. I'm a web developer, I enjoy  building things that last, sharing information and knowledge, and a good debate.
 
-Currently working at [lobelia.earth](//lobelia.earth) helping visualise climate data and create tools that help address the climate emergency.
+I've worked with many start-ups, donning the hats of app development, devops, growth hacking, mentoring. I pride myself in the ability to pick up a task, find material to learn from, and be able to action that learning quickly and efficiently.
 
+## Things I Enjoy
+
+- Tinkering with things I don't understand
+- Introspection and critical feedback
+- Over-optimisation (mostly in video games)
+- TTRPGs with friends
