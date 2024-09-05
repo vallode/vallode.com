@@ -1,18 +1,26 @@
 footer {
   display: flex;
+  flex-direction: column;
   font-size: 1.6rem;
-  gap: var(--spacing);
   padding: var(--spacing) 0;
 
+  p {
+    margin: 0;
+  }
+
   a {
-    color: inherit;
-    padding: var(--spacing-xs);
+    color: #008eb8;
     position: relative;
-    text-decoration: underline dotted currentColor 1px;
+    text-decoration: underline solid currentColor 1px;
     transition: all 0.1s;
 
     &:hover {
       text-decoration: underline solid currentColor 1px;
     }
+  }
+
+  .contacts {
+    display: flex;
+    gap: var(--spacing);
   }
 }
