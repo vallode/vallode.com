@@ -1,0 +1,39 @@
+---
+
+---
+
+<footer>
+  <div class="contacts">
+    <p><a href="mailto:mariusz+website@riseup.net">Email</a></p>
+    <p><a href="//github.com/vallode">GitHub</a></p>
+  </div>
+</footer>
+
+<style lang="scss">
+  footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    padding: var(--spacing) 0;
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      color: #008eb8;
+      position: relative;
+      text-decoration: underline solid currentColor 1px;
+      transition: all 0.1s;
+
+      &:hover {
+        text-decoration: underline solid currentColor 1px;
+      }
+    }
+
+    .contacts {
+      display: flex;
+      gap: var(--spacing);
+    }
+  }
+</style>

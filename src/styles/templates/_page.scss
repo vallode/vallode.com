@@ -1,0 +1,44 @@
+main {
+  .footnote-definition {
+    display: flex;
+    margin: 0 0 var(--spacing);
+    padding: 0;
+
+    &:target p {
+      background-color: var(--foreground-highlight);
+    }
+
+    sup,
+    p {
+      display: inline;
+    }
+
+    sup {
+      font-size: 2rem;
+      line-height: calc(1ex / 0.32);
+      margin: 0 var(--spacing) 0 0;
+      top: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .metadata {
+    display: flex;
+    margin: 0;
+    gap: var(--spacing);
+    list-style: none;
+  }
+
+  img {
+    height: auto;
+    min-height: 100px;
+    width: 100%;
+  }
+
+  hr {
+    border: 1px solid var(--border);
+  }
+}

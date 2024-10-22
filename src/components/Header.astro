@@ -1,0 +1,45 @@
+---
+
+---
+
+<header>
+  <span>Vallode</span>
+
+  <nav>
+    <a href="/">home</a>
+    <a href="/posts">posts</a>
+  </nav>
+</header>
+
+<style lang="scss">
+  header {
+    align-items: center;
+    display: flex;
+    font-family: sans-serif;
+    gap: var(--spacing);
+    padding: var(--spacing) 0 var(--spacing-xs);
+
+    span {
+      font-size: 3.2rem;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      font-size: 1.6rem;
+    }
+
+    a {
+      color: inherit;
+      padding: var(--spacing-xs);
+      padding-bottom: 0;
+      position: relative;
+      text-decoration: underline dotted gray 1px;
+      transition: all 0.1s;
+
+      &:hover {
+        text-decoration: underline solid black 1px;
+      }
+    }
+  }
+</style>

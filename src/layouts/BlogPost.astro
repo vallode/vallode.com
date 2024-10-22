@@ -1,0 +1,32 @@
+---
+import type { CollectionEntry } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
+import Layout from "../layouts/BaseLayout.astro";
+
+type Props = CollectionEntry<"posts">["data"];
+
+const { title, description, pubDate } = Astro.props;
+---
+
+<Layout title={title} description={description}>
+  <article>
+    <div class="prose">
+      <div class="title">
+        <hgroup>
+          {
+            pubDate && (
+              <p>
+                <small>
+                  <FormattedDate date={pubDate} />
+                </small>
+              </p>
+            )
+          }
+          <h1>{title}</h1>
+        </hgroup>
+      </div>
+
+      <slot />
+    </div>
+  </article>
+</Layout>
