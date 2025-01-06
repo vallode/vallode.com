@@ -5,7 +5,9 @@ const { pathname } = Astro.url;
 <header>
   <nav>
     <a href="/" class:list={{ active: pathname === "/" }}>home</a>
-    <a href="/posts" class:list={{ active: pathname === "/posts" }}>posts</a>
+    <a href="/posts" class:list={{ active: pathname.startsWith("/posts") }}
+      >posts</a
+    >
   </nav>
 
   <a href="/" class="heading">
