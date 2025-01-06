@@ -1,14 +1,16 @@
 ---
-
+const { pathname } = Astro.url;
 ---
 
 <header>
-  <span>Vallode</span>
-
   <nav>
-    <a href="/">home</a>
-    <a href="/posts">posts</a>
+    <a href="/" class:list={{ active: pathname === "/" }}>home</a>
+    <a href="/posts" class:list={{ active: pathname === "/posts" }}>posts</a>
   </nav>
+
+  <h1>Vallode</h1>
+
+  <nav></nav>
 </header>
 
 <style lang="scss">
@@ -19,26 +21,31 @@
     gap: var(--spacing);
     padding: var(--spacing) 0 var(--spacing-xs);
 
-    span {
+    h1 {
       font-size: 3.2rem;
+      line-height: 0.6;
       margin: 0;
     }
 
     nav {
       display: flex;
+      flex: 1;
       font-size: 1.6rem;
     }
 
     a {
-      color: inherit;
+      color: var(--foreground);
       padding: var(--spacing-xs);
-      padding-bottom: 0;
-      position: relative;
-      text-decoration: underline dotted gray 1px;
+      font-weight: 600;
+      text-decoration: none;
       transition: all 0.1s;
 
+      &.active {
+        color: var(--foreground-focus);
+      }
+
       &:hover {
-        text-decoration: underline solid black 1px;
+        text-decoration: underline;
       }
     }
   }

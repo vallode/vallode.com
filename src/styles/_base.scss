@@ -11,6 +11,10 @@ body {
   color: var(--foreground);
   margin: 0 auto;
   padding: var(--spacing-xs) var(--spacing-lg);
+
+  @media screen and (max-width: 400px) {
+    padding: var(--spacing-xs)
+  }
 }
 
 ol,
