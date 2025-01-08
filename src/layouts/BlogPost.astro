@@ -10,21 +10,19 @@ const { title, description, pubDate } = Astro.props;
 
 <Layout title={title} description={description}>
   <article>
-    <div class="prose">
-      <div class="title">
-        <hgroup>
-          {
-            pubDate && (
-              <p>
-                <small>
-                  <FormattedDate date={pubDate} />
-                </small>
-              </p>
-            )
-          }
-          <h1>{title}</h1>
-        </hgroup>
-      </div>
+    <div>
+      <hgroup>
+        {
+          pubDate && (
+            <p>
+              <small>
+                <FormattedDate date={pubDate} />
+              </small>
+            </p>
+          )
+        }
+        <h1>{title}</h1>
+      </hgroup>
 
       <slot />
     </div>
