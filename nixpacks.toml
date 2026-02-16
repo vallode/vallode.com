@@ -12,7 +12,7 @@ cmds = ['deno install --node-modules-dir']
 cacheDirectories = ['node_modules']
 
 [phases.build]
-cmds = ['deno task build']
+cmds = ['deno install --node-modules-dir && deno task build']
 cacheDirectories = ['.astro']
 
 [variables]
