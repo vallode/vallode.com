@@ -1,5 +1,8 @@
 {
   "version": "2.6.9",
+  "tasks": {
+    "build": "deno run -A npm:astro build"
+  },
   "allowScripts": {
     "allow": ["npm:sharp@0.34.5"],
     "deny": ["npm:esbuild@0.25.12", "npm:esbuild@0.27.3", "npm:fsevents@2.3.3"]
