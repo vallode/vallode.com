@@ -4,8 +4,7 @@ providers = ['node']
 nixPkgs = ['nodejs_20']
 aptPkgs = ['unzip']
 cmds = [
-  "curl -fsSL https://deno.land/install.sh | sh -s v2.6.9",
-  "ln -sf /root/.deno/bin/deno /root/usr/local/bin/deno"
+  "curl -fsSL https://deno.land/install.sh | sh -s v2.6.9"
 ]
 
 [phases.install]
@@ -15,3 +14,7 @@ cacheDirectories = ['node_modules']
 [phases.build]
 cmds = ['deno run build']
 cacheDirectories = ['.astro']
+
+[variables]
+DENO_INSTALL = "/root/.deno"
+NIXPACKS_PATH = "/root/.deno/bin"
