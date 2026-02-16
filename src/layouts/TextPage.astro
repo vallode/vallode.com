@@ -1,0 +1,164 @@
+---
+import type { ImageMetadata } from "astro";
+import BaseLayout from "./BaseLayout.astro";
+import Nav from "../components/Nav.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  image?: ImageMetadata;
+  showHeader?: boolean;
+  showFooter?: boolean;
+  centered?: boolean;
+  frontmatter?: Record<string, any>;
+}
+
+const {
+  title,
+  description,
+  image,
+  showFooter = true,
+  centered = false,
+  frontmatter,
+} = Astro.props;
+---
+
+<BaseLayout
+  title={frontmatter?.title ?? title}
+  description={description}
+  image={image}
+  showFooter={showFooter}
+>
+  <main class:list={["text-page", { centered }]}>
+    <article>
+      <header class="page-header">
+        <h1>{frontmatter?.title ?? title}</h1>
+      </header>
+
+      <Nav />
+
+      <div class="prose">
+        <slot />
+      </div>
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  :global(.content) {
+    max-width: 28rem !important;
+  }
+
+  .text-page {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .text-page.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0rem;
+    text-align: center;
+  }
+
+  .page-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    line-height: 1.2;
+  }
+
+  .prose {
+    color: var(--text-color);
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+
+  .prose :global(p) {
+    display: block;
+  }
+
+  .prose > :global(p:first-of-type):first-letter {
+    font-size: 2rem;
+    line-height: 0;
+  }
+
+  .prose :global(p) {
+    margin-bottom: 1.5em;
+  }
+
+  .prose :global(h2) {
+    margin-top: 2em;
+    margin-bottom: 0.75em;
+    font-size: 1.75rem;
+    color: var(--text-color);
+  }
+
+  .prose :global(h3) {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.375rem;
+    color: var(--text-color);
+  }
+
+  .prose :global(ul),
+  .prose :global(ol) {
+    margin-bottom: 1.5em;
+    padding-left: 1.5em;
+  }
+
+  .prose :global(li) {
+    margin-bottom: 0.5em;
+  }
+
+  .prose :global(a) {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .prose :global(a:hover) {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+  }
+
+  .prose :global(code) {
+    background-color: rgba(var(--gray-light), 0.3);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+
+  .prose :global(blockquote) {
+    margin: 1.5em 0;
+    padding-left: 1em;
+    border-left: 4px solid var(--accent);
+    font-style: italic;
+    color: var(--text-color);
+    opacity: 0.9;
+  }
+
+  @media (max-width: 720px) {
+    .text-page {
+      padding: 1rem 1rem 3rem;
+    }
+
+    .page-header h1 {
+      font-size: 2rem;
+    }
+
+    .prose {
+      font-size: 1rem;
+    }
+  }
+</style>

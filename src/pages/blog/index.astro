@@ -1,0 +1,147 @@
+---
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import TextPage from "../../layouts/TextPage.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+// Group posts by year
+const postsByYear = posts.reduce(
+  (acc, post) => {
+    const year = post.data.pubDate.getFullYear();
+    if (!acc[year]) {
+      acc[year] = [];
+    }
+    acc[year].push(post);
+    return acc;
+  },
+  {} as Record<number, typeof posts>,
+);
+
+const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
+---
+
+<TextPage title="Blog" description="My thoughts and writings">
+  <main>
+    <p>
+      Find my longer thoughts here, where I'm trying to write more and find my
+      own style. <a href="/rss.xml">RSS</a> available.
+    </p>
+
+    {
+      years.map((year) => (
+        <section class="year-section">
+          <h2 class="year-header">{year}</h2>
+          <ul class="post-list">
+            {postsByYear[Number(year)].map((post) => (
+              <li>
+                <a href={`/blog/${post.id}/`}>
+                  <span class="title">{post.data.title}</span>
+                  <span class="date">
+                    <FormattedDate date={post.data.pubDate} />
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </main>
+</TextPage>
+
+<style>
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--text-color);
+    font-family: "Nudles";
+    margin-bottom: 2rem;
+  }
+
+  .year-section + .year-section {
+    margin-top: 1.5rem;
+  }
+
+  section .year-header {
+    font-family: "Nudles";
+    font-size: 1.8rem;
+    margin: 0;
+    padding-bottom: 0.1rem;
+  }
+
+  main .post-list {
+    font-family: "Nudles";
+    padding: 0;
+    margin: 1rem 0 0;
+    font-size: 1.3rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .post-list li {
+    display: flex;
+    counter-increment: counter;
+  }
+
+  .post-list li a {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: scale 0.02s linear;
+    align-items: baseline;
+  }
+
+  .post-list li a:hover,
+  .post-list li a:focus-within {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+  }
+
+  .post-list li a .title {
+    order: 1;
+  }
+
+  .post-list li a .title::first-letter {
+    color: var(--accent);
+  }
+
+  .post-list li a:hover {
+    scale: 1.08;
+  }
+
+  .post-list li a::before {
+    content: ".  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .";
+    text-overflow: hidden;
+    overflow: hidden;
+    white-space: pre;
+    flex: 1;
+    margin: 0 12px;
+    order: 2;
+  }
+
+  .post-list li a .date {
+    order: 3;
+    font-size: 0.9em;
+  }
+
+  @media (max-width: 720px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .post-list {
+      font-size: 1.1rem;
+    }
+  }
+</style>

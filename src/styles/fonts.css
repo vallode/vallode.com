@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Nudles";
+  src:
+    url("/fonts/Nudles.woff2") format("woff2"),
+    url("/fonts/Nudles.woff") format("woff"),
+    url("/fonts/Nudles.ttf") format("truetype");
+}

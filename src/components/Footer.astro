@@ -1,40 +1,81 @@
 ---
-
+import Icon from "./Icon.astro";
 ---
 
 <footer>
-  <div class="contacts">
-    <p><a href="mailto:mariusz+website@riseup.net">Email</a></p>
-    <p><a href="//github.com/vallode">GitHub</a></p>
-    <p><a href="/stack">Stack</a></p>
+  <div class="links">
+    <div class="side">
+      <a href="/now">/now</a>
+      <a href="/links">/links</a>
+    </div>
+
+    <a href="//github.com/vallode" aria-label="Github" class="icon">
+      <Icon name="git" />
+    </a>
+    <a href="/rss.xml" aria-label="RSS feed" class="icon">
+      <Icon name="rss" />
+    </a>
+    <a href="mailto:hello@mariuszz.com" aria-label="Mail" class="icon">
+      <Icon name="mail" />
+    </a>
   </div>
 </footer>
 
-<style lang="scss">
+<style>
   footer {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    font-size: 1.6rem;
-    padding: var(--spacing) 0;
+    justify-content: center;
+    margin: 2.4rem 0 0;
+    width: 100%;
+  }
 
-    p {
-      margin: 0;
-    }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    a {
-      color: #008eb8;
-      position: relative;
-      text-decoration: underline solid currentColor 1px;
-      transition: all 0.1s;
+  .icon:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+  }
 
-      &:hover {
-        text-decoration: underline solid currentColor 1px;
-      }
-    }
+  .links {
+    border-bottom: 2px solid var(--text-color);
+    border-top: 2px solid var(--text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    margin: 0 0 1.5rem;
+    padding: 0.75rem 0;
+    width: 100%;
+  }
 
-    .contacts {
-      display: flex;
-      gap: var(--spacing);
-    }
+  .links .side {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    font-size: 1.1rem;
+    gap: 0.5rem;
+  }
+
+  .side p {
+    margin: 0;
+    line-height: 0;
+  }
+
+  .side a {
+    text-decoration: none;
+    color: var(--text-color);
+    line-height: 1.2;
+  }
+
+  .side a:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
   }
 </style>

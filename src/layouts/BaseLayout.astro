@@ -1,27 +1,88 @@
 ---
+import type { ImageMetadata } from "astro";
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Nav from "../components/Nav.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
+import { Image } from "astro:assets";
+import inkyImage from "../assets/inky.png";
 
-type Props = {
-  title?: string;
-  description?: string;
-};
+interface Props {
+  title: string;
+  description: string;
+  image?: ImageMetadata;
+  showNav?: boolean;
+  showFooter?: boolean;
+  showThemeToggle?: boolean;
+}
 
-const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
+const {
+  title,
+  description,
+  image,
+  showNav = false,
+  showFooter = true,
+  showThemeToggle = true,
+} = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead title={title} description={description} image={image} />
   </head>
+
   <body>
-    <Header />
-    <main>
+    <div class="content">
+      {showNav && <Nav />}
       <slot />
-    </main>
-    <Footer />
+      {showFooter && <Footer />}
+      {showThemeToggle && <ThemeToggle />}
+    </div>
+
+    <a
+      href="//github.com/vallode/vallode.com/commit/main"
+      title={`Last Updated at ${__BUILD_DATE__}`}
+      class="build-date"
+    >
+      {__BUILD_DATE__}
+    </a>
+
+    <Image
+      src={inkyImage}
+      class="corner-cat"
+      alt="Illustration of pixalated cat"
+      loading="lazy"
+    />
   </body>
 </html>
+
+<style>
+  .content {
+    max-width: 32rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2.8rem 0;
+  }
+
+  .corner-cat {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 6rem;
+  }
+
+  .build-date {
+    position: absolute;
+    right: 8px;
+    bottom: 0;
+    opacity: 0.5;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .build-date:hover {
+    opacity: 0.8;
+  }
+</style>

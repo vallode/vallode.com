@@ -1,0 +1,163 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Mariusz Zarzycki" description="" showFooter={false}>
+  <main>
+    <h1>Mariusz<br />Zarzycki</h1>
+    <p>Freelance web developer</p>
+
+    <ul class="list">
+      <li><a href="/about"><span>A</span>bout</a></li>
+      <li><a href="/blog"><span>B</span>log</a></li>
+      <li><a href=""><span>P</span>rojects</a></li>
+      <li><a href="/rss.xml"><span>R</span>SS</a></li>
+    </ul>
+  </main>
+</BaseLayout>
+
+<style>
+  :global(body) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  :global(.content) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  h1 {
+    position: relative;
+    text-align: center;
+    font-size: 5rem;
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 12px 0 0px;
+    font-family: "Nudles";
+  }
+
+  h1 span {
+    position: absolute;
+    top: 14px;
+    left: 2px;
+    width: 100%;
+    font-size: 5rem;
+    z-index: -1;
+    height: 100%;
+    color: transparent;
+    /* background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff); */
+    background: var(--text-color);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--text-color);
+    font-family: "Nudles";
+    margin: 0 0 1.8rem;
+  }
+
+  .inner {
+    border: 8px solid var(--bg-color);
+    height: 100%;
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  ul {
+    font-family: "Nudles";
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  ul li {
+    display: flex;
+    counter-increment: counter;
+  }
+
+  ul li a {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: scale 0.02s linear;
+  }
+
+  ul li a span {
+    color: var(--accent);
+  }
+
+  ul li a:hover {
+    scale: 1.08;
+  }
+
+  ul li a::before {
+    content: ".  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .";
+    text-overflow: hidden;
+    overflow: hidden;
+    white-space: pre;
+    flex: 1;
+    margin: 0 12px;
+    order: 2;
+  }
+
+  ul li a::after {
+    content: counters(counter, ".", upper-roman);
+    order: 3;
+  }
+
+  hr {
+    position: relative;
+    height: 2px;
+    width: 110%;
+    left: -5%;
+    border: 0;
+    background-color: var(--text-color);
+    margin: 1.2rem 0 1.8rem;
+  }
+
+  hr::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 12px;
+    background-color: var(--bg-color);
+  }
+
+  .list {
+    margin-bottom: 2.4rem;
+  }
+
+  .list li {
+  }
+</style>

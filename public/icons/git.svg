@@ -1,0 +1,21 @@
+<svg
+  width="24"
+  height="24"
+  stroke-width="1.5"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  color="currentColor"
+>
+  <path
+    d="M18 21c1.1046 0 2-.8954 2-2s-.8954-2-2-2-2 .8954-2 2 .8954 2 2 2ZM6 7c1.10457 0 2-.89543 2-2s-.89543-2-2-2-2 .89543-2 2 .89543 2 2 2Zm12 10V7s0-2-2-2h-3M6 7v10s0 2 2 2h3"
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="m15.0005 7.50012-2.5-2.5 2.5-2.5M8.5 16.5 11 19l-2.5 2.5"
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

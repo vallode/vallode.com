@@ -1,30 +1,61 @@
 ---
+import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
-import Layout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import TextPage from "./TextPage.astro";
 
-type Props = CollectionEntry<"posts">["data"];
+type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
-<Layout title={title} description={description}>
-  <article>
-    <div>
-      <hgroup>
-        {
-          pubDate && (
-            <p>
-              <small>
-                <FormattedDate date={pubDate} />
-              </small>
-            </p>
-          )
-        }
-        <h1>{title}</h1>
-      </hgroup>
+<TextPage title={title} description={description}>
+  <div class="title">
+    <p>
+      Posted <FormattedDate date={pubDate} />
+    </p>
+    {
+      updatedDate && (
+        <p>
+          Last Updated <FormattedDate date={updatedDate} />
+        </p>
+      )
+    }
+  </div>
 
-      <slot />
-    </div>
-  </article>
-</Layout>
+  <slot />
+</TextPage>
+
+<style>
+  main {
+    width: calc(100% - 2em);
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+
+  .title p {
+    margin: 0;
+  }
+
+  .title h1 {
+    margin: 0 0 0.5em 0;
+  }
+  .date {
+    margin-bottom: 0.5em;
+  }
+  .last-updated-on {
+    font-style: italic;
+  }
+</style>

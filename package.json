@@ -1,23 +1,22 @@
 {
-  "private": true,
+  "name": "force",
   "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "astro check && astro build",
+    "dev": "astro dev",
+    "build": "astro build",
     "preview": "astro preview",
-    "start": "astro dev"
+    "astro": "astro",
+    "format": "prettier --write ."
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "^3.1.8",
-    "@astrojs/rss": "^4.0.9",
-    "@astrojs/sitemap": "^3.2.1",
-    "astro": "^4.16.6",
-    "modern-normalize": "^3.0.1",
-    "sass": "^1.80.1",
-    "typescript": "^5.6.3"
-  },
-  "devDependencies": {
-    "prettier": "3.4.2",
-    "prettier-plugin-astro": "0.14.1"
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/rss": "^4.0.15",
+    "@astrojs/sitemap": "^3.7.0",
+    "@fontsource/exo-2": "^5.2.8",
+    "@fontsource/orbitron": "^5.2.8",
+    "astro": "^5.17.1",
+    "prettier": "^3.8.1",
+    "sharp": "^0.34.3"
   }
 }

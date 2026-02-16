@@ -1,0 +1,139 @@
+---
+import Icon from "./Icon.astro";
+---
+
+<button id="theme-toggle" type="button" aria-label="Toggle theme">
+  <Icon name="sun" size={24} class="sun-icon" />
+  <Icon name="half-moon" size={24} class="moon-icon" />
+</button>
+
+<style>
+  #theme-toggle {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    color: var(--text-color);
+  }
+
+  #theme-toggle:hover :global(svg) {
+    transform: scale(1.1) rotate(5deg);
+    background: var(--text-color);
+    color: var(--bg-color);
+  }
+
+  #theme-toggle:active :global(svg) {
+    transform: scale(0.95) rotate(-5deg);
+  }
+
+  #theme-toggle :global(svg) {
+    transition: transform 0.2s ease;
+    color: var(--text-color);
+    stroke: currentColor;
+  }
+
+  .sun-icon {
+    display: none;
+  }
+
+  .moon-icon {
+    display: block;
+  }
+
+  /* Manual dark mode - show sun icon */
+  :global(.dark) #theme-toggle .sun-icon {
+    display: block;
+  }
+
+  :global(.dark) #theme-toggle .moon-icon {
+    display: none;
+  }
+
+  /* Auto dark mode - show sun icon */
+  @media (prefers-color-scheme: dark) {
+    :global(:root:not(.light)) #theme-toggle .sun-icon {
+      display: block;
+    }
+
+    :global(:root:not(.light)) #theme-toggle .moon-icon {
+      display: none;
+    }
+  }
+
+  :global(.corner-cat) {
+    filter: brightness(0) saturate(100%) invert(0) opacity(0.5);
+    transition: filter 0.3s ease;
+  }
+
+  :global(.dark .corner-cat) {
+    filter: brightness(0) saturate(100%) invert(1);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :global(:root:not(.light) .corner-cat) {
+      filter: brightness(0) saturate(100%) invert(1) opacity(0.5);
+    }
+  }
+</style>
+
+<script>
+  // Get theme from localStorage or system preference
+  function getTheme() {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    }
+
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+
+    return "light";
+  }
+
+  // Apply theme to document
+  function applyTheme(theme: string) {
+    const root = document.documentElement;
+    if (theme === "dark") {
+      root.classList.remove("light");
+      root.classList.add("dark");
+    } else {
+      root.classList.remove("dark");
+      root.classList.add("light");
+    }
+    localStorage.setItem("theme", theme);
+  }
+
+  // Toggle theme
+  function toggleTheme() {
+    const currentTheme = getTheme();
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+    applyTheme(newTheme);
+  }
+
+  // Apply theme on page load
+  const initialTheme = getTheme();
+  if (initialTheme) {
+    applyTheme(initialTheme);
+  }
+
+  // Add click handler
+  document
+    .getElementById("theme-toggle")
+    ?.addEventListener("click", toggleTheme);
+
+  // Handle page navigation (for Astro view transitions)
+  document.addEventListener("astro:page-load", () => {
+    const theme = getTheme();
+    if (theme) {
+      applyTheme(theme);
+    }
+    document
+      .getElementById("theme-toggle")
+      ?.addEventListener("click", toggleTheme);
+  });
+</script>

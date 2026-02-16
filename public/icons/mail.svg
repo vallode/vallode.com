@@ -1,0 +1,19 @@
+<svg
+  width="24"
+  height="24"
+  stroke-width="1.5"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  color="currentColor"
+>
+  <path
+    d="m7 9 5 3.5L17 9"
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M2 17V7c0-1.10457.89543-2 2-2h16c1.1046 0 2 .89543 2 2v10c0 1.1046-.8954 2-2 2H4c-1.10457 0-2-.8954-2-2Z"
+    stroke="currentColor"
+  />
+</svg>

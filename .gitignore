@@ -1,9 +1,5 @@
 # build output
 dist/
-
-# Content
-src/content/posts/drafts/*.md
-
 # generated types
 .astro/
 
