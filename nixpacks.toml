@@ -8,7 +8,7 @@ cmds = [
 ]
 
 [phases.install]
-cmds = ['deno install']
+cmds = ['deno install --node-modules-dir']
 cacheDirectories = ['node_modules']
 
 [phases.build]
