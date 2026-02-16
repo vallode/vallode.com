@@ -8,13 +8,13 @@ cmds = [
 ]
 
 [phases.install]
-cmds = ['deno install --node-modules-dir']
+cmds = ['deno install']
 cacheDirectories = ['node_modules']
 
 [phases.build]
-cmds = ['deno install --node-modules-dir && deno task build']
+cmds = ['deno install && deno task build']
 cacheDirectories = ['.astro']
 
 [variables]
 DENO_INSTALL = "/root/.deno"
-NIXPACKS_PATH = "/root/.deno/bin:/app/node_modules/.bin"
+NIXPACKS_PATH = "/root/.deno/bin"
