@@ -11,4 +11,4 @@ my ramblings, projects, and miscellaneous bits.
 I enjoy working in public, sharing my projects as far out as possible. One
 of my first web-related interests was the creation of [startpages](/startpages), a community I still maintain close contact with over a decade later.
 
-This website is built using [Astro](//astro.build) (via [Deno](//deno.com)), hosted on [Cloudflare](//cloudflare.com), and uses [Bye Bye Binary's](//byebyebinary.space) [Nudles](//typotheque.genderfluid.space/fr/fontes/nudles) font. Everything is [open-source](//github.com/vallode/vallode.com).
+This website is built using [Astro](//astro.build) (via [Deno](//deno.com)), hosted on [Cloudflare](//cloudflare.com), and uses [Bye Bye Binary's](//byebyebinary.space) [Nudles](//typotheque.genderfluid.space/fr/fontes/nudles) font. Icons from [Iconoir](//iconoir.com). Everything is [open-source](//github.com/vallode/vallode.com).
