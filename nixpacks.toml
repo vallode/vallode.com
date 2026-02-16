@@ -1,7 +1,7 @@
 providers = ['node']
 
 [phases.setup]
-nixPkgs = ['nodejs_24', 'deno']
+nixPkgs = ['nodejs_20', 'deno']
 
 [phases.install]
 cmds = ['deno install']
