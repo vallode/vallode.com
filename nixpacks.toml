@@ -1,0 +1,12 @@
+providers = ['node']
+
+[phases.setup]
+nixPkgs = ['nodejs_20', 'deno']  # Install both
+
+[phases.install]
+cmds = ['deno install']
+cacheDirectories = ['.npm', 'node_modules']
+
+[phases.build]
+cmds = ['deno run build']
+cacheDirectories = ['.astro']  # Cache Astro's type gen / vite cache
