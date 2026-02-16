@@ -2,8 +2,9 @@ providers = ['node']
 
 [phases.setup]
 nixPkgs = ['nodejs_20']
+aptPkgs = ['unzip']
 cmds = [
-  "curl -fsSL https://deno.land/x/install/install.sh | sh -s v2.6.9",
+  "curl -fsSL https://deno.land/install.sh | sh -s v2.6.9",
   "ln -sf /root/.deno/bin/deno /usr/local/bin/deno"
 ]
 
