@@ -17,4 +17,4 @@ cacheDirectories = ['.astro']
 
 [variables]
 DENO_INSTALL = "/root/.deno"
-NIXPACKS_PATH = "/root/.deno/bin"
+NIXPACKS_PATH = "/root/.deno/bin:/app/node_modules/.bin"
