@@ -68,10 +68,9 @@ const title = _title === SITE_TITLE ? SITE_TITLE : `${_title} | ${SITE_TITLE}`;
   )
 }
 
-<!-- Theme script (must run before body renders to prevent flash) -->
+<!-- Light/dark theme script (must run before body renders to prevent flash) -->
 <script is:inline>
   (function () {
-    // Disable transitions on page load to prevent flash
     document.documentElement.classList.add("no-transition");
 
     const savedTheme = localStorage.getItem("theme");
@@ -80,9 +79,7 @@ const title = _title === SITE_TITLE ? SITE_TITLE : `${_title} | ${SITE_TITLE}`;
     } else if (savedTheme === "light") {
       document.documentElement.classList.add("light");
     }
-    // If no saved theme, let CSS media query handle it automatically
 
-    // Re-enable transitions after a brief delay
     setTimeout(() => {
       document.documentElement.classList.remove("no-transition");
     }, 0);
