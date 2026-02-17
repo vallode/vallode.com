@@ -2,7 +2,11 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Mariusz Zarzycki" description="" showFooter={false}>
+<BaseLayout
+  title="Mariusz Zarzycki"
+  description="Full-stack developer and tinkerer"
+  showFooter={false}
+>
   <main>
     <h1>Mariusz<br />Zarzycki</h1>
     <p>Freelance web developer</p>
@@ -37,30 +41,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   }
 
   h1 {
+    color: var(--text-color);
+    font-family: "Nudles";
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 0.3em;
+    padding: 12px 0 0px;
     position: relative;
     text-align: center;
-    font-size: 5rem;
-    color: var(--text-color);
-    font-weight: bold;
-    padding: 12px 0 0px;
-    font-family: "Nudles";
-  }
-
-  h1 span {
-    position: absolute;
-    top: 14px;
-    left: 2px;
-    width: 100%;
-    font-size: 5rem;
-    z-index: -1;
-    height: 100%;
-    color: transparent;
-    /* background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff); */
-    background: var(--text-color);
-    background-size: 200% 200%;
-    animation: gradientAnimation 5s linear infinite;
-    -webkit-background-clip: text;
-    background-clip: text;
   }
 
   p {
@@ -72,11 +61,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     margin: 0 0 1.8rem;
   }
 
-  .inner {
-    border: 8px solid var(--bg-color);
-    height: 100%;
-  }
-
   .content {
     padding: 16px;
   }
@@ -84,10 +68,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   main {
     width: 100%;
     margin: 0 auto;
+    font-family: "Nudles", serif;
   }
 
   ul {
-    font-family: "Nudles";
     padding: 0;
     margin: 0;
     font-size: 1.3rem;
@@ -102,12 +86,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     counter-increment: counter;
   }
 
-  ul li a {
-    display: flex;
-    width: 100%;
-    text-decoration: none;
+  a {
     color: var(--text-color);
+    display: flex;
+    text-decoration: none;
     transition: scale 0.02s linear;
+    width: 100%;
+  }
+
+  a:hover {
+    color: var(--bg-color);
   }
 
   ul li a span {
@@ -156,8 +144,5 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   .list {
     margin-bottom: 2.4rem;
-  }
-
-  .list li {
   }
 </style>
