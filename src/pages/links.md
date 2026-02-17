@@ -1,10 +1,10 @@
 ---
 layout: ../layouts/TextPage.astro
 title: Links
-description: TODO!
+description: Bookmarks I find interesting or want to keep around.
 ---
 
 A collection of links to projects and things I find interesting.
 
 - [Iconoir](//iconoir.com), open-source icon library
--
+- [WigglyPaint](//wigglypaint.com/), drawing tool with a wiggle
