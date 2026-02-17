@@ -5,3 +5,11 @@
     url("/fonts/Nudles.woff") format("woff"),
     url("/fonts/Nudles.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Bespoke Serif";
+  src:
+    url("/fonts/BespokeSerif-Variable.woff2") format("woff2"),
+    url("/fonts/BespokeSerif-Variable.woff") format("woff"),
+    url("/fonts/BespokeSerif-Variable.ttf") format("truetype");
+}

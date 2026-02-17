@@ -1,11 +1,5 @@
 @import "fonts.css";
 
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
-
 *,
 *::after,
 *::before {
@@ -71,6 +65,7 @@ html.no-transition * {
 
 body {
   color: var(--text-color);
+  font-family: "Bespoke Serif", sans-serif;
   font-size: 20px;
   line-height: 1.5;
   margin: 0;
@@ -122,6 +117,9 @@ b {
 
 a {
   color: var(--accent);
+  transition:
+    color 0.02s linear,
+    background-color 0.02s linear;
 }
 
 a:hover {
