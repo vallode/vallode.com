@@ -4,7 +4,7 @@
 import "../styles/global.css";
 
 import type { ImageMetadata } from "astro";
-import { SITE_TITLE } from "../consts";
+import { SITE_TITLE } from "@/consts.js";
 
 interface Props {
   title: string;
@@ -67,6 +67,11 @@ const title = _title === SITE_TITLE ? SITE_TITLE : `${_title} | ${SITE_TITLE}`;
     <meta property="twitter:image" content={new URL(image.src, Astro.url)} />
   )
 }
+
+<script
+  data-goatcounter="https://vallode.goatcounter.com/count"
+  src="//gc.zgo.at/count.js"
+  async></script>
 
 <!-- Light/dark theme script (must run before body renders to prevent flash) -->
 <script is:inline>
