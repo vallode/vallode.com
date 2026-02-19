@@ -7,6 +7,7 @@
     "npm:@fontsource/exo-2@^5.2.8": "5.2.8",
     "npm:@fontsource/orbitron@^5.2.8": "5.2.8",
     "npm:astro@^5.17.1": "5.17.2_vite@6.4.1__picomatch@4.0.3_zod@3.25.76",
+    "npm:prettier-plugin-astro@~0.14.1": "0.14.1",
     "npm:prettier@^3.8.1": "3.8.1",
     "npm:sharp@~0.34.3": "0.34.5"
   },
@@ -2230,6 +2231,14 @@
         "source-map-js"
       ]
     },
+    "prettier-plugin-astro@0.14.1": {
+      "integrity": "sha512-RiBETaaP9veVstE4vUwSIcdATj6dKmXljouXc/DDNwBSPTp8FRkLGDSGFClKsAFeeg+13SB0Z1JZvbD76bigJw==",
+      "dependencies": [
+        "@astrojs/compiler",
+        "prettier",
+        "sass-formatter"
+      ]
+    },
     "prettier@3.8.1": {
       "integrity": "sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==",
       "bin": true
@@ -2468,6 +2477,15 @@
       ],
       "bin": true
     },
+    "s.color@0.0.15": {
+      "integrity": "sha512-AUNrbEUHeKY8XsYr/DYpl+qk5+aM+DChopnWOPEzn8YKzOhv4l2zH6LzZms3tOZP3wwdOyc0RmTciyi46HLIuA=="
+    },
+    "sass-formatter@0.7.9": {
+      "integrity": "sha512-CWZ8XiSim+fJVG0cFLStwDvft1VI7uvXdCNJYXhDvowiv+DsbD1nXLiQ4zrE5UBvj5DWZJ93cwN0NX5PMsr1Pw==",
+      "dependencies": [
+        "suf-log"
+      ]
+    },
     "sax@1.4.4": {
       "integrity": "sha512-1n3r/tGXO6b6VXMdFT54SHzT9ytu9yr7TaELowdYpMqY/Ao7EnlQGmAQ1+RatX7Tkkdm6hONI2owqNx2aZj5Sw=="
     },
@@ -2599,6 +2617,12 @@
       "integrity": "sha512-LIN7rULI0jBscWQYaSswptyderlarFkjQ+t79nzty8tcIAceVomEVlLzH5VP4Cmsv6MtKhs7qaAiwlcp+Mgaxw==",
       "dependencies": [
         "inline-style-parser"
+      ]
+    },
+    "suf-log@2.5.3": {
+      "integrity": "sha512-KvC8OPjzdNOe+xQ4XWJV2whQA0aM1kGVczMQ8+dStAO6KfEB140JEVQ9dE76ONZ0/Ylf67ni4tILPJB41U0eow==",
+      "dependencies": [
+        "s.color"
       ]
     },
     "svgo@4.0.0": {
@@ -2867,6 +2891,7 @@
         "npm:@fontsource/exo-2@^5.2.8",
         "npm:@fontsource/orbitron@^5.2.8",
         "npm:astro@^5.17.1",
+        "npm:prettier-plugin-astro@~0.14.1",
         "npm:prettier@^3.8.1",
         "npm:sharp@~0.34.3"
       ]
