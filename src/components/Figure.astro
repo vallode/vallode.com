@@ -1,65 +1,43 @@
 ---
-import type { HTMLAttributes } from "astro/types";
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 
-interface Props extends HTMLAttributes<"svg"> {
-  name: string;
-  size?: number | string;
-  label?: string;
-}
+type Props = {
+  src: ImageMetadata;
+  alt: string;
+};
 
-const { name, size = 24, label, class: className, ...props } = Astro.props;
-
-// Try to read the SVG file from the public directory
-let svg: string | null = null;
-try {
-  const filepath = join(process.cwd(), "public", "icons", `${name}.svg`);
-  svg = await readFile(filepath, "utf-8");
-} catch {
-  console.warn(`Icon "${name}" not found at public/${name}.svg`);
-}
-
-// Parse SVG to extract viewBox and inner content
-const viewBoxMatch = svg?.match(/viewBox="([^"]+)"/);
-const viewBox = viewBoxMatch?.[1] || "0 0 24 24";
-
-// Extract inner content (everything between <svg> tags)
-const innerContent = svg
-  ?.replace(/<\?xml[^>]*\?>/, "")
-  .replace(/<svg[^>]*>/, "")
-  .replace(/<\/svg>/, "");
-
-const sizeValue = typeof size === "number" ? `${size}px` : size;
+const { src, alt } = Astro.props;
 ---
 
-{
-  (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={sizeValue}
-      height={sizeValue}
-      viewBox={viewBox}
-      fill="none"
-      aria-hidden={!label}
-      aria-label={label}
-      class:list={[className]}
-      {...props}
-      set:html={innerContent}
-    />
-  )
-}
+<figure>
+  <Image src={src} alt={alt} />
+  <figcaption>
+    <slot />
+  </figcaption>
+</figure>
 
 <style>
-  svg {
-    display: inline-block;
-    vertical-align: middle;
-    stroke-width: 2px;
+  figure {
+    display: flex;
+    flex-direction: column;
+    margin: var(--spacing-lg) 0;
   }
 
-  .icon-fallback {
-    display: inline-block;
-    font-size: 0.75em;
-    opacity: 0.5;
+  img {
+    border: 1px solid var(--border);
+  }
+
+  figcaption {
+    border-left: 1px solid var(--border);
+    font-size: 80%;
+    padding-left: var(--spacing);
+    padding: var(--spacing-xs) 0 var(--spacing-xs) var(--spacing);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :global(:root:not(.light)) img {
+      filter: brightness(0.7);
+    }
   }
 </style>
