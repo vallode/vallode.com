@@ -127,10 +127,6 @@ p {
   margin: 0;
 }
 
-.prose p {
-  margin-bottom: 2em;
-}
-
 textarea {
   width: 100%;
   font-size: var(--text-md);

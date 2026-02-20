@@ -27,8 +27,14 @@ import Icon from "./Icon.astro";
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2.4rem 0 0;
+    margin: 0 0 1.5rem;
     width: 100%;
+  }
+
+  @media screen and (max-width: 32rem) {
+    footer {
+      padding: 0 1rem;
+    }
   }
 
   .icon {
@@ -50,7 +56,6 @@ import Icon from "./Icon.astro";
     justify-content: center;
     align-items: center;
     gap: 0.25rem;
-    margin: 0 0 1.5rem;
     padding: 0.75rem 0;
     width: 100%;
   }

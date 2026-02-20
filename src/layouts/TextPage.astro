@@ -46,7 +46,7 @@ const {
 
 <style>
   :global(.content) {
-    max-width: 28rem !important;
+    width: 28rem !important;
   }
 
   .text-page {
@@ -95,6 +95,10 @@ const {
 
   .prose :global(p) {
     margin-bottom: 1.5em;
+  }
+
+  .prose :global(p:last-of-type) {
+    margin-bottom: 0;
   }
 
   .prose :global(h2) {
