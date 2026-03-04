@@ -1,12 +1,12 @@
 {
   "version": "5",
   "specifiers": {
-    "npm:@astrojs/mdx@^4.3.13": "4.3.13_astro@5.17.2__vite@6.4.1___picomatch@4.0.3__zod@3.25.76",
+    "npm:@astrojs/mdx@^4.3.13": "4.3.13_astro@5.18.0__vite@6.4.1___picomatch@4.0.3__zod@3.25.76",
     "npm:@astrojs/rss@^4.0.15": "4.0.15",
     "npm:@astrojs/sitemap@^3.7.0": "3.7.0",
     "npm:@fontsource/exo-2@^5.2.8": "5.2.8",
     "npm:@fontsource/orbitron@^5.2.8": "5.2.8",
-    "npm:astro@^5.17.1": "5.17.2_vite@6.4.1__picomatch@4.0.3_zod@3.25.76",
+    "npm:astro@^5.18.0": "5.18.0_vite@6.4.1__picomatch@4.0.3_zod@3.25.76",
     "npm:prettier-plugin-astro@~0.14.1": "0.14.1",
     "npm:prettier@^3.8.1": "3.8.1",
     "npm:sharp@~0.34.3": "0.34.5"
@@ -44,7 +44,7 @@
         "vfile"
       ]
     },
-    "@astrojs/mdx@4.3.13_astro@5.17.2__vite@6.4.1___picomatch@4.0.3__zod@3.25.76": {
+    "@astrojs/mdx@4.3.13_astro@5.18.0__vite@6.4.1___picomatch@4.0.3__zod@3.25.76": {
       "integrity": "sha512-IHDHVKz0JfKBy3//52JSiyWv089b7GVSChIXLrlUOoTLWowG3wr2/8hkaEgEyd/vysvNQvGk+QhysXpJW5ve6Q==",
       "dependencies": [
         "@astrojs/markdown-remark",
@@ -869,8 +869,8 @@
       "integrity": "sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==",
       "bin": true
     },
-    "astro@5.17.2_vite@6.4.1__picomatch@4.0.3_zod@3.25.76": {
-      "integrity": "sha512-7jnMqGo53hOQNwo1N/wqeOvUp8wwW/p+DeerSjSkHNx8L/1mhy6P7rVo7EhdmF8DpKqw0tl/B5Fx1WcIzg1ysA==",
+    "astro@5.18.0_vite@6.4.1__picomatch@4.0.3_zod@3.25.76": {
+      "integrity": "sha512-CHiohwJIS4L0G6/IzE1Fx3dgWqXBCXus/od0eGUfxrZJD2um2pE7ehclMmgL/fXqbU7NfE1Ze2pq34h2QaA6iQ==",
       "dependencies": [
         "@astrojs/compiler",
         "@astrojs/internal-helpers",
@@ -2890,7 +2890,7 @@
         "npm:@astrojs/sitemap@^3.7.0",
         "npm:@fontsource/exo-2@^5.2.8",
         "npm:@fontsource/orbitron@^5.2.8",
-        "npm:astro@^5.17.1",
+        "npm:astro@^5.18.0",
         "npm:prettier-plugin-astro@~0.14.1",
         "npm:prettier@^3.8.1",
         "npm:sharp@~0.34.3"

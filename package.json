@@ -15,7 +15,7 @@
     "@astrojs/sitemap": "^3.7.0",
     "@fontsource/exo-2": "^5.2.8",
     "@fontsource/orbitron": "^5.2.8",
-    "astro": "^5.17.1",
+    "astro": "^5.18.0",
     "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.14.1",
     "sharp": "^0.34.3"
